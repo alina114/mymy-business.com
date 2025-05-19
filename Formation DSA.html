@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business DIGI / DSA - Transforme Ta Vie Financière</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #FF0080, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%);
+        }
+        .gradient-bg-alt {
+            background: linear-gradient(135deg, #FF0080 0%, #FF8C00 100%);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px 0 rgba(255, 0, 128, 0.75);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px 0 rgba(255, 0, 128, 0.9);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #FF0080, #FFD700);
+            margin: 1rem auto 0;
+            border-radius: 2px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite ease-in-out;
+        }
+        @keyframes backgroundPan {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animated-gradient-bg {
+            background: linear-gradient(90deg, #4A00E0, #8E2DE2, #FF0080, #FFD700);
+            background-size: 400% 400%;
+            animation: backgroundPan 15s ease infinite;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+        .accordion-button.active + .accordion-content {
+            max-height: 10000px;
+            transition: max-height 1s ease-in;
+        }
+        .accordion-button .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+        .accordion-button.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+        .scroll-animation {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .scroll-animation.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description" content="Découvre le SYSTÈME DSA, la méthode qui cartonne en 2025 pour créer ton business digital rentable en 1 semaine. Apprends à générer des revenus passifs en vendant des produits digitaux grâce à un système éprouvé utilisé par des centaines d'entrepreneurs. Résultats rapides et accompagnement inclus.">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <section id="hero" class="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden animated-gradient-bg px-4 py-20">
+        <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50 transition-all duration-300" id="site-header">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-20">
+            <div class="flex-shrink-0">
+                <a href="#" class="flex items-center">
+                    <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/2ebcc0c202ab08a6.png" alt="Logo MYMY BUSINESS" class="h-14 w-auto mr-2" style="border-radius: 9999px;">
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-10">
+                <a href="#Nouveau en 2025" class="text-gray-800 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+                    Présentation ⇡
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#benefices" class="text-gray-800 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+                    Tes bénéfices
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#programme" class="text-gray-800 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+                    Ton programme
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#bonus" class="text-gray-800 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+                    Tes bonus<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#cta" class="px-14 py-3 bg-gradient-to-r from-pink-600 to-yellow-600 text-white font-medium rounded-md hover:from-yellow-700 hover:to-purple-600 transition-colors duration-200 shadow-md hover:shadow-lg">
+                    JE ME LANCE MAINTENANT
+                </a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu" id="mobile-menu-button">
+                    <i class="fa fa-bars text-xl"></i>
+                </button>
+                <a href="#cta" class="ml-2 px-4 py-2 bg-gradient-to-r from-pink-600 to-yellow-600 text-white font-medium rounded-md hover:from-yellow-700 hover:to-purple-600 transition-colors duration-200 shadow-md hover:shadow-lg md:hidden">
+                    JE ME LANCE MAINTENANT
+                </a>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-1 pb-1 space-y-1 bg-white rounded-lg shadow-lg">
+                <a href="#hero" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Présentation ⇡</a>
+                <a href="#benefices" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Tes bénéfices</a>
+                <a href="#programme" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Ton programme</a>
+                <a href="#bonus" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Tes bonus</a>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="relative z-10 max-w-4xl mx-auto mt-20 md:mt-0">
+            <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight fade-in" style="animation-delay: 0.2s;">
+                <span class="block mb-2">Fatiguée de Lutter Financièrement ?</span>
+                <span class="gradient-text">Découvre la Révolution Digitale Qui Change des Vies.</span>
+            </h1>
+            <p class="text-lg md:text-2xl mb-1 max-w-2xl mx-auto font-light fade-in" style="animation-delay: 0.4s;">
+                Lance ta machine à cash avec notre système clé en main. Apprends, Revends, Encaisse 100% des profits. Sans créer de produit, sans stress, sans même montrer ton visage.
+            </p>
+            <a href="#cta" class="open-popup-trigger cta-button inline-block bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg transform transition duration-300 ease-in-out hover:scale-105 pulse-animation fade-in" style="animation-delay: 0.6s;" data-page-id="6817d711d8bcb3ca43b66669">
+                Accéder à la Formation <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <p class="mt-1 text-sm opacity-80 fade-in" style="animation-delay: 0.8s;">Rejoins des milliers de femmes qui ont déjà transformé leur avenir financier.</p>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-3xl opacity-70"></i>
+        </div>
+    </section>
+    <section id="Nouveau en 2025" <div="" class="container mx-auto px-4 md:px-8 py-16 md:py-20 lg:py-24">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+            <div class="w-full lg:w-1/2 slide-in-left" style="animation-delay: 0.3s;">
+                <span class="bg-purple-100 text-purple-600 px-4 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
+                    <i class="fas fa-bolt mr-1"></i> NOUVEAU EN 2025
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    <span class="gradient-text">Ton Système Clé en Main</span> pour Générer des Revenus en une semaine !
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Découvre comment des centaines de femmes ordinaires génèrent entre 2000€ et 10 000€ par mois grâce à cette méthode simple, sans être influenceuse, sans montrer leur visage et sans investissement financier.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                    <a href="#cta" class="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all text-center pulse cta-button">
+                        Je Démarre Mon Business Maintenant
+                    </a>
+                    <a href="#temoignages" class="bg-white border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all text-center">
+                        <i class="fas fa-play-circle mr-2"></i> Voir les Témoignages
+                    </a>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center gap-1 sm:gap-28">
+                  <div class="flex -space-x-2 mb-2 sm:mb-0">
+                    <img src="https://images.unsplash.com/photo-1517677129300-07b130802f46?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxMDN8fHdvbWFufGVufDB8MHx8fDE3NDYxMTcyMDh8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Utilisateur" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white">
+                    <img src="https://images.unsplash.com/photo-1534278221230-84061d5f99da?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxMTN8fHdvbWFufGVufDB8MHx8fDE3NDYxMTcyMzl8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Utilisateur" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white">
+                    <img src="https://images.unsplash.com/photo-1522938974444-f12497b69347?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxMzJ8fHdvbWFufGVufDB8MHx8fDE3NDYxMTcyODN8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Utilisateur" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white">
+                    <img src="https://images.unsplash.com/photo-1533810019453-7351dbd31aee?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxODl8fHdvbWFufGVufDB8MHx8fDE3NDYxMTczMTd8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Utilisateur" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white">
+                    <img src="https://images.unsplash.com/photo-1630939687530-241d630735df?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHw4M3x8d29tYW4lMjBvZmZpY2V8ZW58MHwwfHx8MTc0NjU0OTM2N3ww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Utilisateur" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white"><img src="https://images.unsplash.com/photo-1516554344860-089511650386?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxMjN8fHdvbWFuJTIwb2ZmaWNlfGVufDB8MHx8fDE3NDY1NDk0MTB8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Utilisateur" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white"><div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-pink-500 text-white flex items-center justify-center text-xs font-bold border-2 border-white">
+                      +6194
+                    </div>
+                  </div>
+                  <p class="text-gray-600 text-center sm:text-left text-sm sm:text-base">
+                    <span class="font-bold text-pink-600">+6200 personnes</span> génèrent des revenus confortablement, pourquoi pas toi ?
+                  </p>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 slide-in-right" style="animation-delay: 0.6s;">
+                <div class="relative">
+                    <div class="absolute -top-6 -left-6 w-full h-full bg-purple-200 rounded-2xl transform rotate-3"></div>
+                    <div class="absolute -bottom-6 -right-6 w-full h-full bg-pink-200 rounded-2xl transform -rotate-3"></div>
+                    <div class="relative bg-white shadow-xl rounded-2xl p-4 hero-animation">
+                        <div class="aspect-w-16 aspect-h-9 mb-4">
+                            <div class="w-full h-0 pb-[56.25%] relative bg-gray-200 rounded-xl overflow-hidden">
+                                <video src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/videos/ba526085f772b5ef.mp4" controls="" class="absolute top-0 left-0 w-full h-full object-cover" poster="https://fakeimg.pl/800x450/FF5E94/FFFFFF?text=Chargement...">Votre navigateur ne supporte pas la vidéo.</video>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="https://images.unsplash.com/photo-1483884105135-c06ea81a7a80?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHw0NTR8fHdvbWFuJTIwcGMlMjBjb2ZmZWUlMjB8ZW58MHwwfHx8MTc0NjU2MDI1OXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Fondatrice" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg">Alinaa</h3>
+                                    <p class="text-gray-600 text-sm">Fondatrice de MyMy Business</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4 italic text-justify">"J’ai rejoint cette aventure incroyable parce que je cherchais une solution pour générer rapidement des revenus. J’avais un besoin urgent d’argent pour sortir d’une situation financière compliquée. C’est la seule formation qui m’a permis de gagner autant en si peu de temps, sans avoir à créer moi-même une offre et sans avoir à reverser quoique soit. Grâce à ce modèle, j’ai pu obtenir un revenu rapide, constant et facilement, sans stress ni prise de tête. Il suffit simplement de copier-coller et d’adapter le contenu à la cible choisie 😍"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="probleme" class="py-10 md:py-24 bg-gradient-to-b from-purple-50 to-white scroll-animation">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4 section-title">Te Reconnais-tu Dans Ces Situations ?</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">Tu rêves d'indépendance financière, mais tu te sens bloquée, dépassée, ou tu penses que c'est trop compliqué ?</p>
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="text-4xl text-pink-500 mb-4"><i class="fas fa-sack-xmark"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Tes fins de mois sont difficiles</h3>
+                    <p class="text-gray-600">Tes finances sont toujours au plus bas, tu as l'impression de courir après l'argent sans jamais vraiment t'en sortir. L'épargne est un lointain souvenir ou n'a même jamais existé.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="text-4xl text-yellow-500 mb-4"><i class="fas fa-clock"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Tu manque de Temps</h3>
+                    <p class="text-gray-600">Entre le travail, la famille, les obligations... quand trouver le temps de construire un projet qui te tient à cœur et qui pourrait changer ta vie ?</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="text-4xl text-purple-500 mb-4"><i class="fas fa-brain"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Tu n'as pas les compétences</h3>
+                    <p class="text-gray-600">Créer un business en ligne te semble une montagne insurmontable ? Technique, marketing, création de produit... Tu ne sais pas par où commencer.</p>
+                </div>
+            </div>
+            <p class="mt-12 text-xl font-semibold text-gray-700">Et si je te disais qu'il existe une solution SIMPLE, RAPIDE et ACCESSIBLE pour enfin atteindre tes objectifs les plus fous ?</p>
+        </div>
+    </section>
+    <section id="solution" class="py-16 md:py-24 gradient-bg text-white scroll-animation">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-12 text-center section-title text-white">La Solution : Ton Business Clé en Main en 4 Étapes Simples</h2>
+            <div class="max-w-5xl mx-auto grid md:grid-cols-4 gap-8 text-center">
+                <div class="flex flex-col items-center glassmorphism p-6 rounded-xl">
+                    <div class="bg-white text-purple-700 rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4 shadow-lg">1</div>
+                    <i class="fas fa-tv text-4xl mb-1 text-yellow-300"></i>
+                    <h3 class="text-lg font-semibold mb-2 font-heading">Visionne</h3>
+                    <p class="text-sm opacity-90">Plonge dans les modules de formation clairs et concis pour maîtriser le système.</p>
+                </div>
+                <div class="flex flex-col items-center glassmorphism p-6 rounded-xl">
+                    <div class="bg-white text-purple-700 rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4 shadow-lg">2</div>
+                    <i class="fas fa-cogs text-4xl mb-1 text-yellow-300"></i>
+                    <h3 class="text-lg font-semibold mb-2 font-heading">Mets en Place</h3>
+                    <p class="text-sm opacity-90">Configure ton système de vente automatique étape par étape (on t'aide si besoin !).</p>
+                </div>
+                <div class="flex flex-col items-center glassmorphism p-6 rounded-xl">
+                    <div class="bg-white text-purple-700 rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4 shadow-lg">3</div>
+                    <i class="fas fa-share-alt text-4xl mb-1 text-yellow-300"></i>
+                    <h3 class="text-lg font-semibold mb-2 font-heading">Partage</h3>
+                    <p class="text-sm opacity-90">Poste du contenu simple sur les réseaux (même anonymement) pour attirer tes clients.</p>
+                </div>
+                <div class="flex flex-col items-center glassmorphism p-6 rounded-xl">
+                    <div class="bg-white text-purple-700 rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4 shadow-lg">4</div>
+                    <i class="fas fa-hand-holding-usd text-4xl mb-1 text-yellow-300"></i>
+                    <h3 class="text-lg font-semibold mb-2 font-heading">Encaisse</h3>
+                    <p class="text-sm opacity-90">Reçois 100% des ventes directement sur ton compte. C'est aussi simple que ça !</p>
+                </div>
+            </div>
+            <div class="mt-12 text-center max-w-3xl mx-auto bg-white/10 p-8 rounded-lg backdrop-blur-sm border border-white/20">
+                 <h3 class="text-2xl font-bold mb-4 font-heading text-yellow-300">Pourquoi ce Business est Ultra Viral ?</h3>
+                 <p class="text-lg mb-4 opacity-95">Parce qu'il répond à un besoin universel (gagner plus d'argent) avec une solution incroyablement simple et rentable. Tu apprends les secrets du marketing digital ET tu obtiens un produit à forte demande à revendre immédiatement, avec 100% de marge !</p>
+                 <ul class="list-none space-y-2 text-left inline-block">
+                    <li class="flex items-center"><i class="fas fa-check-circle text-green-300 mr-2"></i> Système automatisé, peu de temps requis.</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle text-green-300 mr-2"></i> Pas besoin d'être influenceur ou de montrer ton visage.</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle text-green-300 mr-2"></i> Aucun investissement financier supplémentaire requis après l'achat.</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle text-green-300 mr-2"></i> Un système en pleine explosion, encore peu connu en France !</li>
+                 </ul>
+            </div>
+        </div>
+    </section>
+    <section id="benefices" class="py-16 md:py-24 bg-white scroll-animation">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-12 text-center section-title">Les Bénéfices Concrets Pour Toi</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg hover:shadow-pink-200 transition duration-300">
+                    <div class="text-4xl gradient-text mb-1"><i class="fas fa-coins"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Revenus 100% Pour Toi</h3>
+                    <p class="text-gray-600">Chaque vente de la formation te rapporte au minimum 597€ directement. Pas de commission à reverser, 100% des bénéfices sont pour toi.</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg hover:shadow-pink-200 transition duration-300">
+                    <div class="text-4xl gradient-text mb-1"><i class="fas fa-umbrella-beach"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Liberté Géographique &amp; Temporelle</h3>
+                    <p class="text-gray-600">Travaille d'où tu veux, quand tu veux. Quelques heures par semaine suffisent grâce au système automatisé.</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg hover:shadow-pink-200 transition duration-300">
+                    <div class="text-4xl gradient-text mb-1"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Simplicité Maximale</h3>
+                    <p class="text-gray-600">Pas besoin de créer de produit, de gérer un stock ou un SAV complexe. Tout est prêt à l'emploi.</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg hover:shadow-pink-200 transition duration-300">
+                    <div class="text-4xl gradient-text mb-1"><i class="fas fa-users"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Communauté Bienveillante</h3>
+                    <p class="text-gray-600">Rejoins 2 groupes VIP privés pour échanger, apprendre et être soutenue par d'autres membres qui réussissent.</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg hover:shadow-pink-200 transition duration-300">
+                    <div class="text-4xl gradient-text mb-1"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Accompagnement &amp; Coaching</h3>
+                    <p class="text-gray-600">Profite de lives mensuels et d'un support continu pour t'aider à lancer et scaler ton activité sans limite de temps.</p>
+                </div>
+                 <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg hover:shadow-pink-200 transition duration-300">
+                    <div class="text-4xl gradient-text mb-1"><i class="fas fa-brain"></i></div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Compétences Marketing de Pointe</h3>
+                    <p class="text-gray-600">Acquiers les vrais secrets du marketing digital que tu pourras appliquer pour ce business ou pour tes propres projets futurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="programme" class="py-16 md:py-24 bg-gray-100 scroll-animation">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-1 text-center section-title">Tout Ce Que Tu Vas Découvrir Dans La Formation Ultra Complète </h2>
+            <p class="text-lg text-gray-600 mb-10 text-center max-w-3xl mx-auto">Plus de 250 vidéos de formation ultra-courtes, chacune axée sur un point essentiel, faciles à retrouver et à revoir pour approfondir un sujet précis selon ton besoin du moment. Ce format micro-learning te permet d’apprendre par petites séquences ciblées, favorisant ton engagement et ta mémorisation. Chaque vidéo est conçue pour une application immédiate et des résultats rapides, afin que tu puisses progresser à ton rythme et intégrer facilement chaque notion. Voici un aperçu détaillé :</p>
+            <div class="max-w-4xl mx-auto accordion">
+                <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center bg-gradient-to-r from-purple-100 to-pink-100 hover:bg-gradient-to-r hover:from-purple-200 hover:to-pink-200 transition duration-300">
+                        <span>1 - COMMENCEZ ICI !</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white">
+                        <h3 class="font-bold text-purple-700 mb-2">BIENVENUE À LA DSA</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4">
+                            <li>Comment marche la plateforme ?</li><li>Comment revendre la DSA</li><li>Intégration client DSA</li><li>Ambassadeur de la DSA</li><li>Le Pricing de la DSA</li><li>Comment Consommer la DSA</li>
+                        </ul>
+                         <h3 class="font-bold text-purple-700 mb-2">LA COMMUNAUTE DSA</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4">
+                           <li>Le groupe Telegram DSA</li><li>Le groupe Skool DSA</li><li>Changer son adresse email Skool</li>
+                        </ul>
+                         <h3 class="font-bold text-purple-700 mb-2">L'ACCOMPAGNEMENT EXTRA À LA DSA</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Coaching DSA</li><li>Validation DSA</li><li>Rappel Important</li><li>Ton imprimerie de billet légale 💰</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center bg-gradient-to-r from-purple-100 to-pink-100 hover:bg-gradient-to-r hover:from-purple-200 hover:to-pink-200 transition duration-300">
+                        <span>2 - LE LANCEMENT</span>
+                         <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white">
+                        <h3 class="font-bold text-purple-700 mb-2">LE BON MINDSET 🧠</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>1 Million $ en 7 mois ? (Story time)</li><li>Concentrez-vous sur ce qui est important</li><li>Discipline &amp; Cohérence</li><li>Se souvenir de votre raison !</li><li>Que le Hustle commence !</li><li>Ne soyez pas HELPLESS !</li><li>J'ai tout mis dedans !</li></ul>
+                        <h3 class="font-bold text-purple-700 mb-2">SE DÉCLARER 👨‍⚖️</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Vous avez besoin de 3 choses</li><li>Se Déclarer sans se plumer en ligne</li><li>Étapes pour LTD - Wise - Stripe</li><li>Recommandation compte Stripe</li><li>Extra DSA</li></ul>
+                        <h3 class="font-bold text-purple-700 mb-2">PROTOCOLE DE LANCEMENT 🚀</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Liste des niches de la DSA</li><li>Plan Éditorial Instagram</li><li>Vos Stories Sur Insta</li><li>Hacker L'algo à tester</li><li>Les Bonus à Offrir</li><li>Pensez d'abord à la valeur !</li><li>Construire une audience est plus efficace</li><li>Calculateur de bénéfices</li><li>Paiement &amp; Relance DSA</li><li>Traitement d'objection DSA</li><li>Complétez cette Checklist (Obligatoire)</li></ul>
+                        <h3 class="font-bold text-purple-700 mb-2">CRÉER UN PRODUIT DIGITAL 🔥</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700"><li>C'est quoi un produit digital ?</li><li>Comment créer un produit digital ?</li><li>Guidelines produits digitaux</li><li>La règle avant de créer son produit digital !</li><li>Étapes avant de créer un produit digital</li><li>Créer un produit avec l'IA en 5 min</li><li>101 idées de produits digitaux à vendre</li><li>Où héberger votre produit digital ?</li><li>Comment protéger votre produit digital ?</li><li>Type de communautés</li><li>Validation produits digitaux</li></ul>
+                    </div>
+                </div>
+                 <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center bg-gradient-to-r from-purple-100 to-pink-100 hover:bg-gradient-to-r hover:from-purple-200 hover:to-pink-200 transition duration-300">
+                        <span>3 - LES STRATÉGIES DE CONTENUS</span>
+                         <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white">
+                        <h3 class="font-bold text-purple-700 mb-2">FACELESS PLAYBOOK ANONYME 🎭</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Pourquoi le Faceless ? Adopter une approche anonyme</li><li>Banques ou bien vos propres Rush ?</li><li>Étapes pour maîtriser votre niche</li><li>Audio Formula</li><li>Planning Edito (shooting)</li><li>Choisir son nom</li><li>Guidelines Brolls Faceless</li><li>Guidelines Gestion Media</li></ul>
+                        <h3 class="font-bold text-purple-700 mb-2">FACECAM STRATÉGIES 💪</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Le facecam c'est quoi ?</li><li>3 guidelines à suivre !</li><li>Ma stratégie Facecam</li><li>Mon process facecam</li><li>Rappel très important</li></ul>
+                        <h3 class="font-bold text-purple-700 mb-2">BRANDING BLUEPRINT 😎</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Branding DSA</li><li>Votre Instagram</li><li>Aesthetics Mastery</li><li>Story telling</li><li>Identification</li><li>Inspiration</li><li>Votre Personal Branding</li><li>Nouveau Branding DSA</li><li>Social Proof résultats DSA</li><li>Social Proof Témoignages vidéos</li><li>Témoignages explosifs 💣</li><li>Social Proof Rajout – Flout</li></ul>
+                        <h3 class="font-bold text-purple-700 mb-2">LA CRÉATION DE CONTENU 🎥</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Ressources 360° pour créer du contenu</li><li>Photoshop Tout En Un</li><li>CapCut Les fondamentaux</li><li>Capcut Infinity Réels</li><li>Canvas Tout En Un</li><li>Final Cut Pro X Tout En Un</li><li>Audio Avec IA Tout En Un</li><li>Sous Titre Avec IA Tout En Un</li></ul>
+                        <h3 class="font-bold text-purple-700 mb-2">COPYWRITING FORMULA 🖋</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700"><li>Copywriting de A à Z</li><li>Culture Copywriting</li><li>+ 1000 Hooks formula</li><li>Le Secret Pour Vendre</li></ul>
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center bg-gradient-to-r from-purple-100 to-pink-100 hover:bg-gradient-to-r hover:from-purple-200 hover:to-pink-200 transition duration-300">
+                        <span>4 - INSTAGRAM / TIKTOK</span>
+                         <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white">
+                        <h3 class="font-bold text-purple-700 mb-2">LES SECRETS D'INSTAGRAM 🤫</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Quelle est la différence entre une Stories et Reels sur Instagram ?</li><li>Comment marche l'algorithme ?</li><li>Qu'est-ce qui ramène du reach ?</li><li>Comment trouver des audios tendances ?</li><li>Quoi Poster &amp; Combien De fois ?</li><li>Penser longs &amp; courts termes (Programmation)</li><li>Les Groupes d'engagement</li><li>À quelle vitesse faut-il opérer ?</li><li>Comment produire rapidement sur Insta ?</li><li>Instagram Vs Tiktok</li><li>Comment publier pour une exposition extrême</li><li>Outil analyse de contenu Instagram</li><li>Conclusion</li><li>Nouveau Hack SEO Reels</li><li>Création de compte - Guidelin</li><li>Le nerf de la guerre - Stories</li><li>Ban + Restriction Insta</li><li>Stratégie audio populaire</li></ul>
+                        <h3 class="font-bold text-purple-700 mb-2">TIKTOK MASTERY 🎊</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700"><li>Comment Marche l'algo de Tiktok</li><li>Trouver la viralité sur Tiktok</li><li>Créer de la viralité sur Tiktok</li><li>Le reposting sur Tiktok</li><li>Répondre aux Msgs Tiktok</li><li>Automatisation sur Tiktok</li><li>Branding &amp; Guidelines Profil</li></ul>
+                    </div>
+                </div>
+                 <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center bg-gradient-to-r from-purple-100 to-pink-100 hover:bg-gradient-to-r hover:from-purple-200 hover:to-pink-200 transition duration-300">
+                        <span>5 - LES OUTILS</span>
+                         <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white">
+                         <h3 class="font-bold text-purple-700 mb-2">VSL FORMULA 🔑</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>VSL c'est quoi ?</li><li>Obligation VSL ?</li><li>Structure d'une VSL</li><li>Les 2 types de VSL</li><li>Public VSL</li><li>Montage VSL</li><li>Hébergement VSL</li><li>Mes reco pour vos VSL</li></ul>
+                         <h3 class="font-bold text-purple-700 mb-2">EMAIL MARKETING 📩</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Comment créer un auto-répondeur ?</li><li>Comment créer une newsletter ?</li><li>Automatisations &amp; Études de cas</li><li>30 Emails à Copier Coller avec L'IA</li><li>Derniers mots</li><li>Mes propres emails à modifier</li><li>Prompt ChatGPT Emails</li><li>Les CTA dans vos mails</li><li>Augmenter % Des Convertions</li></ul>
+                         <h3 class="font-bold text-purple-700 mb-2">TUNNELS DE VENTE SYSTEME IO 💪</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Pourquoi Systeme IO ?</li><li>Vue d'ensemble plateforme</li><li>Choisir son nom de domaine</li><li>Nom de domaine + Email pro</li><li>Recevoir paiement sur SIO</li><li>Type de Tunnels de vente</li><li>Boutique Systeme IO - Stant Store</li><li>Créer &amp; Personnaliser Tunnel</li><li>Comment ajouter un produit sur SIO</li><li>Rajouter le prix de votre produit</li><li>Templates pour System IO</li><li>Créer sa formation Systeme IO</li><li>Template Stan Store Sur SIO</li><li>Affiliation Systeme IO</li><li>Checklist avant de commencer</li><li>Boutique Systeme IO - Stant Store</li><li>Assistance &amp; blocage SIO</li><li>SEO &amp; Référencement SIO</li><li>Tunnel de vente - Copier Coller</li><li>Digital Store - Copier Coller</li><li>Enfin le digital store est complet</li></ul>
+                         <h3 class="font-bold text-purple-700 mb-2">L'IA &amp; L'AUTOMATISATION 🤖</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Comment Créer Un Chatbot ?</li><li>Scénarios Chatbots pour vendre</li><li>Comment créer une illustration avec L'IA ?</li><li>Mon Automatisation DSA</li></ul>
+                         <h3 class="font-bold text-purple-700 mb-2">PLANNING EDITO MRR 🚀</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Cultura Les Meilleurs Comptes Faceless</li><li>Cultura Les Meilleurs Comptes Branding</li><li>Comment trouver la viralité à reproduire ?</li><li>(Sujets - Niches - Angles) Prochains Reels</li><li>Comment j'organise mon Planning Edito ?</li><li>L'excel Des Réels DSA - Copier Coller</li><li>Créer son Excel des Réels - Perf</li><li>Cas pratique - Hacker l'Excel Réels</li><li>Fréquence des publications !</li></ul>
+                         <h3 class="font-bold text-purple-700 mb-2">GAGNER 💰 AVEC STAN STORE</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700"><li>Funnels Vs Website Vs SAAS LP</li><li>Pourquoi Choisir Stan pour se lancer ?</li><li>Comment configurer votre Stan Store ?</li><li>Comment personnaliser votre boutique ?</li><li>Collecter les paiements sur Stan Store</li><li>Ajouter un Lead magnet ou Produit PLR</li><li>Ressources (Design + TXT)</li><li>Emailing &amp; Follow up</li><li>Store - Copier Coller</li></ul>
+                    </div>
+                </div>
+                 <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center bg-gradient-to-r from-purple-100 to-pink-100 hover:bg-gradient-to-r hover:from-purple-200 hover:to-pink-200 transition duration-300">
+                        <span>6 - LES STRATÉGIES DE VENTE</span>
+                         <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white">
+                        <h3 class="font-bold text-purple-700 mb-2">STRATÉGIES DE VENTE 💶</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Vendre c'est simple</li><li>Meilleur alliés</li><li>La méthode FOMO</li><li>Avoir un Setter</li><li>Le seul secret pour vendre plus</li></ul>
+                        <h3 class="font-bold text-purple-700 mb-2">GROWTH HACKING 🥷</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700"><li>Growth Hacking Intro</li><li>Stratégie Copycat - Traduction</li><li>Stratégie 1 Contenu - 15 fois / jour</li><li>Stratégie 60 fois / jour</li><li>Stratégie - Devenir Media</li><li>Créer des nouveaux comptes</li><li>Reposting Viralité</li></ul>
+                    </div>
+                </div>
+                 <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center bg-gradient-to-r from-purple-100 to-pink-100 hover:bg-gradient-to-r hover:from-purple-200 hover:to-pink-200 transition duration-300">
+                        <span>7 - LA REVENTE</span>
+                         <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white">
+                        <h3 class="font-bold text-purple-700 mb-2">MRR MASTERY 🤝</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>C'est quoi MRR ?</li><li>PLR or MRR ?</li><li>Comment vendre la DSA ?</li></ul>
+                         <h3 class="font-bold text-purple-700 mb-2">15 PRODUITS PLR/MRR OFFERTS 💳 (Liste non exhaustive)</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Dark Aesthetics (PLR)</li><li>Réels Faceless (PLR)</li><li>Guide pour Gagner De l'argent (leadmagnet) - PLR</li><li>111 idées produits digitaux (PLR)</li><li>Marketing TikTok Sans visage (PLR)</li><li>Social Media Planner Pour créateur (PLR)</li><li>Halal Marketing Insta (PLR)</li><li>Faceless Ebook Marketing Digital (PLR)</li><li>Gagner un Salaire En ligne (PLR)</li><li>Transition Vues (PLR)</li><li>Guide Ultime Des Réels (PLR)</li><li>Le guide Canva (PLR)</li><li>Revenu passif avec Pinterest (PLR)</li><li>Viral Sur Thread (PLR)</li><li>Consigne pour les produits PLR</li><li>Pricing des produits PLR</li><li>Comment Vendre Les PLR's</li><li>Comment l'ajouter comme leadmagnet</li></ul>
+                         <h3 class="font-bold text-purple-700 mb-2">MARKETING D'AFFILIATION 🔔</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>Plateformes D'affiliation 360°</li><li>Comment Vendre de L'affiliation</li><li>Mes tips &amp; retours sur L'affiliation</li></ul>
+                        <h3 class="font-bold text-purple-700 mb-2">PRODUITS PARTENAIRES 🧠</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700"><li>Pourquoi choisir l'affiliate ?</li><li>Comment ça marche ?</li><li>DSA Affiliate - 200 € + 50 € + 200 € /mois</li><li>DSA Affiliate - Update</li><li>PRO Affiliate - 1000 €</li><li>Comment Vendre Ces programmes ?</li><li>Comment recevoir les paiements</li></ul>
+                    </div>
+                </div>
+                 <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center bg-gradient-to-r from-purple-100 to-pink-100 hover:bg-gradient-to-r hover:from-purple-200 hover:to-pink-200 transition duration-300">
+                        <span>8 - 9 - 10 - RESSOURCES, VIRALITÉ &amp; COMPLÉMENTS</span>
+                         <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white">
+                        <h3 class="font-bold text-purple-700 mb-2">8 - LES RESSOURCES</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>+100 000 Contenus - Niches 360° 🎊 (Banque Luxe, Faceless, Homme, Islam, Minimaliste...)</li><li>Créer votre propre Banque</li></ul>
+                        <h3 class="font-bold text-purple-700 mb-2">9 - LA VIRALITÉ</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>LA VIRALITÉ GARANTIE🔗 (C'est quoi la viralité, secret des vues, doubler la mise...)</li><li>AUDIENCE RAPIDEMENT 👁 (Identifier, lister ce qui marche, stratégie rapide)</li></ul>
+                        <h3 class="font-bold text-purple-700 mb-2">10 - COMPLEMENTS</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700 mb-4"><li>DÉLÉGATION DU WORK ✅ (Quand, quoi, comment trouver les bonnes RH)</li><li>Q&amp;A + LIVES DSA 👥</li></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bonus" class="py-16 md:py-24 gradient-bg-alt text-white scroll-animation">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-1 section-title text-white">Et Ce N'est Pas Tout ! Tes Bonus Exclusifs Pour Une Réussite Maximale 🚀</h2>
+            <p class="text-lg mb-10 max-w-3xl mx-auto opacity-90">Pour t'assurer de cartonner dès le début, j'ai inclus ces cadeaux d'une valeur inestimable :</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <div class="bg-white/20 p-6 rounded-xl backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 transition duration-300">
+                    <div class="text-4xl text-yellow-300 mb-3"><i class="fas fa-fire"></i></div>
+                    <h3 class="text-xl font-bold mb-2 font-heading">15 PRODUITS DIGITAUX PRÊTS À VENDRE</h3>
+                    <p class="opacity-90">100% personnalisables &amp; 100% de profits pour toi. Lance tes propres offres sans effort.</p>
+                </div>
+                <div class="bg-white/20 p-6 rounded-xl backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 transition duration-300">
+                    <div class="text-4xl text-yellow-300 mb-3"><i class="fas fa-heart"></i></div>
+                    <h3 class="text-xl font-bold mb-2 font-heading">+100 000 VIDÉOS RÉELS PRÊTES À PUBLIER</h3>
+                    <p class="opacity-90">Explose sur toutes les niches avec cette banque de contenu massive pour tes réseaux sociaux.</p>
+                </div>
+                <div class="bg-white/20 p-6 rounded-xl backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 transition duration-300">
+                    <div class="text-4xl text-yellow-300 mb-3"><i class="fas fa-envelope-open-text"></i></div>
+                    <h3 class="text-xl font-bold mb-2 font-heading">40 MODÈLES D'EMAILS + 1000 HOOKS + TUNNELS &amp; 1000 MOCKUPS</h3>
+                    <p class="opacity-90">Tout le matériel marketing à copier-coller pour convertir tes prospects en clients.</p>
+                </div>
+                 <div class="bg-white/20 p-6 rounded-xl backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 transition duration-300">
+                    <div class="text-4xl text-yellow-300 mb-3"><i class="fas fa-box-open"></i></div>
+                    <h3 class="text-xl font-bold mb-2 font-heading">PARTENARIAT PREMIUM</h3>
+                    <p class="opacity-90">Gagne 30% à 50% sur chaque vente en direct de produits partenaires exclusifs.</p>
+                </div>
+                 <div class="bg-white/20 p-6 rounded-xl backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 transition duration-300">
+                    <div class="text-4xl text-yellow-300 mb-3"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-bold mb-2 font-heading">PLUSIEURS LIVES / MOIS</h3>
+                    <p class="opacity-90">Pour t'accompagner, répondre à tes questions et scaler plus vite ton activité.</p>
+                </div>
+                <div class="bg-white/20 p-6 rounded-xl backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 transition duration-300">
+                    <div class="text-4xl text-yellow-300 mb-3"><i class="fas fa-users"></i></div>
+                    <h3 class="text-xl font-bold mb-2 font-heading">2 GROUPES VIP PRIVÉS DSA</h3>
+                    <p class="opacity-90">Échange, apprends, applique et chiffre dans une communauté soudée et motivante.</p>
+                </div>
+            </div>
+             <div class="max-w-3xl mx-auto bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl p-8 md:p-12 text-white shine-effect mt-12">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6">
+                        💥EN PLUS DE TOUS CES BONUS, JE T'OFFRE UN COACHING GRATUIT POUR TE SOUTENIR DANS LA MISE EN PLACE DE TON BUSINESS EN LIGNE ! 🚀
+                    </h3>
+                    <p class="text-xl mb-8">
+                        Ces bonus ont une valeur inestimable, mais ils sont inclus GRATUITEMENT dans ton adhésion à la Digital Success Academy.
+                    </p>
+                    <a href="#cta" class="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all inline-block cta-button">
+                        <i class="fas fa-rocket mr-2"></i> Je veux accéder à tous ces bonus
+                    </a>
+                </div>
+        </div><div class="mt-16 text-center">
+                <p class="mt-12 text-2xl font-bold text-white">💥 TOUT EST PRÊT POUR TOI, PAS D'EXCUSE. PRENDS TA PLACE MAINTENANT ! 🚀</p>
+            </div>
+    </section>
+    <section id="temoignages" class="py-16 md:py-24 bg-white scroll-animation">
+        <div class="mt-12 text-center">
+  <h3 class="text-2xl font-bold mb-6 font-heading">Des Résultats Concrets et Rapides !</h3>
+  <div class="relative w-full max-w-7xl mx-auto overflow-hidden px-4 sm:px-6">
+    <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+      <!-- Slide 1 -->
+      <div class="min-w-full">
+        <div class="relative aspect-[4/3] w-full">
+          <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/c1d3dca60c139069.jpeg" data-initial="true">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-3 sm:p-4 md:p-6">
+            <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold">Des résultats quotidiens</h3>
+            <p class="text-gray-200 text-sm sm:text-base">Des succès partagés.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="min-w-full">
+        <div class="relative aspect-[4/3] w-full">
+          <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/75f982ba4646f37a.jpeg" data-initial="true">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-3 sm:p-4 md:p-6">
+            <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold">Une communauté soudée</h3>
+            <p class="text-gray-200 text-sm sm:text-base">Une force vers succès</p>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="min-w-full">
+        <div class="relative aspect-[4/3] w-full">
+          <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/c46206a15dfa002c.jpeg" data-initial="true">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-3 sm:p-4 md:p-6">
+            <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold">Succès après succès.</h3>
+            <p class="text-gray-200 text-sm sm:text-base">La preuve par l'image.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="min-w-full">
+        <div class="relative aspect-[4/3] w-full">
+          <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/dd061a0321ffb819.jpeg" data-initial="true">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-3 sm:p-4 md:p-6">
+            <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold">Des stratégies efficaces </h3>
+            <p class="text-gray-200 text-sm sm:text-base">Des gains concrets.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 5 -->
+      <div class="min-w-full">
+        <div class="relative aspect-[4/3] w-full">
+          <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/33b62bd4353e9c64.jpeg" data-initial="true">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-3 sm:p-4 md:p-6">
+            <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold">Résultat à la fin du mois</h3>
+            <p class="text-gray-200 text-sm sm:text-base">Transformation financière.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation buttons -->
+    <button id="prevBtn" class="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/60 text-white rounded-full p-2 sm:p-3 backdrop-blur-sm transition-all z-10">
+      <i class="fa fa-chevron-left text-base sm:text-xl"></i>
+    </button>
+    <button id="nextBtn" class="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/60 text-white rounded-full p-2 sm:p-3 backdrop-blur-sm transition-all z-10">
+      <i class="fa fa-chevron-right text-base sm:text-xl"></i>
+    </button>
+    <div id="carousel-indicators" class="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-1 sm:space-x-2 z-10">
+      <!-- Indicateurs dynamiques -->
+    </div>
+  </div>
+</div>
+    </section>
+    <section id="cta" class="py-16 md:py-24 animated-gradient-bg text-white scroll-animation">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-heading font-black mb-6">Prête à Prendre Ton Avenir Financier en Main ?</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light">Accède instantanément à la formation complète, aux bonus exclusifs et à la communauté pour seulement <span class="font-bold text-yellow-300">597€</span>.</p>
+            <div class="max-w-lg mx-auto bg-gradient-to-br from-purple-600 via-pink-600 to-red-500 p-8 md:p-12 rounded-2xl shadow-2xl text-white transform transition duration-500 hover:scale-105 mb-0">
+                <h3 class="text-2xl font-semibold mb-4">Accède à Tout Ça Pour Un Prix Exceptionnel</h3>
+                <p class="text-7xl md:text-8xl font-extrabold mb-3">597€</p>
+                <p class="text-xl mb-6">(Payable en 3 fois <span class="font-bold">199€</span> sans frais)</p>
+                <p class="text-2xl font-semibold text-yellow-300 mb-10">Rentabilisé en UNE SEULE vente ! 🔥</p>
+                 <p class="mt-6 text-gray-200 text-sm">Formation + Droit de Revente + Tous les Bonus Inclus</p>
+            </div>
+            <a href="Paiement DSA" class="open-popup-trigger cta-button inline-block bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-5 px-12 rounded-full text-2xl shadow-lg transform transition duration-300 ease-in-out hover:scale-105 pulse-animation mt-0" data-page-id="6817d711d8bcb3ca43b66669" id="page-link">
+                Oui, Je Veux Accéder à la DSA Maintenant ! <i class="fas fa-lock ml-2"></i>
+            </a>
+            <p class="mt-8 text-lg font-semibold">⚠️ Attention : Cette offre et ce business sont en pleine explosion. Ne manque pas le train de l'opportunité la plus simple et rentable de 2025 ! Les places avec accompagnement personnalisé sont limitées.</p>
+        </div>
+    </section>
+    <section id="faq" class="py-16 md:py-24 bg-gray-50 scroll-animation">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-12 text-center section-title">Questions Fréquentes</h2>
+            <div class="max-w-3xl mx-auto accordion">
+                <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                        <span>Ai-je besoin de compétences techniques ?</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white text-gray-700">
+                        Absolument pas ! La formation est conçue pour les débutantes. Tout est expliqué étape par étape, de manière simple et visuelle. Le système est "copier-coller". Si tu sais utiliser les réseaux sociaux basiques, tu peux réussir.
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                        <span>Dois-je montrer mon visage ou avoir beaucoup d'abonnés ?</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white text-gray-700">
+                        Non ! La formation inclut des stratégies "faceless" (anonymes) très efficaces. Tu peux construire ton business discrètement. Tu n'as pas besoin d'une audience existante, la formation t'apprend justement à la construire rapidement.
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                        <span>Combien de temps faut-il consacrer par jour ?</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white text-gray-700">
+                        Une fois le système mis en place (quelques heures au total), tu peux y consacrer seulement 1 à 2 heures par jour, voire moins grâce à l'automatisation et à la programmation de contenu. C'est flexible et s'adapte à ton emploi du temps.
+                    </div>
+                </div>
+                 <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                        <span>Est-ce que c'est légal et éthique ?</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white text-gray-700">
+                        Oui, totalement. Le concept de Master Resell Rights (MRR) est légal. Tu achètes une formation de haute qualité avec le droit de la revendre. Tu apportes une vraie valeur (la formation elle-même) à tes clients. La formation aborde également comment déclarer son activité.
+                    </div>
+                </div>
+                 <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                        <span>Quand verrai-je les premiers résultats ?</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white text-gray-700">
+                        Cela dépend de ton implication, mais beaucoup de nos membres réalisent leur première vente en quelques jours seulement après avoir mis en place le système, parfois même en 24h ! La formation est conçue pour des résultats rapides.
+                    </div>
+                </div>
+                 <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+                    <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                        <span>Y a-t-il des coûts cachés ou des abonnements ?</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content p-5 bg-white text-gray-700">
+                        Non. L'accès à la formation DSA et à ses droits de revente est un paiement unique de 597€ (ou 3x199€). Il n'y a pas d'abonnement mensuel pour la formation elle-même. Certains outils externes recommandés (comme l'auto-répondeur ou Systeme.io) peuvent avoir des plans gratuits ou payants, mais la formation t'explique comment démarrer avec un minimum voire zéro frais supplémentaires.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-4">© 2025 MYMY BUSINESS - Tous droits réservés.</p>
+            <p class="text-xs">Ce site n'appartient pas à Facebook et n'est pas affilié à Facebook Inc. Le contenu de ce site web n'a pas été vérifié par Facebook. Facebook est une marque déposée de Facebook, Inc.</p>
+            <div class="mt-4 space-x-2 text-xs">
+                <a href="#" class="hover:text-white">Mentions Légales</a>
+                <a href="#" class="hover:text-white">Politique de Confidentialité</a>
+                <a href="#" class="hover:text-white">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle and auto-close on scroll
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                window.addEventListener('scroll', () => {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            }
+            // Shrink header on scroll
+            const header = document.getElementById('site-header');
+            if (header) {
+                window.addEventListener('scroll', () => {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    if (scrollTop > 50) {
+                        header.classList.add('h-16');
+                        header.classList.remove('h-20');
+                    } else {
+                        header.classList.add('h-20');
+                        header.classList.remove('h-16');
+                    }
+                });
+            }
+            // Popup Logic
+            const popupOverlay = document.getElementById('dsa-popup-overlay');
+            const closePopupButton = document.getElementById('close-dsa-popup');
+            const openPopupButtons = document.querySelectorAll('.open-popup-trigger');
+            function openPopup(e) {
+                e.preventDefault();
+                if (popupOverlay) {
+                    popupOverlay.style.display = 'flex';
+                    document.body.classList.add('popup-open');
+                }
+            }
+            function closePopup() {
+                if (popupOverlay) {
+                    popupOverlay.style.display = 'none';
+                    document.body.classList.remove('popup-open');
+                }
+            }
+            openPopupButtons.forEach(button => {
+                button.addEventListener('click', openPopup);
+            });
+            if (closePopupButton) {
+                closePopupButton.addEventListener('click', closePopup);
+            }
+            if (popupOverlay) {
+                popupOverlay.addEventListener('click', function(e) {
+                    if (e.target === popupOverlay) {
+                        closePopup();
+                    }
+                });
+            }
+            document.addEventListener('keydown', function(e) {
+                if (e.key === "Escape" && popupOverlay && popupOverlay.style.display === 'flex') {
+                    closePopup();
+                }
+            });
+            // Accordion Logic
+            const accordionButtons = document.querySelectorAll('.accordion-button');
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const isActive = button.classList.contains('active');
+                    button.classList.toggle('active');
+                    if (!isActive) {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    } else {
+                        content.style.maxHeight = null;
+                    }
+                });
+            });
+            // Scroll Animation Logic
+            const scrollElements = document.querySelectorAll('.scroll-animation');
+            const elementInView = (el, dividend = 1) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+                );
+            };
+            const displayScrollElement = (element) => {
+                element.classList.add('visible');
+            };
+            const handleScrollAnimation = () => {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 1.15)) {
+                        displayScrollElement(el);
+                    }
+                });
+            };
+            handleScrollAnimation();
+            window.addEventListener('scroll', handleScrollAnimation);
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    if (this.classList.contains('open-popup-trigger')) {
+                       return;
+                    }
+                    const targetId = this.getAttribute('href');
+                    if (targetId && targetId.length > 1 && targetId.startsWith('#')) {
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            e.preventDefault();
+                            const headerOffset = document.getElementById('site-header') ? document.getElementById('site-header').offsetHeight : 0;
+                            const elementPosition = targetElement.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                            window.scrollTo({
+                                 top: offsetPosition,
+                                 behavior: "smooth"
+                            });
+                            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                                mobileMenu.classList.add('hidden');
+                            }
+                        }
+                    }
+                });
+            });
+            // Carousel Logic in Testimonials
+            const carousel = document.getElementById('carousel');
+            if (carousel) {
+                const slides = carousel.querySelectorAll(':scope > div');
+                const prevBtn = document.getElementById('prevBtn');
+                const nextBtn = document.getElementById('nextBtn');
+                const indicatorsContainer = document.getElementById('carousel-indicators');
+                let totalSlides = slides.length;
+                let currentIndex = 0;
+                let touchStartX = 0;
+                let touchEndX = 0;
+                let autoPlayInterval;
+                function createIndicators() {
+                    if (!indicatorsContainer) return;
+                    indicatorsContainer.innerHTML = '';
+                    for (let i = 0; i < totalSlides; i++) {
+                        const indicator = document.createElement('div');
+                        indicator.classList.add('indicator', 'w-2', 'h-2', 'sm:w-3', 'sm:h-3', 'rounded-full', 'cursor-pointer', 'opacity-70', 'hover:opacity-100', 'transition-opacity');
+                        indicator.dataset.index = i;
+                        if (i === 0) {
+                            indicator.classList.add('bg-white');
+                            indicator.classList.remove('bg-white/50');
+                        } else {
+                            indicator.classList.add('bg-white/50');
+                        }
+                        indicator.addEventListener('click', () => {
+                            goToSlide(i);
+                        });
+                        indicatorsContainer.appendChild(indicator);
+                    }
+                }
+                function updateCarousel() {
+                    if (totalSlides === 0) return;
+                    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    const currentIndicators = indicatorsContainer ? indicatorsContainer.querySelectorAll('.indicator') : [];
+                    currentIndicators.forEach((indicator, index) => {
+                        if (index === currentIndex) {
+                            indicator.classList.add('bg-white');
+                            indicator.classList.remove('bg-white/50');
+                        } else {
+                            indicator.classList.remove('bg-white');
+                            indicator.classList.add('bg-white/50');
+                        }
+                    });
+                }
+                function goToSlide(index) {
+                    if (totalSlides === 0) return;
+                    currentIndex = index;
+                    updateCarousel();
+                    resetAutoPlay();
+                }
+                function goToNext() {
+                    if (totalSlides === 0) return;
+                    currentIndex = (currentIndex + 1) % totalSlides;
+                    updateCarousel();
+                }
+                function goToPrev() {
+                    if (totalSlides === 0) return;
+                    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                    updateCarousel();
+                }
+                function startAutoPlay() {
+                    if (totalSlides > 0) {
+                       autoPlayInterval = setInterval(goToNext, 5000);
+                    }
+                }
+                function stopAutoPlay() {
+                    clearInterval(autoPlayInterval);
+                }
+                function resetAutoPlay() {
+                    stopAutoPlay();
+                    startAutoPlay();
+                }
+                if (nextBtn) nextBtn.addEventListener('click', () => { goToNext(); resetAutoPlay(); });
+                if (prevBtn) prevBtn.addEventListener('click', () => { goToPrev(); resetAutoPlay(); });
+                carousel.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                    stopAutoPlay();
+                });
+                carousel.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                    startAutoPlay();
+                });
+                function handleSwipe() {
+                    const swipeThreshold = 50;
+                    if (touchEndX < touchStartX - swipeThreshold) {
+                        goToNext();
+                    } else if (touchEndX > touchStartX + swipeThreshold) {
+                        goToPrev();
+                    }
+                }
+                carousel.addEventListener('mouseenter', stopAutoPlay);
+                carousel.addEventListener('mouseleave', startAutoPlay);
+                if (totalSlides > 0) {
+                    createIndicators();
+                    updateCarousel();
+                    startAutoPlay();
+                } else {
+                    if(prevBtn) prevBtn.style.display = 'none';
+                    if(nextBtn) nextBtn.style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

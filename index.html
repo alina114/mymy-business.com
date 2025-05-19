@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMy Business - Site en construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(90deg, #4A00E0, #8E2DE2, #FF0080, #FFD700);
+            background-size: 400% 400%;
+            animation: backgroundPan 15s ease infinite;
+            overflow-x: hidden;
+        }
+
+        @keyframes backgroundPan {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .logo-container {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .glow {
+            position: relative;
+        }
+
+        .glow::after {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 0.3s ease;
+        }
+
+        .glow:hover::after {
+            opacity: 0.7;
+        }
+
+        .title-gradient {
+            background: linear-gradient(to right, #ffffff, #FFD700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -100% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        .btn-shine {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-shine::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+            transform: rotate(30deg);
+            animation: shine 4s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) rotate(30deg); }
+            100% { transform: translateX(100%) rotate(30deg); }
+        }
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+    </style>
+    <meta name="description" content="Une communauté d'entrepreneurs qui s'entraident pour réussir ensemble.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 md:p-8">
+    <div class="particles" id="particles"></div>
+    
+    <div class="container mx-auto max-w-5xl">
+        <div class="flex flex-col items-center justify-center text-center">
+            <div class="logo-container glow mb-1">
+                <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/2ebcc0c202ab08a6.png" class="w-1/2 mx-auto" alt="Logo MYMY BUSINESS">
+                
+            </div>
+            
+            <h2 class="text-2xl md:text-4xl font-semibold mb-6 text-white">Le site est en construction</h2>
+            
+            <p class="text-xl text-white/90 mb-12 max-w-2xl">En attendant, découvrez mes formations disponibles :</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
+                <a href="https://alina114.github.io/business-digi/" target="_blank" class="group">
+                    <div class="card rounded-2xl p-8 h-full flex flex-col items-center justify-center text-center group-hover:border-white/50 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-purple-500/30 to-pink-500/30 rounded-bl-3xl"></div>
+                        <i class="fas fa-laptop-code text-5xl mb-6 text-white"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-white">Formation Business Digital</h3>
+                        <p class="text-white/80 mb-6">Développez vos compétences digitales et boostez votre business en ligne.</p>
+                        <div class="mt-auto">
+                            <button class="btn-shine bg-gradient-to-r from-purple-600 to-pink-500 text-white font-bold py-3 px-6 rounded-full transform transition-all duration-300 hover:scale-105 flex items-center">
+                                <span>Découvrir</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://www.app.mymy-business.com/MTEEDE/" target="_blank" class="group">
+                    <div class="card rounded-2xl p-8 h-full flex flex-col items-center justify-center text-center group-hover:border-white/50 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-yellow-500/30 to-orange-500/30 rounded-bl-3xl"></div>
+                        <i class="fas fa-graduation-cap text-5xl mb-6 text-white"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-white">Formation MTEEDE</h3>
+                        <p class="text-white/80 mb-6">Maîtriser son Temps, son Espace, et son État d'Esprit.</p>
+                        <div class="mt-auto">
+                            <button class="btn-shine bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-bold py-3 px-6 rounded-full transform transition-all duration-300 hover:scale-105 flex items-center">
+                                <span>Découvrir</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="mt-16 text-white/70">
+                <div class="w-24 h-24 md:w-32 md:h-32 bg-white rounded-full flex items-center justify-center shadow-lg mx-auto mt-6">
+                    <i class="fas fa-rocket text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent"></i>
+                </div><p class="mb-2">Restez connecté avec nous</p>
+                <div class="flex space-x-4 justify-center">
+                    <a href="#" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all duration-300">
+                        <i class="fab fa-facebook-f text-white"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all duration-300">
+                        <i class="fab fa-instagram text-white"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all duration-300">
+                        <i class="fab fa-linkedin-in text-white"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-white/50 text-sm">
+                <p>© 2025 MyMy Business. Tous droits réservés.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Création des particules lumineuses
+        const particlesContainer = document.getElementById('particles');
+        
+        function createParticle() {
+            const particle = document.createElement('div');
+            
+            // Style de base pour la particule
+            particle.style.position = 'absolute';
+            particle.style.width = Math.random() * 5 + 2 + 'px';
+            particle.style.height = particle.style.width;
+            particle.style.background = 'rgba(255, 255, 255, ' + (Math.random() * 0.5 + 0.2) + ')';
+            particle.style.borderRadius = '50%';
+            particle.style.boxShadow = '0 0 10px 2px rgba(255, 255, 255, 0.8)';
+            
+            // Position aléatoire
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.top = Math.random() * 100 + 'vh';
+            
+            // Animation
+            const duration = Math.random() * 15 + 10;
+            particle.style.animation = `float ${duration}s ease-in-out infinite`;
+            particle.style.opacity = '0';
+            
+            // Ajouter au DOM
+            particlesContainer.appendChild(particle);
+            
+            // Animation d'apparition et de disparition
+            setTimeout(() => {
+                particle.style.transition = 'opacity 2s ease-in-out';
+                particle.style.opacity = Math.random() * 0.7 + 0.3;
+                
+                setTimeout(() => {
+                    particle.style.opacity = '0';
+                    
+                    // Supprimer après la disparition
+                    setTimeout(() => {
+                        particlesContainer.removeChild(particle);
+                        createParticle(); // Créer une nouvelle particule
+                    }, 2000);
+                }, (duration - 2) * 1000);
+            }, 100);
+        }
+        
+        // Créer les particules initiales
+        for (let i = 0; i < 50; i++) {
+            setTimeout(() => {
+                createParticle();
+            }, i * 200);
+        }
+
+        // Animation des cartes
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mousemove', function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const angleX = (y - centerY) / 20;
+                const angleY = (centerX - x) / 20;
+                
+                this.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) translateY(-10px)`;
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(-10px)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>

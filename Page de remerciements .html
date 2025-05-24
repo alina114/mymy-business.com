@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Remerciements </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(90deg, #4A00E0, #8E2DE2, #FF0080, #FFD700);
+            background-size: 400% 400%;
+            animation: backgroundPan 15s ease infinite;
+            min-height: 100vh;
+        }
+        @keyframes backgroundPan {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animated-gradient-bg {
+            background: linear-gradient(90deg, #4A00E0, #8E2DE2, #FF0080, #FFD700);
+            background-size: 400% 400%;
+            animation: backgroundPan 15s ease infinite;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%);
+        }
+        .gradient-bg-alt {
+            background: linear-gradient(135deg, #FF0080 0%, #FF8C00 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #FF0080, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        
+        .fa-whatsapp {
+            color: #25D366;
+        }
+        
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 25px -5px rgba(249, 168, 212, 0.4);
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .shine-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .shine-effect::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+            transform: rotate(30deg);
+            animation: shine 3s infinite;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%) rotate(30deg); }
+            100% { transform: translateX(100%) rotate(30deg); }
+        }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: '#fdf2f8',
+                100: '#fce7f3',
+                200: '#fbcfe8',
+                300: '#f9a8d4',
+                400: '#f472b6',
+                500: '#ec4899',
+                600: '#db2777',
+                700: '#be185d',
+                800: '#9d174d',
+                900: '#831843',
+              },
+              secondary: {
+                50: '#f5f3ff',
+                100: '#ede9fe',
+                200: '#ddd6fe',
+                300: '#c4b5fd',
+                400: '#a78bfa',
+                500: '#8b5cf6',
+                600: '#7c3aed',
+                700: '#6d28d9',
+                800: '#5b21b6',
+                900: '#4c1d95',
+              },
+              accent: {
+                50: '#fffbeb',
+                100: '#fef3c7',
+                200: '#fde68a',
+                300: '#fcd34d',
+                400: '#fbbf24',
+                500: '#f59e0b',
+                600: '#d97706',
+                700: '#b45309',
+                800: '#92400e',
+                900: '#78350f',
+              }
+            }
+          }
+        }
+      }
+    </script>
+      <meta name="description" content="Félicitations et Merci !
+Ton inscription à la formation est confirmée. Voici les prochaines étapes à suivre ">
+</head>
+  <body class="bg-gradient-to-br from-primary-400/20 via-secondary-300/20 to-accent-300/20">
+    
+    <div class="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8 font-sans animated-gradient-bg">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(90deg, #4A00E0, #8E2DE2, #FF0080, #FFD700);
+            background-size: 400% 400%;
+            animation: backgroundPan 15s ease infinite;
+            min-height: 100vh;
+        }
+        @keyframes backgroundPan {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animated-gradient-bg {
+            background: linear-gradient(90deg, #4A00E0, #8E2DE2, #FF0080, #FFD700);
+            background-size: 400% 400%;
+            animation: backgroundPan 15s ease infinite;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%);
+        }
+        .gradient-bg-alt {
+            background: linear-gradient(135deg, #FF0080 0%, #FF8C00 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #FF0080, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    </style>
+    <div class="bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden max-w-4xl w-full border border-primary-200 hover:shadow-primary-300/50 transition-all duration-500">
+        <div class="px-6 py-10 md:px-12 md:py-16 text-center">
+            <div class="mb-8">
+                <i class="fas fa-check-circle text-6xl md:text-7xl text-primary-500 animate-float"></i>
+            </div>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold gradient-text mb-4 pulse-animation">Félicitations et Merci !</h1>
+            <p class="text-lg sm:text-xl text-gray-600 mb-10 md:mb-12">Ton  inscription à la formation est confirmée. Voici les prochaines étapes à suivre :</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-left">
+
+                <div class="bg-white/20 backdrop-blur-sm p-6 rounded-xl border border-primary-200 card-hover shadow-lg shine-effect">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-primary-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-800">1. Vérifies tes emails</h2>
+                    </div>
+                    <p class="text-gray-700 text-sm sm:text-base">Un email contenant la validation de ton paiement vient de t'être envoyé. Penses à vérifier ton dossier <strong class="font-medium">Spam.</strong><strong class="font-medium decoration-pink-500 underline decoration-2"> TRANSFÈRES</strong> LA PREUVE DE PAIEMENT À CETTE ADRESSE 👉 adhesion.dsa@gmail.com
+<strong class="font-medium">⚠️ POUR VALIDER TON INSCRIPTION, on doit voir dans ce mail le nom DSA, le prix payé, ton adresse email et celle de l'expéditeur :</strong><strong class="font-medium decoration-pink-500 underline decoration-2"> alina114@live.fr</strong></p><button id="copyEmailBtn" type="button" class="inline-block mt-4 bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white font-semibold py-2 px-4 rounded-md text-sm transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+  Copier l'adresse mail de validation
+</button>
+                </div>
+
+                <div class="bg-white/20 backdrop-blur-sm p-6 rounded-xl border border-secondary-200 card-hover shadow-lg shine-effect">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-secondary-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-800">2. Accèdes à Skool</h2>
+                    </div>
+                    <p class="text-gray-700 text-sm sm:text-base">Pour accéder à la communauté et aux modules de formation, </p><strong class="font-medium decoration-pink-500 underline decoration-2"> crées un compte sur SKOOL et demande ton adhésion.</strong><p class="text-gray-700 text-sm sm:text-base">Les réponses aux questions posées doivent correspondre aux informations transférées par mail 
+👉L'email avec lequel tu as acheté la DSA, ton nom complet et l'email de Mymy Business :  
+</p><strong class="font-medium decoration-pink-500 underline decoration-2"> alina114@live.fr</strong>
+                     <a href="https://www.skool.com/dsa/" target="_blank" rel="noopener" class="inline-block mt-4 bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white font-semibold py-2 px-4 rounded-md text-sm transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-center">
+  Accéder à mon espace Skool
+</a>
+                </div>
+
+                <div class="bg-white/20 backdrop-blur-sm p-6 rounded-xl border border-accent-200 card-hover shadow-lg shine-effect text-center">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-accent-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-800">3. Démarres ta formation </h2>
+                    </div>
+                    <p class="text-gray-700 text-sm sm:text-base">Une fois ton inscription validée, tes accés à Skool sont automatiquement activés.
+ </p><p class="text-gray-700 text-sm sm:text-base font-medium underline decoration-pink-500 decoration-2">Prends le temps de suivre chaque modules,</p><p class="text-gray-700 text-sm sm:text-base">prends des notes, imprègnes toi de toutes les Guidelines et passe à l'action 🚀 . Tu recevras aussi ton invitation au groupe VIP Telegram
+ </p><p class="text-gray-700 text-sm sm:text-base">PS : La validation peut prendre quelques heures, accorde nous un peu de temps pour bien vérifier les informations fournies (max 12h)
+ </p><a href="https://www.thedsa.co/de761a5f" target="_blank" rel="noopener" class="inline-block mt-4 bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white font-semibold py-2 px-4 rounded-md text-sm transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">Revoir les étapes en vidéo 
+</a>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-gray-200">
+                 <p class="text-gray-600 mb-6 text-lg">Besoin d'aide ? Une question ?</p>
+                 <div class="space-y-4">
+                     <p class="text-gray-800 font-medium">
+                         <i class="fab fa-whatsapp mr-2 text-lg"></i>Contacte moi par message sur WhatsApp
+                     </p>
+                     <p class="text-gray-800 font-medium">
+                         <a href="https://wa.me/1XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-5 rounded-md text-sm transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                             <i class="fab fa-whatsapp mr-2 text-lg"></i> Contacter par WhatsApp
+                         </a>
+                     </p>
+                 </div>
+                 
+            </div><p class="text-gray-800 font-medium mt-6">
+                         <i class="fas fa-headset mr-2 text-primary-600"></i>Ou par email : <a href="mailto:support@votredomaine.com" class="text-secondary-600 hover:underline font-semibold transition duration-300 hover:text-secondary-800 underline">mymybusiness.info@gmail.com</a>
+                     </p><p class="mt-6 text-sm text-gray-500">Nous répondons généralement sous 24h ouvrées.</p>
+
+        </div>
+         <div class="bg-gradient-to-r from-primary-100/80 via-secondary-100/80 to-accent-100/80 backdrop-blur-sm px-6 py-4 text-center text-sm text-gray-700 border-t border-primary-200">
+             © 2025 Mymy Business. Tous droits réservés.
+         </div>
+    </div>
+</div>
+  <script>
+document.getElementById('copyEmailBtn').addEventListener('click', function() {
+  const email = "adresse@email.com"; // Mets ici l'adresse à copier
+  navigator.clipboard.writeText(email).then(function() {
+    // Affiche le message de succès
+    const msg = document.getElementById('copySuccess');
+    msg.classList.remove('hidden');
+    setTimeout(() => msg.classList.add('hidden'), 1200);
+  });
+});
+</script>
+</body>
+</html>

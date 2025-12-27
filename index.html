@@ -111,9 +111,8 @@
             z-index: -1;
         }
 
-        /* Navigation menu styles */
         .nav-menu {
-            background: rgba(255, 255, 255, 0.1);
+            background: transparent;
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             position: fixed;
@@ -125,7 +124,7 @@
         }
 
         .nav-menu.scrolled {
-            background: rgba(74, 0, 224, 0.8);
+            background: transparent;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
@@ -149,7 +148,6 @@
             width: 100%;
         }
 
-        /* Social feed styles */
         .social-post {
             transition: all 0.3s ease;
             transform: scale(1);
@@ -160,7 +158,6 @@
             z-index: 10;
         }
 
-        /* WhatsApp floating button */
         .whatsapp-btn {
             position: fixed;
             bottom: 30px;
@@ -187,7 +184,6 @@
 <body class="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 pt-24">
     <div class="particles" id="particles"></div>
     
-    <!-- Navigation Menu -->
     <nav class="nav-menu w-full py-3 px-4 md:px-8">
         <div class="container mx-auto flex flex-wrap items-center justify-between">
     <a href="#" class="flex items-center">
@@ -201,13 +197,11 @@
             <li>
                 <a href="./" class="nav-link block py-2 pr-4 pl-3 text-white hover:text-gray-200" data-index-id="682b166586f3bf50152bf637" id="index-link">Accueil</a>
             </li>
-            <!-- Sous-menu Formations -->
             <li class="relative group text-white block py-2">
                 <a>
                     Formations
                     <i class="fas fa-chevron-down ml-2 text-xs"></i>
                 </a>
-                <!-- Sous-menu (dropdown) -->
                 <ul class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-200 z-20
                             md:opacity-0 md:group-hover:opacity-100 md:group-hover:visible md:invisible
                             md:absolute md:left-0 md:mt-2
@@ -275,7 +269,6 @@
                 </a>
             </div>
             
-            <!-- Social Media Feed Section -->
             <div id="social" class="mt-20 w-full">
                 <h2 class="text-3xl font-bold mb-8 text-white">Suivez-nous sur les réseaux</h2>
                 
@@ -286,7 +279,6 @@
                     </div>
                     
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-4xl">
-                        <!-- Instagram Post 1 -->
                         <div class="social-post card rounded-xl overflow-hidden">
                             <img src="https://via.placeholder.com/300x300/FF0080/FFFFFF?text=Instagram+Post" alt="Instagram post" class="w-full h-auto">
                             <div class="p-3">
@@ -298,7 +290,6 @@
                             </div>
                         </div>
                         
-                        <!-- Instagram Post 2 -->
                         <div class="social-post card rounded-xl overflow-hidden">
                             <img src="https://via.placeholder.com/300x300/8E2DE2/FFFFFF?text=Instagram+Post" alt="Instagram post" class="w-full h-auto">
                             <div class="p-3">
@@ -310,7 +301,6 @@
                             </div>
                         </div>
                         
-                        <!-- Instagram Post 3 -->
                         <div class="social-post card rounded-xl overflow-hidden">
                             <img src="https://via.placeholder.com/300x300/4A00E0/FFFFFF?text=Instagram+Post" alt="Instagram post" class="w-full h-auto">
                             <div class="p-3">
@@ -336,7 +326,6 @@
                     </div>
                     
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-4xl">
-                        <!-- TikTok Post 1 -->
                         <div class="social-post card rounded-xl overflow-hidden">
                             <div class="relative pb-[177.77%]">
                                 <img src="https://via.placeholder.com/300x533/FF0080/FFFFFF?text=TikTok+Video" alt="TikTok video" class="absolute inset-0 w-full h-full object-cover">
@@ -353,7 +342,6 @@
                             </div>
                         </div>
                         
-                        <!-- TikTok Post 2 -->
                         <div class="social-post card rounded-xl overflow-hidden">
                             <div class="relative pb-[177.77%]">
                                 <img src="https://via.placeholder.com/300x533/8E2DE2/FFFFFF?text=TikTok+Video" alt="TikTok video" class="absolute inset-0 w-full h-full object-cover">
@@ -370,7 +358,6 @@
                             </div>
                         </div>
                         
-                        <!-- TikTok Post 3 -->
                         <div class="social-post card rounded-xl overflow-hidden">
                             <div class="relative pb-[177.77%]">
                                 <img src="https://via.placeholder.com/300x533/4A00E0/FFFFFF?text=TikTok+Video" alt="TikTok video" class="absolute inset-0 w-full h-full object-cover">
@@ -419,19 +406,16 @@
         </div>
     </div>
 
-    <!-- WhatsApp Business Button -->
     <a href="https://wa.me/33679335039" target="_blank" class="whatsapp-btn w-16 h-16 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg hover:bg-[#128C7E] transition-colors">
         <i class="fab fa-whatsapp text-white text-3xl"></i>
     </a>
 
     <script>
-        // Création des particules lumineuses
         const particlesContainer = document.getElementById('particles');
         
         function createParticle() {
             const particle = document.createElement('div');
             
-            // Style de base pour la particule
             particle.style.position = 'absolute';
             particle.style.width = Math.random() * 5 + 2 + 'px';
             particle.style.height = particle.style.width;
@@ -439,19 +423,15 @@
             particle.style.borderRadius = '50%';
             particle.style.boxShadow = '0 0 10px 2px rgba(255, 255, 255, 0.8)';
             
-            // Position aléatoire
             particle.style.left = Math.random() * 100 + 'vw';
             particle.style.top = Math.random() * 100 + 'vh';
             
-            // Animation
             const duration = Math.random() * 15 + 10;
             particle.style.animation = `float ${duration}s ease-in-out infinite`;
             particle.style.opacity = '0';
             
-            // Ajouter au DOM
             particlesContainer.appendChild(particle);
             
-            // Animation d'apparition et de disparition
             setTimeout(() => {
                 particle.style.transition = 'opacity 2s ease-in-out';
                 particle.style.opacity = Math.random() * 0.7 + 0.3;
@@ -459,23 +439,20 @@
                 setTimeout(() => {
                     particle.style.opacity = '0';
                     
-                    // Supprimer après la disparition
                     setTimeout(() => {
                         particlesContainer.removeChild(particle);
-                        createParticle(); // Créer une nouvelle particule
+                        createParticle();
                     }, 2000);
                 }, (duration - 2) * 1000);
             }, 100);
         }
         
-        // Créer les particules initiales
         for (let i = 0; i < 50; i++) {
             setTimeout(() => {
                 createParticle();
             }, i * 200);
         }
 
-        // Animation des cartes
         document.querySelectorAll('.card').forEach(card => {
             card.addEventListener('mousemove', function(e) {
                 const rect = this.getBoundingClientRect();
@@ -499,7 +476,6 @@
             });
         });
 
-        // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const navbarMenu = document.getElementById('navbar-menu');
         
@@ -507,7 +483,6 @@
             navbarMenu.classList.toggle('hidden');
         });
 
-        // Navigation menu scroll effect
         const navMenu = document.querySelector('.nav-menu');
         
         window.addEventListener('scroll', function() {
@@ -518,7 +493,6 @@
             }
         });
 
-        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -533,7 +507,6 @@
                         behavior: 'smooth'
                     });
                     
-                    // Close mobile menu if open
                     if (!navbarMenu.classList.contains('hidden') && window.innerWidth < 768) {
                         navbarMenu.classList.add('hidden');
                     }
@@ -543,7 +516,6 @@
     </script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Pour le mobile : toggle du sous-menu au clic
   document.querySelectorAll('.group > a').forEach(function(el) {
     el.addEventListener('click', function(e) {
       if (window.innerWidth < 768) {
@@ -557,6 +529,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-
-</script></body>
+</script>
+</body>
 </html>

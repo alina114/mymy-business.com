@@ -230,9 +230,11 @@
     
     <div class="container mx-auto max-w-5xl">
         <div class="flex flex-col items-center justify-center text-center">
-            <div class="logo-container glow mb-1">
-                <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/2ebcc0c202ab08a6.png" class="w-1/2 mx-auto" alt="Logo MYMY BUSINESS">
-            </div>
+            <div class="logo-container glow mb-1 relative">
+    <div class="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-black/40 pointer-events-none rounded-full"></div>
+    <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/2ebcc0c202ab08a6.png" class="w-1/2 mx-auto relative z-10" alt="Logo MYMY BUSINESS" style="mask-image: radial-gradient(circle, black 60%, transparent 100%); -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);">
+</div>
+
             
             <h2 class="text-2xl md:text-4xl font-semibold mb-6 text-white">Votre transformation digitale commence ici !</h2>
             
@@ -271,7 +273,70 @@ Découvrez nos formations disponibles :</p>
             </div>
             
             <div id="social" class="mt-20 w-full">
-                <h2 class="text-3xl font-bold mb-8 text-white">Suivez-nous sur les réseaux</h2>
+                <div class="mt-16 w-full flex flex-col items-center">
+    
+    
+    <div class="relative w-full max-w-4xl">
+        <div class="video-glow-container relative">
+            
+            
+            
+            
+            
+        </div>
+    </div>
+    
+    <style>
+        @keyframes spin-slow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes float-1 {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -20px) scale(1.1); }
+            66% { transform: translate(-20px, 30px) scale(0.9); }
+        }
+        
+        @keyframes float-2 {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(-40px, 25px) scale(0.95); }
+            66% { transform: translate(25px, -30px) scale(1.05); }
+        }
+        
+        @keyframes float-3 {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(35px, 30px) scale(1.08); }
+            66% { transform: translate(-30px, -25px) scale(0.92); }
+        }
+        
+        @keyframes float-4 {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(-25px, -35px) scale(0.88); }
+            66% { transform: translate(40px, 20px) scale(1.12); }
+        }
+        
+        .animate-spin-slow {
+            animation: spin-slow 8s linear infinite;
+        }
+        
+        .animate-float-1 {
+            animation: float-1 6s ease-in-out infinite;
+        }
+        
+        .animate-float-2 {
+            animation: float-2 7s ease-in-out infinite;
+        }
+        
+        .animate-float-3 {
+            animation: float-3 8s ease-in-out infinite;
+        }
+        
+        .animate-float-4 {
+            animation: float-4 5.5s ease-in-out infinite;
+        }
+    </style>
+</div><h2 class="text-3xl font-bold mb-8 text-white">Suivez-nous sur les réseaux</h2>
                 
                 <div class="flex flex-col items-center mb-10">
                     <div class="flex items-center mb-4">
@@ -381,7 +446,92 @@ Découvrez nos formations disponibles :</p>
                         <i class="fas fa-external-link-alt ml-2"></i>
                     </a>
                 </div>
+            </div><div class="mt-16 w-full flex flex-col items-center">
+    <h2 class="text-3xl font-bold mb-8 text-white">Découvrez notre vision</h2>
+    
+    <div class="relative w-full max-w-4xl">
+        <div class="video-glow-container relative">
+            <div class="absolute -inset-4 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-500 rounded-3xl opacity-75 blur-2xl animate-spin-slow"></div>
+            
+            <div class="absolute -inset-2 rounded-2xl overflow-hidden">
+                <div class="absolute w-20 h-20 bg-white/30 rounded-full blur-xl animate-float-1" style="top: 10%; left: 10%;"></div>
+                <div class="absolute w-16 h-16 bg-purple-500/40 rounded-full blur-xl animate-float-2" style="top: 70%; right: 15%;"></div>
+                <div class="absolute w-24 h-24 bg-pink-500/30 rounded-full blur-xl animate-float-3" style="bottom: 15%; left: 20%;"></div>
+                <div class="absolute w-14 h-14 bg-yellow-500/40 rounded-full blur-xl animate-float-4" style="top: 30%; right: 25%;"></div>
             </div>
+            
+            <div class="relative card rounded-2xl overflow-hidden shadow-2xl">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-pink-600/20 pointer-events-none z-10"></div>
+                
+                <div class="aspect-video w-full">
+                    <video src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/videos/de4eb2deaf14f7c3.mp4" controls="" data-initial="true"></video>
+                </div>
+                
+                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 z-20">
+                    <h3 class="text-white text-xl font-bold mb-2">Transformez votre avenir</h3>
+                    <p class="text-white/90 text-sm">Rejoignez une communauté d'entrepreneurs chanceux</p>
+                </div>
+                
+                <div class="absolute top-4 right-4 z-20">
+                    <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center animate-pulse">
+                        <i class="fas fa-play text-white text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        @keyframes spin-slow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes float-1 {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -20px) scale(1.1); }
+            66% { transform: translate(-20px, 30px) scale(0.9); }
+        }
+        
+        @keyframes float-2 {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(-40px, 25px) scale(0.95); }
+            66% { transform: translate(25px, -30px) scale(1.05); }
+        }
+        
+        @keyframes float-3 {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(35px, 30px) scale(1.08); }
+            66% { transform: translate(-30px, -25px) scale(0.92); }
+        }
+        
+        @keyframes float-4 {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(-25px, -35px) scale(0.88); }
+            66% { transform: translate(40px, 20px) scale(1.12); }
+        }
+        
+        .animate-spin-slow {
+            animation: spin-slow 8s linear infinite;
+        }
+        
+        .animate-float-1 {
+            animation: float-1 6s ease-in-out infinite;
+        }
+        
+        .animate-float-2 {
+            animation: float-2 7s ease-in-out infinite;
+        }
+        
+        .animate-float-3 {
+            animation: float-3 8s ease-in-out infinite;
+        }
+        
+        .animate-float-4 {
+            animation: float-4 5.5s ease-in-out infinite;
+        }
+    </style>
+</div>
             
             <div id="contact" class="mt-16 text-white/70">
                 <div class="w-24 h-24 md:w-32 md:h-32 bg-white rounded-full flex items-center justify-center shadow-lg mx-auto mt-6">

@@ -1,0 +1,2204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Business DIGI / DSA - Transforme Ta Vie Financière</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="description" content="Découvre le SYSTÈME DSA, la méthode qui cartonne en 2025 pour créer ton business digital rentable en 1 semaine. Apprends à générer des revenus passifs en vendant des produits digitaux grâce à un système éprouvé utilisé par des centaines d'entrepreneurs. Résultats rapides et accompagnement inclus." />
+  <script src="https://unpkg.com/alpinejs" defer></script>
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; overflow-x: hidden; width: 100%; }
+    .font-heading { font-family: 'Montserrat', sans-serif; }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #FF0080, #FFD700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    .gradient-bg { background: linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%); }
+    .gradient-bg-alt { background: linear-gradient(135deg, #FF0080 0%, #FF8C00 100%); }
+
+    .cta-button { transition: all 0.3s ease; box-shadow: 0 4px 15px 0 rgba(255, 0, 128, 0.75); }
+    .cta-button:hover { transform: translateY(-3px); box-shadow: 0 6px 20px 0 rgba(255, 0, 128, 0.9); }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #FF0080, #FFD700);
+      margin: 1rem auto 0;
+      border-radius: 2px;
+    }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .fade-in { animation: fadeIn 1s ease-out forwards; opacity: 0; }
+
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+    .pulse-animation { animation: pulse 2s infinite ease-in-out; }
+
+    @keyframes backgroundPan { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+    .animated-gradient-bg {
+      background: linear-gradient(90deg, #4A00E0, #8E2DE2, #FF0080, #FFD700);
+      background-size: 400% 400%;
+      animation: backgroundPan 15s ease infinite;
+    }
+
+    .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out; }
+    .accordion-button.active + .accordion-content { max-height: 10000px; transition: max-height 1s ease-in; }
+    .accordion-button .accordion-icon { transition: transform 0.3s ease; }
+    .accordion-button.active .accordion-icon { transform: rotate(180deg); }
+
+    .scroll-animation { opacity: 0; transform: translateY(50px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .scroll-animation.visible { opacity: 1; transform: translateY(0); }
+
+    .glassmorphism {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: smooth; }
+    img, video { max-width: 100%; height: auto; display: block; }
+    video { object-fit: cover; }
+    a, button { -webkit-tap-highlight-color: transparent; }
+    .container { max-width: 1200px; }
+
+    .aspect-w-16, .aspect-h-9 { position: relative; }
+
+    #hero { padding-top: 7rem; }
+    @media (min-width: 768px) { #hero { padding-top: 5rem; } }
+
+    section { width: 100%; overflow-x: clip; }
+
+    #mobile-menu { position: absolute; left: 0; right: 0; top: 100%; }
+
+    #site-header { will-change: height; }
+
+    @media (max-width: 767px) {
+      nav a, #mobile-menu a { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+      .cta-button { width: auto; max-width: 100%; }
+      .pulse-animation { animation-duration: 2.5s; }
+    }
+
+    .overflow-x-auto { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+    @keyframes shimmer { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  <section id="hero" class="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden animated-gradient-bg px-4 py-20">
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50 transition-all duration-300" id="site-header">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-20 rounded-2xl border border-white/10 bg-white/10 backdrop-blur-xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] px-3 sm:px-5 mt-3">
+          <div class="flex-shrink-0">
+            <a href="https://mymy-business.com/" class="flex items-center">
+              <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/2ebcc0c202ab08a6.png" alt="Logo MYMY BUSINESS" class="h-14 w-auto mr-2 rounded-full ring-1 ring-white/40 shadow-sm">
+            </a>
+          </div>
+
+          <nav class="hidden md:flex items-center space-x-8">
+            <a href="#hero" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group">
+              ⇡ ⇡ ⇡
+              <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#Nouveau%20en%202025" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group">
+              C'est quoi ?
+              <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#benefices" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group">
+              Tes gains
+              <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#programme" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group">
+              La boîte à outils
+              <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#tarification" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group">
+              Go !
+              <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#faq" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group">
+              Questions
+              <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </nav>
+
+          <div class="hidden md:flex items-center space-x-4">
+            <a href="Paiment DSA" class="px-14 py-3 bg-gradient-to-r from-pink-600 to-yellow-600 text-white font-medium rounded-md hover:from-yellow-700 hover:to-purple-600 transition-colors duration-200 shadow-md hover:shadow-lg ring-1 ring-white/30" data-page-id="682b27e986f3bf50152c00bd" id="page-link">
+              JE VEUX MA BAGUETTE MAGIQUE !
+            </a>
+          </div>
+
+          <div class="md:hidden flex items-center">
+            <button type="button" class="inline-flex items-center justify-center h-10 w-10 rounded-xl border border-white/30 bg-white/40 backdrop-blur-xl text-gray-700 hover:text-gray-900 shadow-sm hover:shadow-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500/40" aria-label="toggle menu" id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+              <i class="fa fa-bars text-xl"></i>
+            </button>
+            <a href="#cta" class="ml-2 px-4 py-2 bg-gradient-to-r from-pink-600 to-yellow-600 text-white font-medium rounded-md hover:from-yellow-700 hover:to-purple-600 transition-colors duration-200 shadow-md hover:shadow-lg md:hidden ring-1 ring-white/30">
+              GO !
+            </a>
+          </div>
+        </div>
+
+        <div class="md:hidden hidden mt-2" id="mobile-menu">
+          <div class="px-2 pt-2 pb-2 space-y-1 rounded-2xl border border-white/30 bg-white/60 backdrop-blur-xl shadow-[0_12px_30px_rgba(0,0,0,0.10)]">
+            <a href="#hero" class="block px-3 py-2 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/50 rounded-xl transition-colors duration-200">Accueil</a>
+            <a href="#Nouveau%20en%202025" class="block px-3 py-2 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/50 rounded-xl transition-colors duration-200">C'est quoi ? ⇡</a>
+            <a href="#benefices" class="block px-3 py-2 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/50 rounded-xl transition-colors duration-200">Tes gains</a>
+            <a href="#programme" class="block px-3 py-2 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/50 rounded-xl transition-colors duration-200">La boîte à outils</a>
+            <a href="#tarification" class="block px-3 py-2 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/50 rounded-xl transition-colors duration-200">Tarifs</a>
+            <a href="#cta" class="block px-3 py-2 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/50 rounded-xl transition-colors duration-200">CTA</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="absolute inset-0 bg-black opacity-30"></div>
+    <div class="relative z-10 max-w-4xl mx-auto mt-20 md:mt-0">
+      <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight fade-in" style="animation-delay: 0.2s;">
+        <span class="block mb-2">Prêt à Lancer Ta Machine à Sous ? 🎰</span>
+        <span class="gradient-text">Tu En Rêvais, Mymy L'a Fait Pour Toi! 🪄</span>
+      </h1>
+      <p class="text-lg md:text-2xl mb-1 max-w-2xl mx-auto font-light fade-in" style="animation-delay: 0.4s;">
+        Lance ton business en ligne avec un système clé en main. Apprends, revends, ramasse les sous. Sans créer de produit, sans te casser la tête, sans même montrer ta bouille.
+      </p>
+      <a href="#cta" class="open-popup-trigger cta-button inline-block bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg transform transition duration-300 ease-in-out hover:scale-105 pulse-animation fade-in" style="animation-delay: 0.6s;" data-page-id="6817d711d8bcb3ca43b66669">
+        Je Veux Ma Baguette Magique <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+      <p class="mt-1 text-sm opacity-80 fade-in" style="animation-delay: 0.8s;">Rejoins la team de ceux qui ont dit stop à la galère !</p>
+    </div>
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <i class="fas fa-chevron-down text-white text-3xl opacity-70"></i>
+    </div>
+  </section>
+
+  <section id="problemes" class="relative py-16 md:py-24 overflow-hidden bg-gradient-to-b from-violet-50 via-white to-white scroll-animation">
+    <div class="pointer-events-none absolute inset-0">
+      <div class="absolute -top-24 -left-24 h-72 w-72 md:h-96 md:w-96 rounded-full bg-gradient-to-br from-fuchsia-300/40 via-violet-300/30 to-sky-300/20 blur-3xl"></div>
+      <div class="absolute -bottom-24 -right-24 h-72 w-72 md:h-96 md:w-96 rounded-full bg-gradient-to-br from-amber-300/30 via-pink-300/30 to-violet-300/20 blur-3xl"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(168,85,247,0.08),transparent_45%),radial-gradient(circle_at_80%_30%,rgba(236,72,153,0.06),transparent_45%),radial-gradient(circle_at_40%_90%,rgba(59,130,246,0.05),transparent_40%)]"></div>
+    </div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="mt-6 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">
+          Te reconnais-tu dans ces situations ?
+          <span class="ml-2 inline-block">🤔</span>
+        </h2>
+        <p class="mt-4 text-base sm:text-lg md:text-xl leading-relaxed text-gray-600">
+          Tu rêves d’indépendance financière, mais tu te sens bloquée, dépassée, ou tu penses que c’est trop compliqué ?
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white/80 p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]">
+          <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-pink-400/20 to-violet-400/10 blur-2xl transition group-hover:from-pink-400/30"></div>
+          <div class="flex items-start gap-4">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white shadow-lg shadow-pink-500/20">
+              <i class="fa fa-coins text-lg"></i>
+            </div>
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center rounded-full bg-pink-50 px-3 py-1 text-xs font-semibold text-pink-700 ring-1 ring-pink-200">Finance</span>
+                <span class="inline-flex items-center rounded-full bg-gray-50 px-3 py-1 text-xs font-semibold text-gray-700 ring-1 ring-gray-200">Stress</span>
+              </div>
+              <h3 class="mt-3 text-xl font-bold tracking-tight text-gray-900">Tes fins de mois sont difficiles</h3>
+              <p class="mt-3 text-gray-600 leading-relaxed">
+                Tes finances sont toujours au plus bas. Tu as l’impression de courir après l’argent sans jamais vraiment t’en sortir. L’épargne est un lointain souvenir.
+              </p>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center justify-between">
+            <div class="flex items-center gap-2 text-sm text-gray-500">
+              <i class="fa fa-arrow-trend-down"></i>
+              <span>Pression constante</span>
+            </div>
+            <div class="text-2xl leading-none">💰</div>
+          </div>
+          <div class="mt-6 h-1.5 w-full overflow-hidden rounded-full bg-gray-100">
+            <div class="h-full w-2/3 rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-500"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white/80 p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]">
+          <div class="pointer-events-none absolute -left-10 -bottom-10 h-32 w-32 rounded-full bg-gradient-to-br from-amber-400/20 to-yellow-400/10 blur-2xl transition group-hover:from-amber-400/30"></div>
+          <div class="flex items-start gap-4">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-yellow-500 text-white shadow-lg shadow-amber-500/20">
+              <i class="fa fa-clock text-lg"></i>
+            </div>
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-800 ring-1 ring-amber-200">Organisation</span>
+                <span class="inline-flex items-center rounded-full bg-gray-50 px-3 py-1 text-xs font-semibold text-gray-700 ring-1 ring-gray-200">Charge mentale</span>
+              </div>
+              <h3 class="mt-3 text-xl font-bold tracking-tight text-gray-900">Tu manques de temps</h3>
+              <p class="mt-3 text-gray-600 leading-relaxed">
+                Entre le travail, la famille, les obligations… quand trouver le temps de construire un projet qui te tient à cœur et qui pourrait changer ta vie ?
+              </p>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center justify-between">
+            <div class="flex items-center gap-2 text-sm text-gray-500">
+              <i class="fa fa-list-check"></i>
+              <span>Journées trop pleines</span>
+            </div>
+            <div class="text-2xl leading-none">⏰</div>
+          </div>
+          <div class="mt-6 h-1.5 w-full overflow-hidden rounded-full bg-gray-100">
+            <div class="h-full w-1/2 rounded-full bg-gradient-to-r from-amber-500 to-yellow-500"></div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white/80 p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)] md:col-span-2 lg:col-span-1">
+          <div class="pointer-events-none absolute -right-10 -bottom-10 h-32 w-32 rounded-full bg-gradient-to-br from-violet-400/20 to-sky-400/10 blur-2xl transition group-hover:from-violet-400/30"></div>
+          <div class="flex items-start gap-4">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 text-white shadow-lg shadow-violet-600/20">
+              <i class="fa fa-brain text-lg"></i>
+            </div>
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center rounded-full bg-violet-50 px-3 py-1 text-xs font-semibold text-violet-800 ring-1 ring-violet-200">Compétences</span>
+                <span class="inline-flex items-center rounded-full bg-gray-50 px-3 py-1 text-xs font-semibold text-gray-700 ring-1 ring-gray-200">Blocage</span>
+              </div>
+              <h3 class="mt-3 text-xl font-bold tracking-tight text-gray-900">Tu n’as pas les compétences</h3>
+              <p class="mt-3 text-gray-600 leading-relaxed">
+                Créer un business en ligne te semble une montagne insurmontable. Technique, marketing, création… tu ne sais pas par où commencer.
+              </p>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center justify-between">
+            <div class="flex items-center gap-2 text-sm text-gray-500">
+              <i class="fa fa-circle-question"></i>
+              <span>Trop de questions</span>
+            </div>
+            <div class="text-2xl leading-none">🧠</div>
+          </div>
+          <div class="mt-6 h-1.5 w-full overflow-hidden rounded-full bg-gray-100">
+            <div class="h-full w-3/5 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12">
+        <div class="relative overflow-hidden rounded-2xl border border-violet-100 bg-gradient-to-r from-violet-100 via-fuchsia-100 to-pink-100 p-6 sm:p-8 shadow-sm">
+          <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.55),transparent_45%,rgba(255,255,255,0.35))]"></div>
+          <div class="relative flex flex-col items-center gap-4 text-center">
+            <p class="text-lg sm:text-xl font-semibold text-gray-800 leading-relaxed">
+              Et si je te disais qu’il existe une solution <span class="font-extrabold text-violet-800">SIMPLE</span>, <span class="font-extrabold text-fuchsia-800">RAPIDE</span> et <span class="font-extrabold text-pink-800">ACCESSIBLE</span> pour enfin atteindre tes objectifs les plus fous ? <span class="ml-1">👇</span>
+            </p>
+            <div class="mt-1 flex flex-wrap items-center justify-center gap-3 text-sm text-gray-700">
+              <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 ring-1 ring-white/60"><i class="fa fa-check text-violet-700"></i> Business clé en main</span>
+              <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 ring-1 ring-white/60"><i class="fa fa-check text-yellow-600"></i> Méthode guidée</span>
+              <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 ring-1 ring-white/60"><i class="fa fa-check text-green-700"></i> Évolution personnelle</span>
+              <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 ring-1 ring-white/60"><i class="fa fa-check text-pink-700"></i> Résultats concrets</span>
+            </div>
+            <div class="mt-4">
+              <a href="#Nouveau%20en%202025" class="cta-button inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg transform transition duration-300 ease-in-out hover:scale-105">
+                OK, montre-moi la solution <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+              <p class="mt-3 text-xs text-gray-600">Tu peux lire tranquillement, tout est expliqué en entonnoir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Nouveau en 2025" class="container mx-auto px-4 md:px-8 py-16 md:py-20 lg:py-24 scroll-animation">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div class="w-full lg:w-1/2 slide-in-left" style="animation-delay: 0.3s;">
+        <span class="bg-purple-100 text-purple-600 px-4 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
+          <i class="fas fa-bolt mr-1"></i> Nouveau en 2026
+        </span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          <span class="gradient-text">Découvre Ta Boîte à Outils Magique Elle est t'attend!</span>🎁
+        </h1>
+        <p class="text-xl text-gray-600 mb-8">
+          Imagine une boîte où tout est dedans pour réussir. Tu n'as rien à inventer. Découvre comment des centaines de copains comme toi génèrent entre 2000€ et 10 000€ par mois avec ce secret ultra facile. Pas besoin d'être une star d'Instagram, pas besoin de montrer ton visage, et zéro investissement de fou.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+          <a href="#benefices" class="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all text-center pulse cta-button">
+            OK, je veux voir ce que je gagne
+          </a>
+          <a href="#temoignages" class="bg-white border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all text-center">
+            <i class="fas fa-play-circle mr-2"></i> Voir les Copains Qui Gagnent
+          </a>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-1 sm:gap-18">
+          <div class="flex -space-x-2 mb-2 sm:mb-0 flex-wrap">
+            <img src="https://images.unsplash.com/photo-1517677129300-07b130802f46?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxMDN8fHdvbWFufGVufDB8MHx8fDE3NDYxMTcyMDh8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Utilisateur" class="w-8 h-8 sm:w-8 sm:h-10 rounded-full border-2 border-white">
+            <img src="https://images.unsplash.com/photo-1534278221230-84061d5f99da?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxMTN8fHdvbWFufGVufDB8MHx8fDE3NDYxMTcyMzl8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Utilisateur" class="w-8 h-8 sm:w-8 sm:h-10 rounded-full border-2 border-white">
+            <img src="https://images.unsplash.com/photo-1522938974444-f12497b69347?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxMzJ8fHdvbWFufGVufDB8MHx8fDE3NDYxMTcyODN8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Utilisateur" class="w-8 h-8 sm:w-8 sm:h-10 rounded-full border-2 border-white">
+            <img src="https://images.unsplash.com/photo-1533810019453-7351dbd31aee?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxODl8fHdvbWFufGVufDB8MHx8fDE3NDYxMTczMTd8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Utilisateur" class="w-8 h-8 sm:w-8 sm:h-10 rounded-full border-2 border-white">
+            <img src="https://images.unsplash.com/photo-1630939687530-241d630735df?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHw4M3x8d29tYW4lMjBvZmZpY2V8ZW58MHwwfHx8MTc0NjU0OTM2N3ww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Utilisateur" class="w-8 h-8 sm:w-8 sm:h-10 rounded-full border-2 border-white">
+            <img src="https://images.unsplash.com/photo-1516554344860-089511650386?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxMjN8fHdvbWFuJTIwb2ZmaWNlfGVufDB8MHx8fDE3NDY1NDk0MTB8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Utilisateur" class="w-8 h-8 sm:w-9 sm:h-10 rounded-full border-2 border-white">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-pink-500 text-white flex items-center justify-center text-xs font-bold border-2 border-white">+11190</div>
+          </div>
+          <p class="text-gray-600 text-center sm:text-left text-sm sm:text-base">
+            <span class="font-bold text-pink-600">+11 000 copains</span> qui ramassent des sous tranquillement, pourquoi pas toi ?!
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full lg:w-1/2 slide-in-right" style="animation-delay: 0.6s;">
+        <div class="relative">
+          <div class="absolute -top-6 -left-6 w-full h-full bg-purple-200 rounded-2xl transform rotate-3"></div>
+          <div class="absolute -bottom-6 -right-6 w-full h-full bg-pink-200 rounded-2xl transform -rotate-3"></div>
+          <div class="relative bg-white shadow-xl rounded-2xl p-4 hero-animation">
+            <div class="mb-4">
+              <div class="w-full h-0 pb-[56.25%] relative bg-gray-200 rounded-xl overflow-hidden">
+                <video src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/videos/ba526085f772b5ef.mp4" controls="" class="absolute top-0 left-0 w-full h-full object-cover" poster="https://fakeimg.pl/800x450/FF5E94/FFFFFF?text=Chargement...">Votre navigateur ne supporte pas la vidéo.</video>
+              </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                  <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/572508299c5b2f60.png" data-initial="true" alt="Mymy">
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg">Mymy</h3>
+                  <p class="text-gray-600 text-sm">Ta super coach business 🌟</p>
+                </div>
+              </div>
+              <p class="text-gray-700 mb-4 italic text-justify">"Coucou toi ! Moi c'est Mymy ☺️!
+                Tu sais quoi ? Si je me suis lancée dans cette super aventure, c'est parce que j'en avais marre de voir des adultes galérer avec l'argent. Alors j'ai créé une méthode Magique, ultra-simple pour que tu puisses te générer des sous rapidement. Ici, pas besoin de te prendre la tête à créer une offre ni de reverser quoi que ce soit. J'ai deux baguettes magiques pour toi 🪄🪄 Celle où tu crées ton business avec un copier-coller et ensuite tu adaptes selon tes envies. Et The baguette Ultime où je te donne tout ! et hop ! Tu es déja prêt à encaisser des revenus de folies. C'est pas de la magie ça🧚🏻‍♀️ !?
+                Avec moi, plein de personnes comme toi ont découvert que gagner de l'argent sur le web, ça pouvait être un jeu d'enfants et sans stress."</p>
+              <p class="text-pink-600 font-bold text-xl">Voilà. Et je suis tellement contente que tu sois là ! 💗 Car c'est à ton tour de jouer💫🤗"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefices" class="py-16 md:py-24 bg-white scroll-animation">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-12 text-center section-title">Tu hésites un peu ? C'est Normal, Regardes Les Vrais Trucs Cool❤️</h2>
+
+      <div class="relative max-w-7xl mx-auto overflow-hidden px-4">
+        <div id="benefitsCarousel" class="flex transition-transform duration-500 ease-in-out">
+          <div class="min-w-full">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg hover:shadow-pink-200 transition duration-300">
+                <div class="text-4xl gradient-text mb-1"><i class="fas fa-coins"></i></div>
+                <h3 class="text-xl font-bold mb-3 font-heading">Tous Les Sous Pour Toi ! 💵</h3>
+                <p class="text-gray-600">Chaque vente te rapporte au minimum 597€ direct dans ta poche. Pas de commission à filer, 100% des bénéfices sont pour toi. Cha-ching !</p>
+              </div>
+              <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg hover:shadow-pink-200 transition duration-300">
+                <div class="text-4xl gradient-text mb-1"><i class="fas fa-umbrella-beach"></i></div>
+                <h3 class="text-xl font-bold mb-3 font-heading">Bosse D'Où Tu Veux ! 🏝️</h3>
+                <p class="text-gray-600">Travaille depuis ton canapé, la plage, ou ton lit. Quelques heures par semaine suffisent grâce au système automatique. La liberté totale !</p>
+              </div>
+              <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg hover:shadow-pink-200 transition duration-300">
+                <div class="text-4xl gradient-text mb-1"><i class="fas fa-puzzle-piece"></i></div>
+                <h3 class="text-xl font-bold mb-3 font-heading">C'est Du Gâteau ! 🍰</h3>
+                <p class="text-gray-600">Pas besoin de créer de produit, de gérer un stock ou un service après-vente compliqué. Tout est prêt à l'emploi. Copie-colle et go !</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="min-w-full">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg hover:shadow-pink-200 transition duration-300">
+                <div class="text-4xl gradient-text mb-1"><i class="fas fa-users"></i></div>
+                <h3 class="text-xl font-bold mb-3 font-heading">Une Team de Copains ! 👥</h3>
+                <p class="text-gray-600">Rejoins 2 groupes VIP privés pour échanger, apprendre et être soutenu(e) par d'autres copains qui cartonnent déjà. On se serre les coudes et on célèbre nos victoires !</p>
+              </div>
+              <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg hover:shadow-pink-200 transition duration-300">
+                <div class="text-4xl gradient-text mb-1"><i class="fas fa-chalkboard-teacher"></i></div>
+                <h3 class="text-xl font-bold mb-3 font-heading">On T'accompagne ! 🤝</h3>
+                <p class="text-gray-600">Profite de lives mensuels et d'un support en continu pour t'aider à lancer et faire grandir ton activité sans limite de temps. Sans oublier ta super coach, Je suis là pour toi !</p>
+              </div>
+              <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg hover:shadow-pink-200 transition duration-300">
+                <div class="text-4xl gradient-text mb-1"><i class="fas fa-brain"></i></div>
+                <h3 class="text-xl font-bold mb-3 font-heading">Les Secrets Du Marketing ! 🧠</h3>
+                <p class="text-gray-600">Apprends les vraies techniques de marketing digital que tu pourras utiliser pour ce business ou tous tes projets futurs. Des compétences en or avec des mises à jours illimités!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="benefitsPrevBtn" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-purple-600 rounded-full p-3 shadow-lg backdrop-blur-sm transition-all z-10" aria-label="Précédent">
+          <i class="fa fa-chevron-left text-xl"></i>
+        </button>
+        <button id="benefitsNextBtn" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-purple-600 rounded-full p-3 shadow-lg backdrop-blur-sm transition-all z-10" aria-label="Suivant">
+          <i class="fa fa-chevron-right text-xl"></i>
+        </button>
+
+        <div id="benefitsIndicators" class="flex justify-center space-x-2 mt-8">
+          <div class="w-3 h-3 rounded-full bg-purple-600 cursor-pointer transition-all" data-index="0" role="button" tabindex="0" aria-label="Slide 1"></div>
+          <div class="w-3 h-3 rounded-full bg-purple-300 cursor-pointer transition-all" data-index="1" role="button" tabindex="0" aria-label="Slide 2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-14 bg-gradient-to-b from-purple-50 to-white scroll-animation">
+    <div class="container mx-auto px-4 md:px-8">
+      <h2 class="text-4xl md:text-5xl font-bold font-heading mb-12 text-center">Voici Comment Ça Va Se Passer 📅</h2>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="space-y-8">
+          <div class="flex gap-6">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-full bg-purple-600 text-white font-bold">1</div>
+            </div>
+            <div class="flex-grow bg-white p-6 rounded-xl shadow-md border-l-4 border-purple-600">
+              <h3 class="text-lg font-bold mb-2">SEMAINE 1 : Tu t'inscris, tu ouvres ta boîte magique 🎁</h3>
+              <p class="text-gray-600">Tu découvres le système, tu regardes les premières vidéos, tu comprends les secrets du marketing digital et comment tout fonctionne.</p>
+              <p class="text-pink-600 font-semibold mt-2">Feeling : 😏 Wow, c'est ça le secret !</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-full bg-pink-600 text-white font-bold">2</div>
+            </div>
+            <div class="flex-grow bg-white p-6 rounded-xl shadow-md border-l-4 border-pink-600">
+              <h3 class="text-lg font-bold mb-2">SEMAINE 2 : On installe ton jouet à sous (avec mon aide, 0 Prises de tête) 🏪</h3>
+              <p class="text-gray-600">Tu commences à poster. Tu vois tes premiers clics. Les choses deviennent réelles.</p>
+              <p class="text-pink-600 font-semibold mt-2">Feeling 🤗 Ça prend forme...</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-full bg-yellow-500 text-white font-bold">3</div>
+            </div>
+            <div class="flex-grow bg-white p-6 rounded-xl shadow-md border-l-4 border-yellow-500">
+              <h3 class="text-lg font-bold mb-2">SEMAINE 3-4 : Tes premiers revenus arrivent 💰</h3>
+              <p class="text-gray-600">Tu affines, tu observes les premiers clics, les premières ventes. Ta tirelire grossie à vue d'œil → Une seule vente = 597€ !</p>
+              <p class="text-pink-600 font-semibold mt-2">Feeling : 🎉 ÇA MARCHE !!!</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-600 text-white font-bold">∞</div>
+            </div>
+            <div class="flex-grow bg-white p-6 rounded-xl shadow-md border-l-4 border-green-600">
+              <h3 class="text-lg font-bold mb-2">MOIS 2+ : Tu scales, tu optimises, tu rêves enfin 🚀</h3>
+              <p class="text-gray-600">Les revenus montent. Tu multiplie tes canaux. C'est exponentiel maintenant.</p>
+              <p class="text-pink-600 font-semibold mt-2">Feeling : 🚀 Incroyable, c'est vraiment possible !</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 text-center">
+          <a href="#temoignages" class="cta-button inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg transform transition duration-300 ease-in-out hover:scale-105">
+            OK, je veux voir les preuves <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="temoignages" class="py-16 md:py-10 bg-white scroll-animation">
+    <div class="mt-12 text-center">
+      <h3 class="text-2xl font-bold mb-6 font-heading">Regarde tous les Copains Qui Ramassent déja plein de Sous ! 💰</h3>
+
+      <div class="relative w-full max-w-7xl mx-auto overflow-hidden px-4 sm:px-6">
+        <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+          <div class="min-w-full">
+            <div class="relative aspect-[4/3] w-full">
+              <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/c1d3dca60c139069.jpeg" data-initial="true" alt="Témoignage 1">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-3 sm:p-4 md:p-6">
+                <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold">Des sous qui rentrent chaque jour</h3>
+                <p class="text-gray-200 text-sm sm:text-base">Des succès partagés avec la team.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="min-w-full">
+            <div class="relative aspect-[4/3] w-full">
+              <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/75f982ba4646f37a.jpeg" data-initial="true" alt="Témoignage 2">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-3 sm:p-4 md:p-6">
+                <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold">Une team de copains soudée</h3>
+                <p class="text-gray-200 text-sm sm:text-base">Ensemble vers le succès</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="min-w-full">
+            <div class="relative aspect-[4/3] w-full">
+              <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/c46206a15dfa002c.jpeg" data-initial="true" alt="Témoignage 3">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-3 sm:p-4 md:p-6">
+                <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold">Succès après succès</h3>
+                <p class="text-gray-200 text-sm sm:text-base">La preuve que ça marche !</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="min-w-full">
+            <div class="relative aspect-[4/3] w-full">
+              <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/dd061a0321ffb819.jpeg" data-initial="true" alt="Témoignage 4">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-3 sm:p-4 md:p-6">
+                <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold">Des stratégies qui cartonnent</h3>
+                <p class="text-gray-200 text-sm sm:text-base">Des gains bien réels.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="min-w-full">
+            <div class="relative aspect-[4/3] w-full">
+              <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/33b62bd4353e9c64.jpeg" data-initial="true" alt="Témoignage 5">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-3 sm:p-4 md:p-6">
+                <h3 class="text-white text-lg sm:text-xl md:text-2xl font-bold">Résultats de fin de mois</h3>
+                <p class="text-gray-200 text-sm sm:text-base">Transformation financière réelle.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="prevBtn" class="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/60 text-white rounded-full p-2 sm:p-3 backdrop-blur-sm transition-all z-10" aria-label="Précédent">
+          <i class="fa fa-chevron-left text-base sm:text-xl"></i>
+        </button>
+        <button id="nextBtn" class="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/60 text-white rounded-full p-2 sm:p-3 backdrop-blur-sm transition-all z-10" aria-label="Suivant">
+          <i class="fa fa-chevron-right text-base sm:text-xl"></i>
+        </button>
+        <div id="carousel-indicators" class="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-1 sm:space-x-2 z-10"></div>
+      </div>
+
+      <div class="mt-10">
+        <a href="#programme" class="cta-button inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg transform transition duration-300 ease-in-out hover:scale-105">
+          OK, je veux voir ce que je reçois <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="programme" class="py-16 md:py-24 bg-gray-100 scroll-animation">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-1 text-center section-title">Tout Ce Qu'il y a Dans La Formation 🧰</h2>
+      <p class="text-lg text-gray-600 mb-10 text-center max-w-3xl mx-auto">
+        Plus de 250 mini-vidéos ultra-courtes et super claires. Chaque vidéo, c'est un LEGO que tu poses. Tu apprends par petits bouts faciles à digérer, tu peux revoir quand tu veux, et hop ! Tu appliques direct. Voici ce qu'on te donne :
+      </p>
+
+      <div class="flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto">
+        <div class="lg:w-1/3 bg-white rounded-lg shadow-md p-6 lg:sticky lg:top-6 h-fit">
+          <h3 class="font-bold text-xl mb-4 text-purple-700">Menu de la Formation</h3>
+          <nav class="space-y-2">
+            <button class="menu-link w-full text-left px-4 py-3 rounded-lg hover:bg-purple-50 transition duration-200 font-semibold text-gray-700" data-section="section1">1 - PAR ICI L'ENTRÉE ! 👋</button>
+            <button class="menu-link w-full text-left px-4 py-3 rounded-lg hover:bg-purple-50 transition duration-200 font-semibold text-gray-700" data-section="section2">2 - LE DÉMARRAGE 🚀</button>
+            <button class="menu-link w-full text-left px-4 py-3 rounded-lg hover:bg-purple-50 transition duration-200 font-semibold text-gray-700" data-section="section3">3 - LES STRATÉGIES DE CONTENU 🎨</button>
+            <button class="menu-link w-full text-left px-4 py-3 rounded-lg hover:bg-purple-50 transition duration-200 font-semibold text-gray-700" data-section="section4">4 - INSTAGRAM / TIKTOK 📱</button>
+            <button class="menu-link w-full text-left px-4 py-3 rounded-lg hover:bg-purple-50 transition duration-200 font-semibold text-gray-700" data-section="section5">5 - LES OUTILS 🛠️</button>
+            <button class="menu-link w-full text-left px-4 py-3 rounded-lg hover:bg-purple-50 transition duration-200 font-semibold text-gray-700" data-section="section6">6 - LES STRATÉGIES DE VENTE 💶</button>
+            <button class="menu-link w-full text-left px-4 py-3 rounded-lg hover:bg-purple-50 transition duration-200 font-semibold text-gray-700" data-section="section7">7 - LA REVENTE 🔄</button>
+            <button class="menu-link w-full text-left px-4 py-3 rounded-lg hover:bg-purple-50 transition duration-200 font-semibold text-gray-700" data-section="section8">8 - 9 - 10 - 11 LES RESSOURCES 🎁</button>
+          </nav>
+
+          <div class="mt-6">
+            <a href="#bonus" class="w-full inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-3 px-6 rounded-xl transition-all transform hover:scale-105 hover:shadow-lg cta-button">
+              Et les bonus ? <i class="fas fa-gift ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:w-2/3 space-y-6">
+          <div id="section1" class="content-section bg-white rounded-lg shadow-md p-6 hidden">
+            <h3 class="text-2xl font-bold mb-4 text-purple-700">1 - PAR ICI L'ENTRÉE ! 👋</h3>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">BIENVENUE À LA DSA</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Comment ça marche la plateforme ?</li>
+                  <li>Comment revendre la DSA</li>
+                  <li>Intégration client DSA</li>
+                  <li>Ambassadeur de la DSA</li>
+                  <li>Le Pricing de la DSA</li>
+                  <li>Comment Consommer la DSA</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">LA COMMUNAUTÉ DSA (LES COPAINS)</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Le groupe Telegram DSA</li>
+                  <li>Le groupe Skool DSA</li>
+                  <li>Changer son adresse email Skool</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">L'ACCOMPAGNEMENT EXTRA À LA DSA</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Coaching DSA</li>
+                  <li>Validation DSA</li>
+                  <li>Rappel Important</li>
+                  <li>Ton imprimerie de billets légale 💰</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="section2" class="content-section bg-white rounded-lg shadow-md p-6 hidden">
+            <h3 class="text-2xl font-bold mb-4 text-purple-700">2 - LE DÉMARRAGE 🚀</h3>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">LE BON ÉTAT D'ESPRIT 🧠</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>1 Million $ en 7 mois ? (Story time)</li>
+                  <li>Concentre-toi sur ce qui compte</li>
+                  <li>Discipline &amp; Cohérence (on lâche rien !)</li>
+                  <li>Souviens-toi de ton "pourquoi" !</li>
+                  <li>C'est parti pour l'aventure !</li>
+                  <li>Ne reste pas bloqué(e) !</li>
+                  <li>J'ai tout mis dedans pour toi !</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">SE DÉCLARER (LA PARTIE LÉGALE) 👨‍⚖️</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Tu as besoin de 3 petites choses</li>
+                  <li>Se Déclarer sans se plumer en ligne</li>
+                  <li>Étapes pour LTD - Wise - Stripe</li>
+                  <li>Recommandation compte Stripe</li>
+                  <li>Extra DSA</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">PROTOCOLE DE LANCEMENT 🚀</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Liste des niches de la DSA</li>
+                  <li>Plan Éditorial Instagram</li>
+                  <li>Tes Stories Sur Insta</li>
+                  <li>Hacker L'algo à tester</li>
+                  <li>Les Cadeaux à Offrir (bonus)</li>
+                  <li>Pense d'abord à la valeur que tu apportes !</li>
+                  <li>Construire une audience, c'est la clé</li>
+                  <li>Calculateur de bénéfices</li>
+                  <li>Paiement &amp; Relance DSA</li>
+                  <li>Traitement d'objection DSA</li>
+                  <li>Complète cette Checklist (Obligatoire)</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">CRÉER UN PRODUIT DIGITAL 🔥</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>C'est quoi un produit digital ?</li>
+                  <li>Comment créer un produit digital ?</li>
+                  <li>Guidelines produits digitaux</li>
+                  <li>La règle avant de créer son produit digital !</li>
+                  <li>Étapes avant de créer un produit digital</li>
+                  <li>Créer un produit avec l'IA en 5 min</li>
+                  <li>101 idées de produits digitaux à vendre</li>
+                  <li>Où héberger ton produit digital ?</li>
+                  <li>Comment protéger ton produit digital ?</li>
+                  <li>Type de communautés</li>
+                  <li>Validation produits digitaux</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="section3" class="content-section bg-white rounded-lg shadow-md p-6 hidden">
+            <h3 class="text-2xl font-bold mb-4 text-purple-700">3 - LES STRATÉGIES DE CONTENU 🎨</h3>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">FACELESS PLAYBOOK (SANS MONTRER TA BOUILLE) 🎭</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Pourquoi le Faceless ? Reste discret(e)</li>
+                  <li>Banques d'images ou bien tes propres Rush ?</li>
+                  <li>Étapes pour maîtriser ta niche</li>
+                  <li>Audio Formula</li>
+                  <li>Planning Edito (shooting)</li>
+                  <li>Choisir son nom</li>
+                  <li>Guidelines Brolls Faceless</li>
+                  <li>Guidelines Gestion Media</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">FACECAM STRATÉGIES (SI TU VEUX MONTRER TA TÊTE) 💪</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Le facecam c'est quoi ?</li>
+                  <li>3 guidelines à suivre !</li>
+                  <li>Ma stratégie Facecam</li>
+                  <li>Mon process facecam</li>
+                  <li>Rappel très important</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">BRANDING BLUEPRINT (TON IMAGE DE MARQUE) 😎</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Branding DSA</li>
+                  <li>Ton Instagram</li>
+                  <li>Aesthetics Mastery</li>
+                  <li>Story telling</li>
+                  <li>Identification</li>
+                  <li>Inspiration</li>
+                  <li>Ton Personal Branding</li>
+                  <li>Nouveau Branding DSA</li>
+                  <li>Social Proof résultats DSA</li>
+                  <li>Social Proof Témoignages vidéos</li>
+                  <li>Témoignages explosifs 💣</li>
+                  <li>Social Proof Rajout – Flout</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">LA CRÉATION DE CONTENU 🎥</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Ressources 360° pour créer du contenu</li>
+                  <li>Photoshop Tout En Un</li>
+                  <li>CapCut Les fondamentaux</li>
+                  <li>Capcut Infinity Réels</li>
+                  <li>Canvas Tout En Un</li>
+                  <li>Final Cut Pro X Tout En Un</li>
+                  <li>Audio Avec IA Tout En Un</li>
+                  <li>Sous Titre Avec IA Tout En Un</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">COPYWRITING FORMULA (L'ART DES MOTS QUI VENDENT) 🖋</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Copywriting de A à Z</li>
+                  <li>Culture Copywriting</li>
+                  <li>+ 1000 Hooks formula</li>
+                  <li>Le Secret Pour Vendre</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="section4" class="content-section bg-white rounded-lg shadow-md p-6 hidden">
+            <h3 class="text-2xl font-bold mb-4 text-purple-700">4 - INSTAGRAM / TIKTOK 📱</h3>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">LES SECRETS D'INSTAGRAM 🤫</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Quelle est la différence entre une Story et un Reel sur Instagram ?</li>
+                  <li>Comment marche l'algorithme ?</li>
+                  <li>Qu'est-ce qui ramène du reach ?</li>
+                  <li>Comment trouver des audios tendances ?</li>
+                  <li>Quoi Poster &amp; Combien De fois ?</li>
+                  <li>Penser long &amp; court terme (Programmation)</li>
+                  <li>Les Groupes d'engagement</li>
+                  <li>À quelle vitesse faut-il opérer ?</li>
+                  <li>Comment produire rapidement sur Insta ?</li>
+                  <li>Instagram Vs Tiktok</li>
+                  <li>Comment publier pour une exposition extrême</li>
+                  <li>Outil analyse de contenu Instagram</li>
+                  <li>Conclusion</li>
+                  <li>Nouveau Hack SEO Reels</li>
+                  <li>Création de compte - Guidelin</li>
+                  <li>Le nerf de la guerre - Stories</li>
+                  <li>Ban + Restriction Insta</li>
+                  <li>Stratégie audio populaire</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">TIKTOK MASTERY 🎊</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Comment Marche l'algo de Tiktok</li>
+                  <li>Trouver la viralité sur Tiktok</li>
+                  <li>Créer de la viralité sur Tiktok</li>
+                  <li>Le reposting sur Tiktok</li>
+                  <li>Répondre aux Msgs Tiktok</li>
+                  <li>Automatisation sur Tiktok</li>
+                  <li>Branding &amp; Guidelines Profil</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="section5" class="content-section bg-white rounded-lg shadow-md p-6 hidden">
+            <h3 class="text-2xl font-bold mb-4 text-purple-700">5 - LES OUTILS (TA BOÎTE À OUTILS) 🛠️</h3>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">VSL FORMULA (VIDÉO DE VENTE) 🔑</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>VSL c'est quoi ?</li>
+                  <li>Obligation VSL ?</li>
+                  <li>Structure d'une VSL</li>
+                  <li>Les 2 types de VSL</li>
+                  <li>Public VSL</li>
+                  <li>Montage VSL</li>
+                  <li>Hébergement VSL</li>
+                  <li>Mes reco pour tes VSL</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">EMAIL MARKETING 📩</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Comment créer un auto-répondeur ?</li>
+                  <li>Comment créer une newsletter ?</li>
+                  <li>Automatisations &amp; Études de cas</li>
+                  <li>30 Emails à Copier Coller avec L'IA</li>
+                  <li>Derniers mots</li>
+                  <li>Mes propres emails à modifier</li>
+                  <li>Prompt ChatGPT Emails</li>
+                  <li>Les CTA dans tes mails</li>
+                  <li>Augmenter % Des Conversions</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">TUNNELS DE VENTE SYSTEME IO 💪</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Pourquoi Systeme IO ?</li>
+                  <li>Vue d'ensemble plateforme</li>
+                  <li>Choisir son nom de domaine</li>
+                  <li>Nom de domaine + Email pro</li>
+                  <li>Recevoir paiement sur SIO</li>
+                  <li>Type de Tunnels de vente</li>
+                  <li>Boutique Systeme IO - Stant Store</li>
+                  <li>Créer &amp; Personnaliser Tunnel</li>
+                  <li>Comment ajouter un produit sur SIO</li>
+                  <li>Rajouter le prix de ton produit</li>
+                  <li>Templates pour System IO</li>
+                  <li>Créer sa formation Systeme IO</li>
+                  <li>Template Stan Store Sur SIO</li>
+                  <li>Affiliation Systeme IO</li>
+                  <li>Checklist avant de commencer</li>
+                  <li>Boutique Systeme IO - Stant Store</li>
+                  <li>Assistance &amp; blocage SIO</li>
+                  <li>SEO &amp; Référencement SIO</li>
+                  <li>Tunnel de vente - Copier Coller</li>
+                  <li>Digital Store - Copier Coller</li>
+                  <li>Enfin le digital store est complet</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">L'IA &amp; L'AUTOMATISATION 🤖</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Comment Créer Un Chatbot ?</li>
+                  <li>Scénarios Chatbots pour vendre</li>
+                  <li>Comment créer une illustration avec L'IA ?</li>
+                  <li>Mon Automatisation DSA</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">PLANNING EDITO MRR 🚀</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Cultura Les Meilleurs Comptes Faceless</li>
+                  <li>Cultura Les Meilleurs Comptes Branding</li>
+                  <li>Comment trouver la viralité à reproduire ?</li>
+                  <li>(Sujets - Niches - Angles) Prochains Reels</li>
+                  <li>Comment j'organise mon Planning Edito ?</li>
+                  <li>L'excel Des Réels DSA - Copier Coller</li>
+                  <li>Créer son Excel des Réels - Perf</li>
+                  <li>Cas pratique - Hacker l'Excel Réels</li>
+                  <li>Fréquence des publications !</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">GAGNER 💰 AVEC STAN STORE</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Funnels Vs Website Vs SAAS LP</li>
+                  <li>Pourquoi Choisir Stan pour se lancer ?</li>
+                  <li>Comment configurer ton Stan Store ?</li>
+                  <li>Comment personnaliser ta boutique ?</li>
+                  <li>Collecter les paiements sur Stan Store</li>
+                  <li>Ajouter un Lead magnet ou Produit PLR</li>
+                  <li>Ressources (Design + TXT)</li>
+                  <li>Emailing &amp; Follow up</li>
+                  <li>Store - Copier Coller</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="section6" class="content-section bg-white rounded-lg shadow-md p-6 hidden">
+            <h3 class="text-2xl font-bold mb-4 text-purple-700">6 - LES STRATÉGIES DE VENTE 💶</h3>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">STRATÉGIES DE VENTE 💶</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Vendre c'est simple (promis !)</li>
+                  <li>Ton meilleur allié</li>
+                  <li>La méthode FOMO</li>
+                  <li>Avoir un Setter</li>
+                  <li>Le seul secret pour vendre plus</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">GROWTH HACKING 🥷</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Growth Hacking Intro</li>
+                  <li>Stratégie Copycat - Traduction</li>
+                  <li>Stratégie 1 Contenu - 15 fois / jour</li>
+                  <li>Stratégie 60 fois / jour</li>
+                  <li>Stratégie - Devenir Media</li>
+                  <li>Créer des nouveaux comptes</li>
+                  <li>Reposting Viralité</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="section7" class="content-section bg-white rounded-lg shadow-md p-6 hidden">
+            <h3 class="text-2xl font-bold mb-4 text-purple-700">7 - LA REVENTE 🔄</h3>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">MRR MASTERY 🤝</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>C'est quoi MRR ?</li>
+                  <li>PLR or MRR ?</li>
+                  <li>Comment vendre la DSA ?</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">15 PRODUITS PLR/MRR OFFERTS 💳 (CADEAUX !)</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Dark Aesthetics (PLR)</li>
+                  <li>Réels Faceless (PLR)</li>
+                  <li>Guide pour Gagner De l'argent (leadmagnet) - PLR</li>
+                  <li>111 idées produits digitaux (PLR)</li>
+                  <li>Marketing TikTok Sans visage (PLR)</li>
+                  <li>Social Media Planner Pour créateur (PLR)</li>
+                  <li>Halal Marketing Insta (PLR)</li>
+                  <li>Faceless Ebook Marketing Digital (PLR)</li>
+                  <li>Gagner un Salaire En ligne (PLR)</li>
+                  <li>Transition Vues (PLR)</li>
+                  <li>Guide Ultime Des Réels (PLR)</li>
+                  <li>Le guide Canva (PLR)</li>
+                  <li>Revenu passif avec Pinterest (PLR)</li>
+                  <li>Viral Sur Thread (PLR)</li>
+                  <li>Consigne pour les produits PLR</li>
+                  <li>Pricing des produits PLR</li>
+                  <li>Comment Vendre Les PLR's</li>
+                  <li>Comment l'ajouter comme leadmagnet</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">MARKETING D'AFFILIATION 🔔</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Plateformes D'affiliation 360°</li>
+                  <li>Comment Vendre de L'affiliation</li>
+                  <li>Mes tips &amp; retours sur L'affiliation</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">PRODUITS PARTENAIRES 🧠</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>Pourquoi choisir l'affiliate ?</li>
+                  <li>Comment ça marche ?</li>
+                  <li>DSA Affiliate - 200 € + 50 € + 200 € /mois</li>
+                  <li>DSA Affiliate - Update</li>
+                  <li>PRO Affiliate - 1000 €</li>
+                  <li>Comment Vendre Ces programmes ?</li>
+                  <li>Comment recevoir les paiements</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="section8" class="content-section bg-white rounded-lg shadow-md p-6 hidden">
+            <h3 class="text-2xl font-bold mb-4 text-purple-700">8 - 9 - 10 - RESSOURCES, VIRALITÉ &amp; COMPLÉMENTS 🎁</h3>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">8 - LES RESSOURCES</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>+100 000 Contenus - Niches 360° 🎊 (Banque Luxe, Faceless, Homme, Islam, Minimaliste...)</li>
+                  <li>Créer ta propre Banque</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">9 - LA VIRALITÉ</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>LA VIRALITÉ GARANTIE🔗 (C'est quoi la viralité, secret des vues, doubler la mise...)</li>
+                  <li>AUDIENCE RAPIDEMENT 👁 (Identifier, lister ce qui marche, stratégie rapide)</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">10 - VISER PLUS LOIN</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>BUSINESS MODEL SMMA 📈 (Pour vendre tes services de super boss du marketing)</li>
+                  <li>PUBLICITÉ SUR ADS 🤑(Pour gagner beaucoup de sous rapidement)</li>
+                  <li>CLOSING &amp; PROSPECTION CLIENT 🫱🏼‍🫲🏽 (Personne te résistera )</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-purple-600 mb-2">11 - COMPLÉMENTS</h4>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                  <li>DÉLÉGATION DU WORK ✅ (Quand, quoi, comment trouver les bonnes RH)</li>
+                  <li>Q&amp;A + LIVES DSA 👥</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center pt-2">
+            <a href="#bonus" class="cta-button inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg transform transition duration-300 ease-in-out hover:scale-105">
+              OK, montre-moi les bonus <i class="fas fa-gift ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bonus" class="py-16 md:py-24 gradient-bg-alt text-white scroll-animation">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-1 section-title text-white">Attends, C'est Pas Fini ! Tes Cadeaux Bonus Pour Cartonner 🎁</h2>
+      <p class="text-lg mb-10 max-w-3xl mx-auto opacity-90">Pour que tu cartonnes dès le début, je t'ai rajouté ces super cadeaux qui valent de l'or :</p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+        <div class="bg-white/20 p-6 rounded-xl backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 transition duration-300">
+          <div class="text-4xl text-yellow-300 mb-3"><i class="fas fa-fire"></i></div>
+          <h3 class="text-xl font-bold mb-2 font-heading">15 PRODUITS DIGITAUX PRÊTS À VENDRE 🎁</h3>
+          <p class="opacity-90">100% personnalisables &amp; 100% de profits pour toi. Lance tes propres offres sans lever le petit doigt.</p>
+        </div>
+        <div class="bg-white/20 p-6 rounded-xl backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 transition duration-300">
+          <div class="text-4xl text-yellow-300 mb-3"><i class="fas fa-heart"></i></div>
+          <h3 class="text-xl font-bold mb-2 font-heading">+100 000 VIDÉOS RÉELS PRÊTES 🎥</h3>
+          <p class="opacity-90">Explose sur toutes les niches avec cette banque de contenu monstre pour tes réseaux sociaux.</p>
+        </div>
+        <div class="bg-white/20 p-6 rounded-xl backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 transition duration-300">
+          <div class="text-4xl text-yellow-300 mb-3"><i class="fas fa-envelope-open-text"></i></div>
+          <h3 class="text-xl font-bold mb-2 font-heading">40 EMAILS + 1000 HOOKS + TUNNELS 📧</h3>
+          <p class="opacity-90">Tout le matériel marketing à copier-coller pour transformer tes prospects en clients.</p>
+        </div>
+        <div class="bg-white/20 p-6 rounded-xl backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 transition duration-300">
+          <div class="text-4xl text-yellow-300 mb-3"><i class="fas fa-box-open"></i></div>
+          <h3 class="text-xl font-bold mb-2 font-heading">PARTENARIAT PREMIUM 🤝</h3>
+          <p class="opacity-90">Gagne 20% à 50% sur chaque vente de produits partenaires exclusifs !</p>
+        </div>
+        <div class="bg-white/20 p-6 rounded-xl backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 transition duration-300">
+          <div class="text-4xl text-yellow-300 mb-3"><i class="fas fa-chart-line"></i></div>
+          <h3 class="text-xl font-bold mb-2 font-heading">PLUSIEURS LIVES / MOIS 🎤</h3>
+          <p class="opacity-90">Pour t'accompagner, répondre à tes questions et scaler plus vite ton activité.</p>
+        </div>
+        <div class="bg-white/20 p-6 rounded-xl backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 transition duration-300">
+          <div class="text-4xl text-yellow-300 mb-3"><i class="fas fa-users"></i></div>
+          <h3 class="text-xl font-bold mb-2 font-heading">2 GROUPES VIP PRIVÉS DSA 👥</h3>
+          <p class="opacity-90">Échange, apprends et chiffre dans une communauté soudée de copains motivés !</p>
+        </div>
+      </div>
+
+      <div class="max-w-3xl mx-auto bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl p-8 md:p-12 text-white shine-effect mt-12 relative overflow-hidden shadow-2xl">
+        <div class="absolute -top-8 -right-8 w-24 h-24 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
+        <div class="absolute -bottom-8 -left-8 w-24 h-24 bg-blue-300 rounded-full opacity-20 animate-pulse"></div>
+
+        <div class="relative z-10">
+          <h3 class="text-2xl md:text-3xl font-bold mb-6 flex items-center">
+            <span class="text-4xl mr-2">💥</span> ET EN PLUS, JE T'OFFRE :
+          </h3>
+
+          <div class="bg-white/20 backdrop-blur-sm rounded-xl p-5 mb-6 transform hover:scale-102 transition-all border-2 border-white/30">
+            <div class="flex items-start">
+              <div class="bg-yellow-400 text-purple-800 rounded-full p-3 mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">UN COACHING PRO (VALEUR 1499€)</h4>
+                <p class="text-white/90">Un accompagnement sur mesure avec une pro du coaching pour t'aider à lancer ton magasin en ligne et surmonter les galères.</p>
+                <span class="line-through text-white/70 mr-2">1499€</span><span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">OFFERT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white/20 backdrop-blur-sm rounded-xl p-5 mb-8 transform hover:scale-102 transition-all border-2 border-white/30">
+            <div class="flex items-start">
+              <div class="bg-yellow-400 text-purple-800 rounded-full p-3 mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">UN ACCOMPAGNEMENT WEB (VALEUR 2500€) — BONUS ULTIME</h4>
+                <p class="text-white/90">Un accompagnement sur mesure par un pro du web pour installer ton magasin en ligne et surmonter tous les obstacles techniques. <span class="font-bold text-yellow-200">Inclus dans l’option Ultime</span> </p>
+                <div class="mt-3 flex items-center">
+                  <span class="line-through text-white/70 mr-2">2500€</span>
+                  <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">OFFERT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white/20 backdrop-blur-sm rounded-xl p-5 mb-8 transform hover:scale-102 transition-all border-2 border-white/30">
+            <div class="flex items-start">
+              <div class="bg-yellow-400 text-purple-800 rounded-full p-3 mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-2">ACCÈS À LA FORMATION MTEEDE (VALEUR 549€)</h4>
+                <p class="text-white/90">La méthode complète pour organiser ton temps, optimiser ton espace de travail et développer un état d'esprit de gagnant.</p>
+                <div class="mt-3 flex items-center">
+                  <span class="line-through text-white/70 mr-2">549€</span>
+                  <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">OFFERT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-xl mb-8 bg-purple-800/40 p-4 rounded-lg border-l-4 border-yellow-400">
+            Ces cadeaux bonus valent de l'or, mais ils sont inclus <span class="font-bold underline">GRATUITEMENT</span> dans ta Boîte magique, y compris l'accès à la formation MTEEDE normalement vendue à 549€.
+          </p>
+
+          <div class="text-center">
+            <a href="Paiment DSA" class="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg hover:bg-yellow-300 hover:-translate-y-1 transition-all inline-block cta-button animate-pulse" data-page-id="682b27e986f3bf50152c00bd" id="page-link">
+              <i class="fas fa-rocket mr-2"></i> Je Veux Tous Ces Cadeaux !
+            </a>
+          </div>
+        </div>
+
+        <div class="absolute top-1/2 right-4 transform -translate-y-1/2">
+          <div class="text-yellow-300 text-6xl opacity-20 rotate-12">🎁</div>
+        </div>
+        <div class="absolute bottom-8 left-8">
+          <div class="text-yellow-300 text-4xl opacity-20 -rotate-12">⭐</div>
+        </div>
+      </div>
+
+      <div class="max-w-6xl mx-auto mt-12 text-left">
+        <div class="flex flex-col items-center gap-3 mb-8 text-center">
+          <span class="inline-flex items-center bg-white/15 border border-white/25 text-white px-5 py-2 rounded-full font-black text-sm md:text-base shadow-lg backdrop-blur-sm">
+            <i class="fas fa-wand-magic-sparkles mr-2 text-yellow-200"></i> DÉTAIL DE L’OFFRE — BAGUETTE MAGIQUE ULTIME
+          </span>
+          <h3 class="text-2xl md:text-4xl font-heading font-black leading-tight">
+            <span class="text-yellow-200">Je fais tout pour toi</span> : tu rêves, on construit, tu encaisses.
+          </h3>
+          <p class="text-white/90 max-w-3xl">Pour celles et ceux qui veulent aller vite, éviter la technique, et démarrer avec un système complet déjà installé.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+          <div class="bg-white/15 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-white/25 relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-yellow-300 rounded-full opacity-15"></div>
+            <div class="absolute -bottom-12 -left-12 w-52 h-52 bg-pink-300 rounded-full opacity-15"></div>
+
+            <div class="relative z-10">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-5">
+                <div></div>
+                <div class="sm:text-right">
+                  <span class="inline-flex items-center bg-yellow-300 text-purple-900 font-black text-xs px-3 py-1 rounded-full shadow">
+                    <i class="fas fa-bolt mr-2"></i> Places limitées
+                  </span>
+                </div>
+              </div>
+
+              <div class="bg-white/15 border border-white/25 rounded-xl p-5 mb-6">
+                <p class="font-bold text-lg text-white">+ Accès à la boîte magique Ultime</p>
+                <p class="text-sm text-white/90 mt-1">+ 1er mois OFFERT puis <span class="font-black text-yellow-200">129€/mois</span></p>
+                <p class="text-sm text-white/80 mt-1">(Sans engagement, annulation quand tu veux)</p>
+              </div>
+
+              <div class="bg-black/15 border border-white/15 p-4 rounded-lg mb-6">
+                <p class="text-sm font-semibold text-white/90">
+                  <i class="fas fa-lightbulb mr-2 text-yellow-200"></i>
+                  Valeur réelle : ces outils coûtent ~3000€/an ailleurs. Ici, c’est 129€/mois et le 1er mois est offert pour te lancer.
+                </p>
+              </div>
+
+              <div class="grid sm:grid-cols-3 gap-3 mb-6">
+                <div class="bg-white/10 border border-white/20 rounded-xl p-4">
+                  <p class="text-xs font-bold tracking-wider text-white/80 uppercase mb-1">Tu reçois</p>
+                  <p class="text-sm text-white/95 font-semibold">Système installé + outils inclus</p>
+                </div>
+                <div class="bg-white/10 border border-white/20 rounded-xl p-4">
+                  <p class="text-xs font-bold tracking-wider text-white/80 uppercase mb-1">Tu fais</p>
+                  <p class="text-sm text-white/95 font-semibold">Publier + attirer des clients</p>
+                </div>
+                <div class="bg-white/10 border border-white/20 rounded-xl p-4">
+                  <p class="text-xs font-bold tracking-wider text-white/80 uppercase mb-1">Objectif</p>
+                  <p class="text-sm text-white/95 font-semibold">Encaisser plus vite</p>
+                </div>
+              </div>
+
+              <a href="Paiment DSA" class="block w-full bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-4 px-8 rounded-full text-center text-lg shadow-lg transform transition duration-300 ease-in-out hover:scale-105 cta-button animate-pulse" data-page-id="682b27e986f3bf50152c00bd">
+                Je Veux La Baguette Ultime ! 🚀
+              </a>
+              <p class="text-center text-sm text-white/90 mt-4 font-semibold">⚡ Premier mois OFFERT + Tous les outils inclus</p>
+
+              <div class="mt-6 grid sm:grid-cols-2 gap-4">
+                <div class="bg-white/10 border border-white/20 rounded-xl p-5">
+                  <p class="text-sm text-white/80 mb-1 font-semibold">Idéal si :</p>
+                  <p class="text-white/95">Tu veux gagner un temps énorme et démarrer sans te prendre la tête avec la technique.</p>
+                </div>
+                <div class="bg-white/10 border border-white/20 rounded-xl p-5">
+                  <p class="text-sm text-white/80 mb-1 font-semibold">Résultat :</p>
+                  <p class="text-white/95">Ton système est prêt, tu te concentres sur l’essentiel : attirer des clients et encaisser.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20">
+            <h4 class="text-2xl font-bold mb-4 text-yellow-200 font-heading">Tout ce qu’il y a dans la Baguette Ultime (détail)</h4>
+
+            <ul class="space-y-3 mb-6 text-white/95">
+              <li class="flex items-start">
+                <i class="fas fa-star text-yellow-300 mr-3 mt-1"></i>
+                <span class="font-semibold">Ton Magasin Clé en Main 🏪 : pages de vente prêtes, tunnel complet déjà installé.</span>
+              </li>
+
+              <li class="flex items-start">
+                <i class="fas fa-star text-yellow-300 mr-3 mt-1"></i>
+                <div>
+                  <span class="font-semibold">Ton Espace FULL OUTILS (Ta Tour de Contrôle) 🛠️</span>
+                  <ul class="ml-5 mt-2 space-y-1 text-sm text-white/90">
+                    <li>• Fini les abonnements partout (adieu Systeme.io, etc.)</li>
+                    <li>• Création de sites en glisser-déposer (facile)</li>
+                    <li>• Emails illimités &amp; Automatisations (le robot bosse pour toi)</li>
+                    <li>• Gestion réseaux sociaux (planifier d’un coup)</li>
+                    <li>• Messagerie centralisée (tous les canaux)</li>
+                    <li>• CRM &amp; tableau de bord (voir les ventes tomber)</li>
+                    <li>• Hébergement de tes formations (tout inclus)</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="flex items-start">
+                <i class="fas fa-star text-yellow-300 mr-3 mt-1"></i>
+                <span class="font-semibold">Bonus “Rente Immédiate” 💰 : commission mensuelle sur chaque copain que tu ramènes (l’abonnement peut se rembourser tout seul).</span>
+              </li>
+
+              <li class="flex items-start">
+                <i class="fas fa-star text-yellow-300 mr-3 mt-1"></i>
+                <span class="font-semibold">Accompagnement Web Pro offert (valeur 2500€) — <span class="text-yellow-200 font-black">bonus inclus dans l’option Ultime</span> (et donc aussi dans Topissime).</span>
+              </li>
+            </ul>
+
+            <div class="bg-white/10 border border-white/20 rounded-xl p-5">
+              <div class="flex items-start gap-3">
+                <div class="bg-yellow-300 text-purple-900 rounded-full w-10 h-10 flex items-center justify-center font-black shadow">
+                  <i class="fas fa-check"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-white">Tu veux le plus simple ?</p>
+                  <p class="text-sm text-white/90 mt-1">Avec l’Ultime, tu démarres plus vite et tu évites les blocages techniques. Tu n’as plus qu’à suivre le plan et publier.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 grid sm:grid-cols-2 gap-4">
+              <div class="bg-white/10 border border-white/20 rounded-xl p-5">
+                <p class="text-sm font-semibold text-white mb-2"><i class="fas fa-stopwatch mr-2 text-yellow-200"></i> Ce que ça t’évite</p>
+                <ul class="space-y-1 text-sm text-white/90">
+                  <li>• Perdre des heures à installer/relier les outils</li>
+                  <li>• Te bloquer sur des réglages techniques</li>
+                  <li>• Multiplier les abonnements dispersés</li>
+                </ul>
+              </div>
+              <div class="bg-white/10 border border-white/20 rounded-xl p-5">
+                <p class="text-sm font-semibold text-white mb-2"><i class="fas fa-bullseye mr-2 text-yellow-200"></i> Ce que tu fais dès J1</p>
+                <ul class="space-y-1 text-sm text-white/90">
+                  <li>• Publier ton contenu</li>
+                  <li>• Envoyer vers ton lien</li>
+                  <li>• Convertir avec un système prêt</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <a href="Paiment DSA" class="inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold px-6 py-3 rounded-full shadow-lg transition-all cta-button w-full mb-3" data-page-id="682b27e986f3bf50152c00bd">
+                <i class="fas fa-wand-magic-sparkles mr-2"></i> Je prends Ultime
+              </a>
+              <a href="#tarification" class="inline-flex items-center justify-center bg-white text-purple-700 hover:bg-yellow-300 font-bold px-6 py-3 rounded-full shadow-lg transition-all cta-button w-full">
+                <i class="fas fa-list-check mr-2"></i> Comparer &amp; choisir
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-14">
+          <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+            <div class="bg-white/15 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-white/25 relative overflow-hidden">
+              <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-300 rounded-full opacity-15"></div>
+              <div class="absolute -bottom-12 -right-12 w-52 h-52 bg-yellow-300 rounded-full opacity-15"></div>
+
+              <div class="relative z-10">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-5">
+                  <div>
+                    <span class="inline-flex items-center bg-white/15 border border-white/25 text-white px-4 py-2 rounded-full font-black text-xs sm:text-sm shadow backdrop-blur-sm">
+                      <i class="fas fa-wand-magic-sparkles mr-2 text-yellow-200"></i> DÉTAIL DE L’OFFRE — TOPISSIME
+                    </span>
+                  </div>
+                  <div class="sm:text-right">
+                    <span class="inline-flex items-center bg-yellow-300 text-purple-900 font-black text-xs px-3 py-1 rounded-full shadow">
+                      <i class="fas fa-hand-sparkles mr-2"></i> Paiement unique
+                    </span>
+                  </div>
+                </div>
+
+                <h3 class="text-2xl md:text-3xl font-heading font-black leading-tight mb-2">
+                  🛠️ LA BAGUETTE <span class="text-yellow-200">TOPISSIME</span>
+                </h3>
+                <p class="text-white/90 mb-5 italic">«Je vais me DÉBROUILLER»</p>
+
+                <div class="bg-white/15 border border-white/25 rounded-xl p-5 mb-6">
+                  <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+                    <div>
+                      <p class="text-white font-bold text-lg">597€</p>
+                      <p class="text-white/90 text-sm">Une fois. C'est tout.</p>
+                    </div>
+                    <div class="sm:text-right">
+                      <p class="text-sm text-white/90 font-semibold">🎯 Rentabilisé en 1 vente</p>
+                      <p class="text-xs text-white/80">Tu revends la formation à 597€, 100% de marge pour toi</p>
+                    </div>
+                  </div>
+                  <p class="text-white/95 mt-4 font-semibold">
+                    « Tu reçois la formation, tu la dévores, tu installes tout <span class="font-black text-yellow-200">TOI-MÊME</span>, et après tu gagnes <span class="font-black text-yellow-200">597€</span> à chaque vente. »
+                  </p>
+                </div>
+
+                <div class="grid sm:grid-cols-3 gap-3 mb-6">
+                  <div class="bg-white/10 border border-white/20 rounded-xl p-4">
+                    <p class="text-xs font-bold tracking-wider text-white/80 uppercase mb-1">Tu reçois</p>
+                    <p class="text-sm text-white/95 font-semibold">La formation + droits de revente</p>
+                  </div>
+                  <div class="bg-white/10 border border-white/20 rounded-xl p-4">
+                    <p class="text-xs font-bold tracking-wider text-white/80 uppercase mb-1">Tu fais</p>
+                    <p class="text-sm text-white/95 font-semibold">Tu configures tout toi-même</p>
+                  </div>
+                  <div class="bg-white/10 border border-white/20 rounded-xl p-4">
+                    <p class="text-xs font-bold tracking-wider text-white/80 uppercase mb-1">Objectif</p>
+                    <p class="text-sm text-white/95 font-semibold">Devenir autonome + revendre</p>
+                  </div>
+                </div>
+
+                <div class="bg-black/15 border border-white/15 p-4 rounded-lg mb-6">
+                  <p class="text-sm font-semibold text-white/90"><i class="fas fa-dumbbell mr-2 text-yellow-200"></i> 💪 <span class="font-black text-white">CE QUE TU FAIS</span></p>
+                  <div class="mt-3 grid sm:grid-cols-2 gap-3 text-sm text-white/90">
+                    <div class="bg-white/10 border border-white/15 rounded-xl p-4">
+                      <p class="font-bold text-white/95 mb-1">🎯 Tu regardes 250+ vidéos</p>
+                      <p class="text-white/80">Tu avances étape par étape.</p>
+                    </div>
+                    <div class="bg-white/10 border border-white/15 rounded-xl p-4">
+                      <p class="font-bold text-white/95 mb-1">🎯 Tu configures TOUT toi-même</p>
+                      <p class="text-white/80">Mets-toi 20–30h sur ça.</p>
+                    </div>
+                    <div class="bg-white/10 border border-white/15 rounded-xl p-4">
+                      <p class="font-bold text-white/95 mb-1">🎯 Tu deviens 100% autonome</p>
+                      <p class="text-white/80">Bravo! 👏</p>
+                    </div>
+                    <div class="bg-white/10 border border-white/15 rounded-xl p-4">
+                      <p class="font-bold text-white/95 mb-1">⚠️ Mais :</p>
+                      <p class="text-white/80">Du temps, des bugs, tu vas te perdre — c’est normal — mais tu finiras par réussir ☺️</p>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="Paiment DSA" class="block w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-full text-center text-lg shadow-lg transform transition duration-300 ease-in-out hover:scale-105 cta-button" data-page-id="682b27e986f3bf50152c00bd">
+                  Je prends Topissime 🔥
+                </a>
+                <p class="text-center text-sm text-white/90 mt-4 font-semibold">✅ Paiement unique — 597€ — 100% autonome</p>
+
+                <div class="mt-6 grid sm:grid-cols-2 gap-4">
+                  <div class="bg-white/10 border border-white/20 rounded-xl p-5">
+                    <p class="text-sm text-white/80 mb-2 font-semibold"><i class="fas fa-user-check mr-2 text-yellow-200"></i> POUR TOI SI :</p>
+                    <ul class="space-y-1 text-sm text-white/90">
+                      <li>• ✓ T'aimes vraiment APPRENDRE</li>
+                      <li>• ✓ T'es à l'aise avec la tecnhique</li>
+                      <li>• ✓ T'es pas pressé(e)</li>
+                      <li>• ✓ Tu fais confiance à ta capacité</li>
+                    </ul>
+                  </div>
+                  <div class="bg-white/10 border border-white/20 rounded-xl p-5">
+                    <p class="text-sm text-white/80 mb-2 font-semibold"><i class="fas fa-coins mr-2 text-yellow-200"></i> RENTABILITÉ :</p>
+                    <p class="text-white/95 font-semibold">🎯 Rentabilisé en 1 vente</p>
+                    <p class="text-sm text-white/90 mt-1">Tu revends la formation à 597€, <span class="font-black text-yellow-200">100% de marge</span> pour toi.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20">
+              <h4 class="text-2xl font-bold mb-4 text-yellow-200 font-heading">✅ Ce qui est inclus dans Topissime (détail)</h4>
+
+              <ul class="space-y-3 mb-6 text-white/95">
+                <li class="flex items-start"><i class="fas fa-check text-yellow-300 mr-3 mt-1"></i><span class="font-semibold">Formation DSA 250+ vidéos + Formation MTEEDE</span></li>
+                <li class="flex items-start"><i class="fas fa-check text-yellow-300 mr-3 mt-1"></i><span class="font-semibold">Droits de revente MRR (tu revends 100% des profits)</span></li>
+                <li class="flex items-start"><i class="fas fa-check text-yellow-300 mr-3 mt-1"></i><span class="font-semibold">15 produits PLR à revendre + 100k vidéos prêtes à poster</span></li>
+                <li class="flex items-start"><i class="fas fa-check text-yellow-300 mr-3 mt-1"></i><span class="font-semibold">2 groupes VIP (Telegram + Skool) avec la communauté</span></li>
+                <li class="flex items-start"><i class="fas fa-check text-yellow-300 mr-3 mt-1"></i><span class="font-semibold">Coaching + Formation MTEEDE (valeur 449€)</span></li>
+              </ul>
+
+              <div class="bg-white/10 border border-white/20 rounded-xl p-6">
+                <div class="flex items-start gap-3">
+                  <div class="bg-yellow-300 text-purple-900 rounded-full w-10 h-10 flex items-center justify-center font-black shadow">
+                    <i class="fas fa-book-open"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-white">Résumé de la formation offerte MTEEDE</p>
+                    <p class="text-sm text-white/90 mt-1">
+                      Introduction : l'infopreneur d'aujourd'hui jongle avec la création de contenu, le marketing, l'administratif, le service client… tout en gardant un équilibre vie pro/perso.
+                    </p>
+
+                    <div class="mt-4 grid sm:grid-cols-2 gap-4">
+                      <div class="bg-black/15 border border-white/15 rounded-lg p-4">
+                        <p class="text-sm font-semibold text-white/90 mb-2">Ce que tu vas obtenir :</p>
+                        <ul class="space-y-1 text-sm text-white/90">
+                          <li>• Développer un état d'esprit propice à la productivité</li>
+                          <li>• Gérer efficacement ton temps et tes priorités</li>
+                          <li>• Créer un espace de travail optimal pour ta créativité</li>
+                          <li>• Concilier harmonieusement vie pro et perso</li>
+                        </ul>
+                        <p class="text-sm text-white/90 mt-3 font-semibold">Consulter le sommaire complet</p>
+                      </div>
+
+                      <div class="bg-black/15 border border-white/15 rounded-lg p-4">
+                        <p class="text-sm font-semibold text-white/90 mb-2">Comment utiliser ce guide :</p>
+                        <ul class="space-y-1 text-sm text-white/90">
+                          <li>• Naviguez via le menu latéral / sommaire</li>
+                          <li>• Lisez les chapitres (concepts &amp; méthodes)</li>
+                          <li>• Réalisez les exercices (mise en pratique)</li>
+                          <li>• Utilisez les check-listes (suivre ta progression)</li>
+                          <li>• Revenez régulièrement (ancrer les habitudes)</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="mt-4 bg-white/10 border border-white/15 rounded-lg p-4">
+                      <p class="text-sm text-white/90">
+                        <span class="font-black text-yellow-200">Objectif :</span> te rendre plus efficace, plus serein(e), et plus constant(e) — pour avancer plus vite sur ton business.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <a href="Paiment DSA" class="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold px-6 py-3 rounded-full shadow-lg transition-all cta-button w-full mb-3" data-page-id="682b27e986f3bf50152c00bd">
+                  <i class="fas fa-wand-magic-sparkles mr-2"></i> Je prends Topissime
+                </a>
+                <a href="#tarification" class="inline-flex items-center justify-center bg-white text-purple-700 hover:bg-yellow-300 font-bold px-6 py-3 rounded-full shadow-lg transition-all cta-button w-full">
+                  <i class="fas fa-list-check mr-2"></i> Comparer &amp; choisir
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <p class="mt-12 text-2xl font-bold text-white">💥 TOUT EST PRÊT POUR TOI, PAS D'EXCUSE. PRENDS TA PLACE MAINTENANT ! 🚀</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tarification" class="py-16 md:py-20 bg-gradient-to-b from-white via-purple-50 to-white scroll-animation">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold font-heading mb-4">
+          <span class="bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-500 bg-clip-text text-transparent">🪄CHOISIS TA BAGUETTE MAGIQUE🪄</span>
+        </h2>
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto italic font-semibold">
+          Je sais, tu as peur de te lancer. Tu penses que c'est compliqué.
+          Spoiler alert: OUI quand on débute, il faut apprendre (Formation fournie) NON si une petite fée te facilite la vie ! <br>
+          <span class="text-pink-600">Voici tes deux chemins. Je te dis lequel choisir ? Continue à lire... 😉</span>
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white rounded-3xl p-8 shadow-lg border-2 border-purple-200 hover:shadow-2xl hover:border-purple-300 transition-all duration-300 transform hover:-translate-y-2">
+          <div class="mb-6">
+            <h3 class="text-2xl font-bold font-heading text-purple-600 flex items-center gap-2 mb-2"><span>🛠️ LA BAGUETTE TOPISSIME</span></h3>
+            <p class="text-gray-700 font-medium italic">«Je vais me DÉBROUILLER»</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl p-4 mb-6 text-center">
+            <div class="text-5xl font-bold font-heading text-pink-600 mb-1">597€</div>
+            <div class="text-sm font-semibold text-gray-700">Une fois. C'est tout.</div>
+          </div>
+
+          <div class="mb-6 bg-purple-50 rounded-lg p-4 border-l-4 border-purple-600">
+            <p class="text-sm text-gray-700 italic font-semibold">
+              « Tu reçois la formation, tu la dévores, tu installes tout TOI-MÊME, et après tu gagnes 597€ à chaque vente. »
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <h4 class="text-sm font-bold font-heading text-purple-600 uppercase tracking-wider mb-3">💪 CE QUE TU FAIS</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-gray-700 text-sm"><span class="text-pink-600 font-bold text-lg flex-shrink-0">🎯</span><span>Tu regardes 250+ vidéos</span></li>
+              <li class="flex items-start gap-2 text-gray-700 text-sm"><span class="text-pink-600 font-bold text-lg flex-shrink-0">🎯</span><span>Tu configures TOUT toi-même (mets-toi 20-30h sur ça)</span></li>
+              <li class="flex items-start gap-2 text-gray-700 text-sm"><span class="text-pink-600 font-bold text-lg flex-shrink-0">🎯</span><span>Tu deviens 100% autonome (bravo! 👏)</span></li>
+              <li class="flex items-start gap-2 text-gray-700 text-sm"><span class="text-pink-600 font-bold text-lg flex-shrink-0">⚠️</span><span><strong>Mais</strong> : c'est du temps, y'a des bugs, tu vas te perdre, c'est normal, mais tu finiras par réussir ☺️</span></li>
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h4 class="text-sm font-bold font-heading text-purple-600 uppercase tracking-wider mb-3">✅ CE QUI EST INCLUS</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-gray-700 text-sm"><span class="text-pink-600 font-bold flex-shrink-0">✓</span><span><strong>Formation DSA 250+ vidéos Formation MTEEDE</strong></span></li>
+              <li class="flex items-start gap-2 text-gray-700 text-sm"><span class="text-pink-600 font-bold flex-shrink-0">✓</span><span><strong>Droits de revente MRR</strong> (tu revends 100% des profits)</span></li>
+              <li class="flex items-start gap-2 text-gray-700 text-sm"><span class="text-pink-600 font-bold flex-shrink-0">✓</span><span>15 produits PLR à revendre + 100k vidéos prêtes à poster</span></li>
+              <li class="flex items-start gap-2 text-gray-700 text-sm"><span class="text-pink-600 font-bold flex-shrink-0">✓</span><span>2 groupes VIP (Telegram + Skool) avec la communauté</span></li>
+              <li class="flex items-start gap-2 text-gray-700 text-sm"><span class="text-pink-600 font-bold flex-shrink-0">✓</span><span>Coaching + Formation MTEEDE (valeur 449€)</span></li>
+            </ul>
+          </div>
+
+          <div class="border-t-2 border-purple-200 pt-6 mb-6">
+            <h4 class="text-sm font-bold font-heading text-purple-600 uppercase tracking-wider mb-3">👤 POUR TOI SI :</h4>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li>✓ T'aimes vraiment APPRENDRE</li>
+              <li>✓ T'es à l'aise avec la tecnhique</li>
+              <li>✓ T'es pas pressé(e)</li>
+              <li>✓ Tu fais confiance à ta capacité</li>
+            </ul>
+          </div>
+
+          <div class="bg-yellow-50 rounded-xl p-4 mb-6 border-2 border-yellow-300">
+            <p class="text-center text-sm text-gray-700 font-semibold">
+              <span class="text-yellow-700">🎯 Rentabilisé en 1 vente</span> <br>
+              <span class="text-xs text-gray-600">Tu revends la formation à 597€, 100% de marge pour toi</span>
+            </p>
+          </div>
+
+          <a href="Paiment DSA" class="w-full bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-3 px-6 rounded-xl transition-all transform hover:scale-105 hover:shadow-lg mb-3 inline-flex items-center justify-center" data-page-id="682b27e986f3bf50152c00bd">
+            Je Suis Courageux(se) 💪
+          </a>
+          <div class="text-center text-sm text-gray-600">Tu te débrouilles... Courage tu peux le faire☺️ !</div>
+        </div>
+
+        <div class="relative bg-gradient-to-br from-purple-600 via-pink-500 to-yellow-500 rounded-3xl p-8 shadow-2xl transform hover:scale-105 transition-all duration-300 text-white group overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-500" style="animation: shimmer 3s infinite;"></div>
+
+          <div class="inline-block bg-yellow-300 text-purple-900 font-bold px-4 py-1 rounded-full text-sm mb-4 relative z-10">✨ MON CONSEIL PERSONNEL ✨</div>
+
+          <div class="mb-6 relative z-10">
+            <h3 class="text-3xl font-bold font-heading flex items-center gap-2 mb-2"><span>🚀 LA BAGUETTE ULTIME</span></h3>
+            <p class="text-white/95 font-semibold italic">«Le luxe ! tout t'es servit sur un plateau d'argent !»</p>
+          </div>
+
+          <div class="bg-white/15 backdrop-blur-sm rounded-2xl p-4 mb-6 text-center border border-white/20 relative z-10">
+            <div class="text-5xl font-bold font-heading text-pink-200 mb-1">597€</div>
+            <div class="text-4xl font-bold font-heading text-yellow-300 mb-1">+399€</div>
+            <div class="text-sm font-semibold text-white/90 mb-1">+ 129€/mois (1er mois = CADEAU 🎁)</div>
+            <div class="text-xs text-white/70">Zéro engagement, tu peux partir quand tu veux</div>
+          </div>
+
+          <div class="mb-6 bg-white/20 backdrop-blur-sm rounded-lg p-4 border border-white/30 relative z-10">
+            <p class="text-sm text-white font-semibold italic leading-relaxed">
+              « Honnêtement? Arrête de te torturer. Je configure TOUT pour toi en 48h. Tu fais juste ce que tu sais faire : VENDRE et POSTER. Ton système? C'est moi qui gère. Et la meilleure partie? À partir de 5 clients par mois, l'abonnement se paie TOUT SEUL. »
+            </p>
+          </div>
+
+          <div class="mb-6 relative z-10">
+            <h4 class="text-sm font-bold font-heading text-yellow-300 uppercase tracking-wider mb-3">🎁 JE FAIS TOUT</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-white/95 text-sm"><span class="text-yellow-300 font-bold flex-shrink-0">⚡</span><span>Ton magasin est prêt en 48h (tu déballes et tu utilises)</span></li>
+              <li class="flex items-start gap-2 text-white/95 text-sm"><span class="text-yellow-300 font-bold flex-shrink-0">⚡</span><span>Pas de configuration, pas de bugs à toi de gérer</span></li>
+              <li class="flex items-start gap-2 text-white/95 text-sm"><span class="text-yellow-300 font-bold flex-shrink-0">⚡</span><span>Tu fais ce que tu sais faire : POSTER et VENDRE</span></li>
+              <li class="flex items-start gap-2 text-white/95 text-sm"><span class="text-yellow-300 font-bold flex-shrink-0">⚡</span><span>Moi je gère le système derrière (CRM, emails, tunnel...)</span></li>
+            </ul>
+          </div>
+
+          <div class="mb-6 relative z-10">
+            <h4 class="text-sm font-bold font-heading text-yellow-300 uppercase tracking-wider mb-3">✅ TOUT EST INCLUS</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-white/95 text-sm"><span class="text-yellow-300 font-bold flex-shrink-0">✓</span><span><strong>TOUT</strong> ce que tu as en Topissime</span></li>
+              <li class="flex items-start gap-2 text-white/95 text-sm"><span class="text-yellow-300 font-bold flex-shrink-0">✓</span><span><strong>+ Magasin clé en main 🏪</strong> (personnalisé, tunnel complet, automatisé)</span></li>
+              <li class="flex items-start gap-2 text-white/95 text-sm"><span class="text-yellow-300 font-bold flex-shrink-0">✓</span><span><strong>+ Accès FULL tools</strong> (CRM, emails illimités, site builder, social planner)</span></li>
+              <li class="flex items-start gap-2 text-white/95 text-sm"><span class="text-yellow-300 font-bold flex-shrink-0">✓</span><span>Tableau de bord des ventes (tu vois tout en temps réel)</span></li>
+              <li class="flex items-start gap-2 text-white/95 text-sm"><span class="text-yellow-300 font-bold flex-shrink-0">✓</span><span>Gestion des réseaux sociaux intégrée</span></li>
+              <li class="flex items-start gap-2 text-white/95 text-sm"><span class="text-yellow-300 font-bold flex-shrink-0">✓</span><span><strong>+ Accompagnement PRO de ma part</strong> (valeur 2500€)</span></li>
+              <li class="flex items-start gap-2 text-white/95 text-sm"><span class="text-yellow-300 font-bold flex-shrink-0">✓</span><span><strong>+ 20% Commission mensuelle</strong> sur chaque client que tu ramènes</span></li>
+              <li class="flex items-start gap-2 text-white/95 text-sm"><span class="bg-yellow-400/40 rounded px-2 py-1 font-bold"><strong>✨ Ton abonnement? IL SE PAIE TOUT SEUL grâce à l'affiliation !</strong></span></li>
+            </ul>
+          </div>
+
+          <div class="border-t border-white/20 pt-6 mb-6 relative z-10">
+            <h4 class="text-sm font-bold font-heading text-yellow-300 uppercase tracking-wider mb-3">👤 POUR TOI SI :</h4>
+            <ul class="space-y-2 text-sm text-white/90">
+              <li>✓ Tu veux des résultats VITE</li>
+              <li>✓ Tu détestes vraiment la technique</li>
+              <li>✓ Tu veux te concentrer sur CE QUE TU SAIS FAIRE : vendre</li>
+              <li>✓ T'as peur d'échouer? Tu veux une solution qui MARCHE direct</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/20 backdrop-blur-sm rounded-xl p-4 mb-6 text-center border border-yellow-300/30 relative z-10">
+            <div class="font-bold text-yellow-300 mb-2 text-lg">⚡ ICI LE TRICK (TU PEUX PAS PERDRE)</div>
+            <div class="text-sm text-white/90 mb-3">5 clients/mois = 129€ de commissions = ton abonnement est GRATUIT</div>
+            <div class="text-xs text-white/70 bg-white/10 rounded px-3 py-2 font-semibold">Donc même si tu vends peu, l'abonnement te coûte RIEN après un mois ou deux 💰</div>
+          </div>
+
+          <a href="Paiment DSA" class="w-full bg-white text-purple-600 font-bold py-3 px-6 rounded-xl transition-all transform hover:scale-105 hover:shadow-lg mb-3 hover:bg-yellow-300 relative z-10 text-lg inline-flex items-center justify-center" data-page-id="682b27e986f3bf50152c00bd">
+            Oui, Je Choisis L'ULTIME 🚀
+          </a>
+          <div class="text-center text-sm text-white/90 relative z-10 font-semibold">C'est LE choix le plus prometteur. Fais-moi confiance. 😉</div>
+        </div>
+      </div>
+
+      <div class="mt-16 max-w-5xl mx-auto bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 border-2 border-purple-200">
+        <h3 class="text-2xl font-bold font-heading text-center text-purple-600 mb-3">💰 REGARDE LE VRAI SCORE</h3>
+        <p class="text-center text-gray-700 font-semibold mb-10 italic">Même nombre de ventes. Comparons ce que tu va réellement gagner..</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-purple-500 hover:shadow-lg transition-all">
+            <h4 class="font-bold text-lg text-gray-700 mb-4 text-center">📊 1 Vente/mois</h4>
+            <div class="mb-4 pb-4 border-b-2 border-gray-200">
+              <p class="text-xs text-purple-600 font-bold mb-2">TOPISSIME</p>
+              <div class="text-3xl font-bold text-purple-600">597€</div>
+              <p class="text-xs text-gray-500 mt-1">/mois</p>
+            </div>
+            <div>
+              <p class="text-xs text-yellow-600 font-bold mb-2">ULTIME</p>
+              <div class="text-3xl font-bold text-yellow-600">493,8€</div>
+              <p class="text-xs text-gray-500 mt-1">/mois</p>
+              <p class="text-xs text-red-600 mt-2 font-bold">-103€ vs Topissime</p>
+              <p class="text-xs text-gray-600 mt-1 italic">Mais sans avoir rien fait... 😎</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-blue-500 hover:shadow-lg transition-all">
+            <h4 class="font-bold text-lg text-gray-700 mb-4 text-center">📊 3 Ventes/mois</h4>
+            <div class="mb-4 pb-4 border-b-2 border-gray-200">
+              <p class="text-xs text-purple-600 font-bold mb-2">TOPISSIME</p>
+              <div class="text-3xl font-bold text-purple-600">1 791€</div>
+              <p class="text-xs text-gray-500 mt-1">/mois</p>
+            </div>
+            <div>
+              <p class="text-xs text-yellow-600 font-bold mb-2">ULTIME</p>
+              <div class="text-3xl font-bold text-yellow-600">1 755,4€</div>
+              <p class="text-xs text-gray-500 mt-1">/mois</p>
+              <p class="text-xs text-green-600 mt-2 font-bold">Presque pareil ✓</p>
+              <p class="text-xs text-gray-600 mt-1 italic">Avec le système clé en main en plus</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-yellow-500 ring-2 ring-yellow-300 hover:shadow-lg transition-all">
+            <h4 class="font-bold text-lg text-gray-700 mb-4 text-center">📊 5 Ventes/mois ⭐</h4>
+            <div class="mb-4 pb-4 border-b-2 border-gray-200">
+              <p class="text-xs text-purple-600 font-bold mb-2">TOPISSIME</p>
+              <div class="text-3xl font-bold text-purple-600">2 985€</div>
+              <p class="text-xs text-gray-500 mt-1">/mois</p>
+            </div>
+            <div>
+              <p class="text-xs text-yellow-600 font-bold mb-2">ULTIME</p>
+              <div class="text-3xl font-bold text-yellow-600">2 985€</div>
+              <p class="text-xs text-gray-500 mt-1">/mois</p>
+              <p class="text-xs text-green-600 mt-2 font-bold">✨ IDENTIQUE!</p>
+              <p class="text-xs text-yellow-600 mt-1 italic font-bold">+ TOUT le système offert</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-green-500 hover:shadow-lg transition-all">
+            <h4 class="font-bold text-lg text-gray-700 mb-4 text-center">📊 10 Ventes/mois 🚀</h4>
+            <div class="mb-4 pb-4 border-b-2 border-gray-200">
+              <p class="text-xs text-purple-600 font-bold mb-2">TOPISSIME</p>
+              <div class="text-3xl font-bold text-purple-600">5 970€</div>
+              <p class="text-xs text-gray-500 mt-1">/mois</p>
+            </div>
+            <div>
+              <p class="text-xs text-yellow-600 font-bold mb-2">ULTIME</p>
+              <div class="text-3xl font-bold text-yellow-600">6 059€</div>
+              <p class="text-xs text-gray-500 mt-1">/mois</p>
+              <p class="text-xs text-green-600 mt-2 font-bold">+89€ vs Topissime ✅</p>
+              <p class="text-xs text-green-600 mt-1 italic font-bold">Tu gagnes plus!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 p-6 bg-gradient-to-r from-yellow-50 to-pink-50 rounded-lg border-2 border-yellow-400 text-center">
+          <h4 class="text-lg font-bold text-gray-800 mb-3">🎯 CE QUE MYMY TE DIT</h4>
+          <p class="text-gray-700 font-semibold mb-4 leading-relaxed">
+            À <span class="text-yellow-600">3 ventes par mois</span> (c'est le MINIMUM si tu te la coules douce🏄🏻😅), La Baguette ULTIME te coûte quasiment rien... <br>
+            <span class="text-pink-600">Mais SANS la galère du setup, sans les bugs, sans les 30h de vidéo... ET AVEC tous les outils automatiques des Pros !</span>
+          </p>
+          <p class="text-gray-700 italic mb-4">Et aprés 5 ventes ? Tu gagnes PLUS que les copains qui n'ont pas pris l'ULTIME ! 🚀</p>
+          <p class="text-gray-800 font-bold text-lg bg-white px-4 py-3 rounded-lg inline-block">« Alors ne cherche pas le plus cheap. Tu veux le plus RAPIDE et FACILE? C'est l'Ultime🎯!!»</p>
+        </div>
+
+        <div class="mt-10 text-center">
+          <a href="#cta" class="cta-button inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg transform transition duration-300 ease-in-out hover:scale-105">
+            OK, je veux passer à l'action <i class="fas fa-lock ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="py-16 md:py-24 animated-gradient-bg text-white scroll-animation">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-5xl font-heading font-black mb-6">Prêt(e) à Ramasser Les Sous ? 💰</h2>
+      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light">Accède instantanément à la formation complète, aux cadeaux exclusifs et à la team pour seulement <span class="font-bold text-yellow-300">597€</span>.</p>
+      <div class="max-w-lg mx-auto bg-gradient-to-br from-purple-600 via-pink-600 to-red-500 p-8 md:p-10 rounded-2xl shadow-2xl text-white transform transition duration-500 hover:scale-105 mb-0">
+        <h3 class="text-2xl font-semibold mb-4">Accède à Tout Ça Pour Un Prix de Dingue</h3>
+        <p class="text-7xl md:text-8xl font-extrabold mb-3">597€</p>
+        <p class="text-xl mb-6">(+ 399€ si tu veux La Baguette Ultime 🪄! )</p>
+        <p class="text-2xl font-semibold text-yellow-300 mb-10">Rentabilisé en UNE SEULE vente ! 🔥</p>
+        <p class="mt-6 text-gray-200 text-sm">Formation + Droit de Revente + Tous les Cadeaux Inclus</p>
+      </div>
+      <a href="Paiment DSA" class="open-popup-trigger cta-button inline-block bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-5 px-12 rounded-full text-2xl shadow-lg transform transition duration-300 ease-in-out hover:scale-105 pulse-animation mt-0" data-page-id="682b27e986f3bf50152c00bd" id="page-link">
+        Oui, Je Veux Ma Baguette Magique ! <i class="fas fa-lock ml-2"></i>
+      </a>
+      <p class="mt-8 text-lg font-semibold">⚠️ Attention : Loupe pas le train de l'opportunité la plus simple et rentable de 2026 ! Les places avec accompagnement perso sont limitées.</p>
+    </div>
+  </section>
+
+  <section id="faq" class="py-16 md:py-24 bg-gray-50 scroll-animation">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-12 text-center section-title">Les Questions Qu'on Me Pose Souvent 🤔</h2>
+      <div class="max-w-3xl mx-auto accordion">
+        <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+          <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center hover:bg-gray-100 transition duration-300" type="button">
+            <span>J'ai besoin de compétences techniques ?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content p-5 bg-white text-gray-700">
+            Absolument pas ! La formation est faite pour les débutants. Tout est expliqué comme à un copain, étape par étape, de manière hyper simple. Le système est "copier-coller". Si tu sais utiliser Instagram ou Facebook, tu peux cartonner avec ça.
+          </div>
+        </div>
+
+        <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+          <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center hover:bg-gray-100 transition duration-300" type="button">
+            <span>Je dois montrer mon visage ou avoir plein d'abonnés ?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content p-5 bg-white text-gray-700">
+            Non ! La formation inclut des stratégies "faceless" (sans montrer ta bouille) super efficaces. Tu peux construire ton business discrètement. Tu n'as pas besoin d'une audience existante, la formation t'apprend justement à la construire rapidement et facilement.
+          </div>
+        </div>
+
+        <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+          <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center hover:bg-gray-100 transition duration-300" type="button">
+            <span>Combien de temps je dois y passer par jour ?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content p-5 bg-white text-gray-700">
+            Une fois que t'as installé le système (quelques heures au total), tu peux y consacrer seulement 1 à 2 heures par jour, voire moins grâce à l'automatisation et à la programmation de contenu. C'est flexible et ça s'adapte à ton emploi du temps. T'inquiète !
+          </div>
+        </div>
+
+        <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+          <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center hover:bg-gray-100 transition duration-300" type="button">
+            <span>C'est légal tout ça ? C'est pas de la contrebande ?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content p-5 bg-white text-gray-700">
+            Oui, c'est totalement légal ! Le concept de Master Resell Rights (MRR), c'est du vrai business. Tu achètes une formation de qualité avec le droit de la revendre. Tu apportes une vraie valeur (la formation elle-même) à tes clients. La formation t'explique même comment déclarer ton activité proprement. Rien d'illégal, promis !
+          </div>
+        </div>
+
+        <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+          <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center hover:bg-gray-100 transition duration-300" type="button">
+            <span>Quand je vais voir les premiers sous rentrer ?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content p-5 bg-white text-gray-700">
+            Ça dépend de ton implication, mais plein de copains dans la team réalisent leur première vente en quelques jours seulement après avoir mis en place le système, parfois même en 24h ! La formation est conçue pour des résultats rapides. Boum !
+          </div>
+        </div>
+
+        <div class="border rounded-lg overflow-hidden mb-4 bg-white shadow-md">
+          <button class="accordion-button w-full text-left p-5 font-semibold text-lg flex justify-between items-center hover:bg-gray-100 transition duration-300" type="button">
+            <span>Y'a des frais cachés ou des abonnements à payer après ?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content p-5 bg-white text-gray-700">
+            Non. L'accès à la formation DSA et à ses droits de revente, c'est un paiement unique de 597€ (ou 3x199€). Il n'y a pas d'abonnement mensuel pour la formation elle-même. Certains outils externes recommandés (comme l'autorépondeur ou Systeme.io) peuvent avoir des plans gratuits ou payants, mais la formation t'explique comment démarrer avec un minimum voire zéro frais supplémentaires. Avec La Baguette Ultime, tous les outils sont inclus dans l'abonnement mensuel (1er mois offert) et en plus Tout ton système est construit, tu n'a plus qu'a démarrer ton aventure !
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center">
+        <a href="#cta" class="cta-button inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg transform transition duration-300 ease-in-out hover:scale-105">
+          OK, j'ai toutes mes réponses <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-400 py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p class="mb-4">© 2025 MYMY BUSINESS - Tous droits réservés.</p>
+      <p class="text-xs">Ce site n'appartient pas à Facebook et n'est pas affilié à Facebook Inc. Le contenu de ce site web n'a pas été vérifié par Facebook. Facebook est une marque déposée de Facebook, Inc.</p>
+      <div class="mt-4 space-x-2 text-xs">
+        <a href="#" class="hover:text-white">Mentions Légales</a>
+        <a href="#" class="hover:text-white">Politique de Confidentialité</a>
+        <a href="#" class="hover:text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+
+  <script>
+    (function () {
+      function qs(sel, root) { return (root || document).querySelector(sel); }
+      function qsa(sel, root) { return Array.from((root || document).querySelectorAll(sel)); }
+
+      function initMobileMenu() {
+        var btn = document.getElementById('mobile-menu-button');
+        var menu = document.getElementById('mobile-menu');
+        if (!btn || !menu) return;
+
+        function closeMenu() {
+          menu.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+
+        function toggleMenu() {
+          var isHidden = menu.classList.contains('hidden');
+          if (isHidden) {
+            menu.classList.remove('hidden');
+            btn.setAttribute('aria-expanded', 'true');
+          } else {
+            closeMenu();
+          }
+        }
+
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          toggleMenu();
+        });
+
+        menu.addEventListener('click', function (e) {
+          var t = e.target;
+          if (t && t.tagName === 'A') closeMenu();
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeMenu();
+        });
+
+        document.addEventListener('click', function (e) {
+          if (!menu.contains(e.target) && !btn.contains(e.target)) closeMenu();
+        });
+
+        window.addEventListener('scroll', function () {
+          if (!menu.classList.contains('hidden')) closeMenu();
+        }, { passive: true });
+      }
+
+      function initHeaderShrink() {
+        var header = document.getElementById('site-header');
+        if (!header) return;
+        window.addEventListener('scroll', function () {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          if (scrollTop > 50) {
+            header.classList.add('h-16');
+            header.classList.remove('h-20');
+          } else {
+            header.classList.add('h-20');
+            header.classList.remove('h-16');
+          }
+        }, { passive: true });
+      }
+
+      function initSmoothAnchors() {
+        qsa('a[href^="#"]').forEach(function (anchor) {
+          anchor.addEventListener('click', function (e) {
+            if (anchor.classList.contains('open-popup-trigger')) return;
+            var targetId = anchor.getAttribute('href');
+            if (!targetId || targetId.length <= 1 || !targetId.startsWith('#')) return;
+            var targetElement = document.querySelector(targetId);
+            if (!targetElement) return;
+
+            e.preventDefault();
+            var headerEl = document.getElementById('site-header');
+            var headerOffset = headerEl ? headerEl.offsetHeight : 0;
+            var elementPosition = targetElement.getBoundingClientRect().top;
+            var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+              mobileMenu.classList.add('hidden');
+              var btn = document.getElementById('mobile-menu-button');
+              if (btn) btn.setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+      }
+
+      function initScrollAnimation() {
+        var scrollElements = qsa('.scroll-animation');
+        if (!scrollElements.length) return;
+
+        var elementInView = function (el, dividend) {
+          if (dividend === void 0) dividend = 1;
+          var elementTop = el.getBoundingClientRect().top;
+          return elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend;
+        };
+
+        var handle = function () {
+          scrollElements.forEach(function (el) {
+            if (elementInView(el, 1.15)) el.classList.add('visible');
+          });
+        };
+
+        handle();
+        window.addEventListener('scroll', handle, { passive: true });
+      }
+
+      function initAccordion() {
+        qsa('.accordion-button').forEach(function (button) {
+          button.addEventListener('click', function () {
+            var content = button.nextElementSibling;
+            if (!content) return;
+
+            var isActive = button.classList.contains('active');
+            button.classList.toggle('active');
+
+            if (!isActive) {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } else {
+              content.style.maxHeight = null;
+            }
+          });
+        });
+      }
+
+      function initProgrammeMenu() {
+        var menuLinks = qsa('.menu-link');
+        var contentSections = qsa('.content-section');
+        if (!menuLinks.length) return;
+
+        function setActive(btn) {
+          menuLinks.forEach(function (b) {
+            b.classList.remove('bg-purple-100', 'text-purple-800');
+            b.classList.add('text-gray-700');
+            b.classList.remove('bg-purple-50');
+          });
+
+          btn.classList.add('bg-purple-100', 'text-purple-800');
+          btn.classList.remove('text-gray-700');
+        }
+
+        function showSection(id) {
+          contentSections.forEach(function (section) { section.classList.add('hidden'); });
+          var target = document.getElementById(id);
+          if (!target) return;
+          target.classList.remove('hidden');
+          target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        menuLinks.forEach(function (link) {
+          link.addEventListener('click', function () {
+            var targetSection = link.getAttribute('data-section');
+            if (!targetSection) return;
+            setActive(link);
+            showSection(targetSection);
+          });
+
+          link.addEventListener('mouseenter', function () {
+            if (!link.classList.contains('bg-purple-100')) link.classList.add('bg-purple-50');
+          });
+
+          link.addEventListener('mouseleave', function () {
+            if (!link.classList.contains('bg-purple-100')) link.classList.remove('bg-purple-50');
+          });
+        });
+
+        menuLinks[0].click();
+      }
+
+      function initBenefitsCarousel() {
+        var carousel = document.getElementById('benefitsCarousel');
+        var prevBtn = document.getElementById('benefitsPrevBtn');
+        var nextBtn = document.getElementById('benefitsNextBtn');
+        var indicatorsContainer = document.getElementById('benefitsIndicators');
+        if (!carousel || !prevBtn || !nextBtn || !indicatorsContainer) return;
+
+        var currentIndex = 0;
+        var totalSlides = 2;
+        var autoPlayInterval = null;
+        var touchStartX = 0;
+
+        function update() {
+          carousel.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+          var indicators = qsa('div[data-index]', indicatorsContainer);
+          indicators.forEach(function (indicator) {
+            var idx = parseInt(indicator.getAttribute('data-index'), 10);
+            if (idx === currentIndex) {
+              indicator.classList.remove('bg-purple-300');
+              indicator.classList.add('bg-purple-600');
+            } else {
+              indicator.classList.remove('bg-purple-600');
+              indicator.classList.add('bg-purple-300');
+            }
+          });
+        }
+
+        function goTo(idx) {
+          currentIndex = (idx + totalSlides) % totalSlides;
+          update();
+          resetAutoPlay();
+        }
+
+        function next() { goTo(currentIndex + 1); }
+        function prev() { goTo(currentIndex - 1); }
+
+        function startAutoPlay() { autoPlayInterval = setInterval(next, 5000); }
+        function stopAutoPlay() { if (autoPlayInterval) clearInterval(autoPlayInterval); autoPlayInterval = null; }
+        function resetAutoPlay() { stopAutoPlay(); startAutoPlay(); }
+
+        nextBtn.addEventListener('click', function () { next(); });
+        prevBtn.addEventListener('click', function () { prev(); });
+
+        qsa('div[data-index]', indicatorsContainer).forEach(function (indicator) {
+          indicator.addEventListener('click', function () {
+            var idx = parseInt(indicator.getAttribute('data-index'), 10);
+            if (!isNaN(idx)) goTo(idx);
+          });
+          indicator.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              var idx = parseInt(indicator.getAttribute('data-index'), 10);
+              if (!isNaN(idx)) goTo(idx);
+            }
+          });
+        });
+
+        carousel.addEventListener('touchstart', function (e) {
+          touchStartX = e.changedTouches[0].screenX;
+          stopAutoPlay();
+        }, { passive: true });
+
+        carousel.addEventListener('touchend', function (e) {
+          var touchEndX = e.changedTouches[0].screenX;
+          var swipeThreshold = 50;
+          if (touchEndX < touchStartX - swipeThreshold) next();
+          else if (touchEndX > touchStartX + swipeThreshold) prev();
+          startAutoPlay();
+        }, { passive: true });
+
+        carousel.addEventListener('mouseenter', stopAutoPlay);
+        carousel.addEventListener('mouseleave', startAutoPlay);
+
+        update();
+        startAutoPlay();
+      }
+
+      function initTestimonialsCarousel() {
+        var carousel = document.getElementById('carousel');
+        if (!carousel) return;
+
+        var slides = Array.from(carousel.children);
+        var totalSlides = slides.length;
+        var prevBtn = document.getElementById('prevBtn');
+        var nextBtn = document.getElementById('nextBtn');
+        var indicatorsContainer = document.getElementById('carousel-indicators');
+        var currentIndex = 0;
+        var touchStartX = 0;
+        var autoPlayInterval = null;
+
+        if (!totalSlides) {
+          if (prevBtn) prevBtn.style.display = 'none';
+          if (nextBtn) nextBtn.style.display = 'none';
+          return;
+        }
+
+        function createIndicators() {
+          if (!indicatorsContainer) return;
+          indicatorsContainer.innerHTML = '';
+          for (var i = 0; i < totalSlides; i++) {
+            var indicator = document.createElement('div');
+            indicator.className = 'indicator w-2 h-2 sm:w-3 sm:h-3 rounded-full cursor-pointer opacity-70 hover:opacity-100 transition-opacity ' + (i === 0 ? 'bg-white' : 'bg-white/50');
+            indicator.dataset.index = String(i);
+            indicator.addEventListener('click', (function (idx) {
+              return function () { goTo(idx); };
+            })(i));
+            indicatorsContainer.appendChild(indicator);
+          }
+        }
+
+        function update() {
+          carousel.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+          if (!indicatorsContainer) return;
+          var inds = qsa('.indicator', indicatorsContainer);
+          inds.forEach(function (el, idx) {
+            if (idx === currentIndex) {
+              el.classList.add('bg-white');
+              el.classList.remove('bg-white/50');
+            } else {
+              el.classList.remove('bg-white');
+              el.classList.add('bg-white/50');
+            }
+          });
+        }
+
+        function goTo(idx) {
+          currentIndex = (idx + totalSlides) % totalSlides;
+          update();
+          resetAutoPlay();
+        }
+
+        function next() { goTo(currentIndex + 1); }
+        function prev() { goTo(currentIndex - 1); }
+
+        function startAutoPlay() { autoPlayInterval = setInterval(next, 5000); }
+        function stopAutoPlay() { if (autoPlayInterval) clearInterval(autoPlayInterval); autoPlayInterval = null; }
+        function resetAutoPlay() { stopAutoPlay(); startAutoPlay(); }
+
+        if (nextBtn) nextBtn.addEventListener('click', function () { next(); });
+        if (prevBtn) prevBtn.addEventListener('click', function () { prev(); });
+
+        carousel.addEventListener('touchstart', function (e) {
+          touchStartX = e.changedTouches[0].screenX;
+          stopAutoPlay();
+        }, { passive: true });
+
+        carousel.addEventListener('touchend', function (e) {
+          var touchEndX = e.changedTouches[0].screenX;
+          var swipeThreshold = 50;
+          if (touchEndX < touchStartX - swipeThreshold) next();
+          else if (touchEndX > touchStartX + swipeThreshold) prev();
+          startAutoPlay();
+        }, { passive: true });
+
+        carousel.addEventListener('mouseenter', stopAutoPlay);
+        carousel.addEventListener('mouseleave', startAutoPlay);
+
+        createIndicators();
+        update();
+        startAutoPlay();
+      }
+
+      function initPopup() {
+        var popupOverlay = document.getElementById('dsa-popup-overlay');
+        var closePopupButton = document.getElementById('close-dsa-popup');
+        var openPopupButtons = qsa('.open-popup-trigger');
+
+        function openPopup(e) {
+          if (e) e.preventDefault();
+          if (!popupOverlay) return;
+          popupOverlay.style.display = 'flex';
+          document.body.classList.add('popup-open');
+        }
+
+        function closePopup() {
+          if (!popupOverlay) return;
+          popupOverlay.style.display = 'none';
+          document.body.classList.remove('popup-open');
+        }
+
+        openPopupButtons.forEach(function (button) { button.addEventListener('click', openPopup); });
+        if (closePopupButton) closePopupButton.addEventListener('click', closePopup);
+
+        if (popupOverlay) {
+          popupOverlay.addEventListener('click', function (e) {
+            if (e.target === popupOverlay) closePopup();
+          });
+        }
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && popupOverlay && popupOverlay.style.display === 'flex') closePopup();
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        initMobileMenu();
+        initHeaderShrink();
+        initSmoothAnchors();
+        initScrollAnimation();
+        initAccordion();
+        initProgrammeMenu();
+        initBenefitsCarousel();
+        initTestimonialsCarousel();
+        initPopup();
+      });
+    })();
+  </script>
+</body>
+</html>

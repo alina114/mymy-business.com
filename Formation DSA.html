@@ -219,52 +219,54 @@
                   GO !
                 </a>
                 <button type="button" class="inline-flex items-center justify-center h-10 w-10 rounded-xl border border-white/30 bg-white/40 backdrop-blur-xl text-gray-700 hover:text-gray-900 shadow-sm hover:shadow-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500/40" aria-label="toggle menu" id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
-                  <i class="fa fa-bars text-xl"></i>
+                  <i class="fa fa-bars text-xl" id="menu-icon-bars"></i>
+                  <i class="fa fa-times text-xl hidden" id="menu-icon-close"></i>
                 </button>
               </div>
             </div>
 
             <nav class="hidden lg:flex items-center space-x-3 xl:space-x-6">
-              <a href="#hero" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group text-sm xl:text-base px-2">
-                ⇡ ⇡ ⇡
-                <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="#Nouveau%20en%202025" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group text-sm xl:text-base px-2">
-                C'est quoi ?
-                <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="#simulateur-revenus" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group text-sm xl:text-base px-2">
-                Tes gains
-                <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="#problemes" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group text-sm xl:text-base px-2">
-                C'est pour moi ?
-                <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="#temoignages" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group text-sm xl:text-base px-2">
-                Témoignages
-                <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="#programme" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group text-sm xl:text-base px-2">
-                Programme
-                <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="#espace-liabiz" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group text-sm xl:text-base px-2">
-                L'IABIZ
-                <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
-              </a><a href="#simulateur-revenus" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group text-sm xl:text-base px-2">
-                Combien je gagne ?
-                <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="#faq" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group text-sm xl:text-base px-2">
-                FAQ
-                <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="#tarification" class="text-gray-900/90 hover:text-blue-700 font-medium transition-colors duration-200 relative group text-sm xl:text-base px-2">
-                Go !
-                <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600/90 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            </nav>
+  <a href="#hero" class="text-pink-500 hover:text-pink-600 font-medium transition-all duration-200 relative group text-lg xl:text-xl px-2 hover:scale-110" title="Accueil">
+    <i class="fas fa-home"></i>
+    <span class="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="#Nouveau%20en%202025" class="text-purple-500 hover:text-purple-600 font-medium transition-all duration-200 relative group text-lg xl:text-xl px-2 hover:scale-110" title="C'est quoi ?">
+    <i class="fas fa-lightbulb"></i>
+    <span class="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="#simulateur-revenus" class="text-green-500 hover:text-green-600 font-medium transition-all duration-200 relative group text-lg xl:text-xl px-2 hover:scale-110" title="Tes gains">
+    <i class="fas fa-piggy-bank"></i>
+    <span class="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="#problemes" class="text-orange-500 hover:text-orange-600 font-medium transition-all duration-200 relative group text-lg xl:text-xl px-2 hover:scale-110" title="C'est pour moi ?">
+    <i class="fas fa-face-smile-wink"></i>
+    <span class="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="#temoignages" class="text-yellow-500 hover:text-yellow-600 font-medium transition-all duration-200 relative group text-lg xl:text-xl px-2 hover:scale-110" title="Témoignages">
+    <i class="fas fa-fire"></i>
+    <span class="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="#programme" class="text-blue-500 hover:text-blue-600 font-medium transition-all duration-200 relative group text-lg xl:text-xl px-2 hover:scale-110" title="Programme">
+    <i class="fas fa-graduation-cap"></i>
+    <span class="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="#espace-liabiz" class="text-cyan-500 hover:text-cyan-600 font-medium transition-all duration-200 relative group text-lg xl:text-xl px-2 hover:scale-110" title="L'IABIZ">
+    <i class="fas fa-wand-magic-sparkles"></i>
+    <span class="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="#simulateur-revenus" class="text-emerald-500 hover:text-emerald-600 font-medium transition-all duration-200 relative group text-lg xl:text-xl px-2 hover:scale-110" title="Combien je gagne ?">
+    <i class="fas fa-sack-dollar"></i>
+    <span class="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="#faq" class="text-indigo-500 hover:text-indigo-600 font-medium transition-all duration-200 relative group text-lg xl:text-xl px-2 hover:scale-110" title="FAQ">
+    <i class="fas fa-comments"></i>
+    <span class="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="#tarification" class="text-rose-500 hover:text-rose-600 font-medium transition-all duration-200 relative group text-lg xl:text-xl px-2 hover:scale-110" title="Go !">
+    <i class="fas fa-rocket"></i>
+    <span class="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-rose-500 to-pink-500 rounded-full transition-all duration-300 group-hover:w-full"></span>
+  </a>
+</nav>
 
             <div class="hidden lg:flex items-center">
               <a href="Paiment DSA" class="px-4 xl:px-8 py-2.5 bg-gradient-to-r from-pink-600 to-yellow-600 text-white font-medium rounded-lg hover:from-yellow-700 hover:to-purple-600 transition-colors duration-200 shadow-md hover:shadow-lg ring-1 ring-white/30 text-sm xl:text-base whitespace-nowrap" data-page-id="682b27e986f3bf50152c00bd" id="page-link">
@@ -273,18 +275,88 @@
             </div>
           </div>
 
-          <div class="lg:hidden hidden mt-2 mx-2 sm:mx-4" id="mobile-menu">
-            <div class="px-3 pt-3 pb-3 space-y-2 rounded-2xl border border-white/30 bg-white/70 backdrop-blur-xl shadow-[0_12px_30px_rgba(0,0,0,0.10)] max-h-[70vh] overflow-y-auto">
-              <a href="#hero" class="block px-4 py-3 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/60 rounded-xl transition-colors duration-200">⇡ Accueil</a>
-              <a href="#Nouveau%20en%202025" class="block px-4 py-3 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/60 rounded-xl transition-colors duration-200">C'est quoi ?</a>
-              <a href="#simulateur-revenus" class="block px-4 py-3 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/60 rounded-xl transition-colors duration-200">Tes gains</a>
-              <a href="#problemes" class="block px-4 py-3 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/60 rounded-xl transition-colors duration-200">C'est pour moi ?</a>
-              <a href="#temoignages" class="block px-4 py-3 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/60 rounded-xl transition-colors duration-200">Témoignages</a>
-              <a href="#programme" class="block px-4 py-3 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/60 rounded-xl transition-colors duration-200">Programme</a>
-              <a href="#espace-liabiz" class="block px-4 py-3 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/60 rounded-xl transition-colors duration-200">L'IABIZ</a>
-              <a href="#faq" class="block px-4 py-3 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/60 rounded-xl transition-colors duration-200">FAQ</a>
-              <a href="#tarification" class="block px-4 py-3 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/60 rounded-xl transition-colors duration-200">Tarifs</a>
-              <a href="#cta" class="block px-4 py-3 text-base font-medium text-gray-900/90 hover:text-blue-700 hover:bg-white/60 rounded-xl transition-colors duration-200">CTA</a>
+          <div class="lg:hidden fixed inset-0 z-[100] pointer-events-none" id="mobile-menu-overlay">
+            <div class="absolute inset-0 bg-black/50 backdrop-blur-sm opacity-0 transition-opacity duration-300" id="mobile-menu-backdrop"></div>
+            <div class="absolute right-0 top-0 h-full w-[85%] max-w-[320px] bg-gradient-to-b from-purple-900 via-pink-900 to-purple-950 transform translate-x-full transition-transform duration-300 ease-out shadow-2xl" id="mobile-menu">
+              <div class="flex flex-col h-full">
+                <div class="flex items-center justify-between p-4 border-b border-white/10">
+                  <div class="flex items-center gap-3">
+                    <img src="https://d1olmvoet3matb.cloudfront.net/EvchaseYz9/images/2ebcc0c202ab08a6.png" alt="Logo" class="h-10 w-10 rounded-full ring-2 ring-pink-500/50">
+                    <span class="text-white font-bold text-lg">MYMY BUSINESS</span>
+                  </div>
+                  <button type="button" class="h-10 w-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors" id="mobile-menu-close-btn">
+                    <i class="fa fa-times text-xl"></i>
+                  </button>
+                </div>
+                
+                <div class="flex-1 overflow-y-auto py-4 px-3">
+                  <nav class="space-y-1">
+                    <a href="#hero" class="mobile-nav-link flex items-center gap-4 px-4 py-3.5 rounded-xl text-white/90 hover:bg-white/10 hover:text-white transition-all duration-200 group">
+                      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa fa-home text-white"></i>
+                      </div>
+                      <span class="font-medium">Accueil</span>
+                    </a>
+                    <a href="#Nouveau%20en%202025" class="mobile-nav-link flex items-center gap-4 px-4 py-3.5 rounded-xl text-white/90 hover:bg-white/10 hover:text-white transition-all duration-200 group">
+                      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa fa-question-circle text-white"></i>
+                      </div>
+                      <span class="font-medium">C'est quoi ?</span>
+                    </a>
+                    <a href="#simulateur-revenus" class="mobile-nav-link flex items-center gap-4 px-4 py-3.5 rounded-xl text-white/90 hover:bg-white/10 hover:text-white transition-all duration-200 group">
+                      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa fa-calculator text-white"></i>
+                      </div>
+                      <span class="font-medium">Tes gains</span>
+                    </a>
+                    <a href="#problemes" class="mobile-nav-link flex items-center gap-4 px-4 py-3.5 rounded-xl text-white/90 hover:bg-white/10 hover:text-white transition-all duration-200 group">
+                      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa fa-user-check text-white"></i>
+                      </div>
+                      <span class="font-medium">C'est pour moi ?</span>
+                    </a>
+                    <a href="#temoignages" class="mobile-nav-link flex items-center gap-4 px-4 py-3.5 rounded-xl text-white/90 hover:bg-white/10 hover:text-white transition-all duration-200 group">
+                      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa fa-star text-white"></i>
+                      </div>
+                      <span class="font-medium">Témoignages</span>
+                    </a>
+                    <a href="#programme" class="mobile-nav-link flex items-center gap-4 px-4 py-3.5 rounded-xl text-white/90 hover:bg-white/10 hover:text-white transition-all duration-200 group">
+                      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa fa-book text-white"></i>
+                      </div>
+                      <span class="font-medium">Programme</span>
+                    </a>
+                    <a href="#espace-liabiz" class="mobile-nav-link flex items-center gap-4 px-4 py-3.5 rounded-xl text-white/90 hover:bg-white/10 hover:text-white transition-all duration-200 group">
+                      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa fa-robot text-white"></i>
+                      </div>
+                      <span class="font-medium">L'IABIZ</span>
+                    </a>
+                    <a href="#faq" class="mobile-nav-link flex items-center gap-4 px-4 py-3.5 rounded-xl text-white/90 hover:bg-white/10 hover:text-white transition-all duration-200 group">
+                      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa fa-circle-question text-white"></i>
+                      </div>
+                      <span class="font-medium">FAQ</span>
+                    </a>
+                    <a href="#tarification" class="mobile-nav-link flex items-center gap-4 px-4 py-3.5 rounded-xl text-white/90 hover:bg-white/10 hover:text-white transition-all duration-200 group">
+                      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa fa-tags text-white"></i>
+                      </div>
+                      <span class="font-medium">Tarifs</span>
+                    </a>
+                  </nav>
+                </div>
+                
+                <div class="p-4 border-t border-white/10">
+                  <a href="Paiment DSA" class="flex items-center justify-center gap-3 w-full py-4 px-6 bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 text-white font-bold rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200" data-page-id="682b27e986f3bf50152c00bd">
+                    <i class="fa fa-wand-magic-sparkles text-lg"></i>
+                    <span>Je veux MA BAGUETTE !</span>
+                    <i class="fa fa-arrow-right text-sm"></i>
+                  </a>
+                  <p class="text-center text-white/50 text-xs mt-3">🔥 Offre limitée - Places restantes !</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -314,37 +386,65 @@
           <script>
             (function () {
               var btn = document.getElementById('mobile-menu-button');
+              var closeBtn = document.getElementById('mobile-menu-close-btn');
+              var overlay = document.getElementById('mobile-menu-overlay');
+              var backdrop = document.getElementById('mobile-menu-backdrop');
               var menu = document.getElementById('mobile-menu');
-              if (!btn || !menu) return;
+              var iconBars = document.getElementById('menu-icon-bars');
+              var iconClose = document.getElementById('menu-icon-close');
+              var navLinks = menu ? menu.querySelectorAll('.mobile-nav-link') : [];
+              
+              if (!btn || !menu || !overlay || !backdrop) return;
+
+              function openMenu() {
+                overlay.classList.remove('pointer-events-none');
+                overlay.classList.add('pointer-events-auto');
+                backdrop.classList.remove('opacity-0');
+                backdrop.classList.add('opacity-100');
+                menu.classList.remove('translate-x-full');
+                menu.classList.add('translate-x-0');
+                btn.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+                if (iconBars) iconBars.classList.add('hidden');
+                if (iconClose) iconClose.classList.remove('hidden');
+              }
 
               function closeMenu() {
-                menu.classList.add('hidden');
+                overlay.classList.add('pointer-events-none');
+                overlay.classList.remove('pointer-events-auto');
+                backdrop.classList.add('opacity-0');
+                backdrop.classList.remove('opacity-100');
+                menu.classList.add('translate-x-full');
+                menu.classList.remove('translate-x-0');
                 btn.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+                if (iconBars) iconBars.classList.remove('hidden');
+                if (iconClose) iconClose.classList.add('hidden');
               }
 
               function toggleMenu() {
-                var isHidden = menu.classList.contains('hidden');
-                if (isHidden) {
-                  menu.classList.remove('hidden');
-                  btn.setAttribute('aria-expanded', 'true');
-                } else {
+                var isOpen = !menu.classList.contains('translate-x-full');
+                if (isOpen) {
                   closeMenu();
+                } else {
+                  openMenu();
                 }
               }
 
               btn.addEventListener('click', toggleMenu);
+              
+              if (closeBtn) {
+                closeBtn.addEventListener('click', closeMenu);
+              }
+              
+              backdrop.addEventListener('click', closeMenu);
 
-              menu.addEventListener('click', function (e) {
-                var t = e.target;
-                if (t && t.tagName === 'A') closeMenu();
+              navLinks.forEach(function(link) {
+                link.addEventListener('click', closeMenu);
               });
 
               document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape') closeMenu();
-              });
-
-              document.addEventListener('click', function (e) {
-                if (!menu.contains(e.target) && !btn.contains(e.target)) closeMenu();
               });
             })();
           </script>
@@ -685,187 +785,199 @@
           <div class="relative">
             <div class="relative w-full h-[520px] sm:h-[500px] md:h-[600px] lg:h-[460px] mb-8" id="problemes-carousel-track">
 
-              <div class="pc-slide group absolute left-1/2 top-1/2 sm:top-[55%] w-[96%] sm:w-[92%] md:w-[85%] lg:w-[72%] -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out opacity-0 scale-90 blur-[1px] z-0" data-index="0">
-                <div class="relative overflow-hidden rounded-2xl border border-gray-100 bg-white/95 p-7 sm:p-9 md:p-10 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur">
-                  <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-pink-400/20 to-violet-400/10 blur-2xl"></div>
-                  <div class="flex items-start gap-5">
-                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white shadow-lg shadow-pink-500/20">
-                      <i class="fa fa-coins text-xl"></i>
-                    </div>
-                    <div class="min-w-0">
-                      <div class="flex flex-wrap items-center gap-2">
-                        <span class="inline-flex items-center rounded-full bg-pink-50 px-3 py-1 text-sm font-semibold text-pink-700 ring-1 ring-pink-200">Finance</span>
-                        <span class="inline-flex items-center rounded-full bg-gray-50 px-3 py-1 text-sm font-semibold text-gray-700 ring-1 ring-gray-200">Stress</span>
-                      </div>
-                      <h3 class="mt-4 text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Tes fins de mois sont difficiles</h3>
-                      <p class="mt-4 text-base md:text-lg text-gray-900 leading-relaxed">
-                        Tes finances sont toujours au plus bas. Tu as l'impression de courir après l'argent sans jamais vraiment t'en sortir. L'épargne est un lointain souvenir.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="mt-7 flex items-center justify-between">
-                    <div class="flex items-center gap-2 text-base text-gray-500">
-                      <i class="fa fa-arrow-trend-down"></i><span>Pression constante</span>
-                    </div>
-                    <div class="text-3xl leading-none">💰</div>
-                  </div>
-                  <div class="mt-6 h-2 w-full overflow-hidden rounded-full bg-gray-200">
-                    <div class="h-full w-2/3 rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-500"></div>
-                  </div>
-                </div>
-              </div>
+  <div class="pc-slide group absolute left-1/2 top-1/2 sm:top-[55%] w-[96%] sm:w-[92%] md:w-[85%] lg:w-[72%] -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out opacity-0 scale-90 blur-[1px] z-0" data-index="0">
+    <div class="relative overflow-hidden rounded-2xl border border-rose-200/60 bg-gradient-to-br from-white via-rose-50/50 to-pink-50/60 p-7 sm:p-9 md:p-10 shadow-[0_10px_40px_rgba(244,63,94,0.12)] backdrop-blur-sm">
+      <div class="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-gradient-to-br from-rose-400/20 via-pink-300/15 to-fuchsia-400/10 blur-3xl animate-pulse"></div>
+      <div class="pointer-events-none absolute -left-8 -bottom-8 h-24 w-24 rounded-full bg-gradient-to-tr from-amber-300/15 to-orange-300/10 blur-2xl"></div>
+      <div class="flex items-start gap-5">
+        <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-rose-500 via-pink-500 to-fuchsia-600 text-white shadow-xl shadow-rose-500/30 ring-4 ring-rose-200/50">
+          <i class="fa fa-wallet text-2xl drop-shadow-lg"></i>
+          <div class="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 animate-bounce shadow-lg"></div>
+        </div>
+        <div class="min-w-0">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="inline-flex items-center rounded-full bg-gradient-to-r from-rose-100 to-pink-100 px-3 py-1 text-sm font-semibold text-rose-700 ring-1 ring-rose-300/60 shadow-sm">💳 Finance</span>
+            <span class="inline-flex items-center rounded-full bg-gradient-to-r from-slate-100 to-gray-100 px-3 py-1 text-sm font-semibold text-slate-700 ring-1 ring-slate-200 shadow-sm">😰 Stress</span>
+          </div>
+          <h3 class="mt-4 text-2xl md:text-3xl font-bold tracking-tight bg-gradient-to-r from-rose-700 via-pink-600 to-fuchsia-700 bg-clip-text text-transparent">Tes fins de mois sont difficiles</h3>
+          <p class="mt-4 text-base md:text-lg text-gray-700 leading-relaxed">
+            Tes finances sont toujours au plus bas. Tu as l'impression de courir après l'argent sans jamais vraiment t'en sortir. L'épargne est un lointain souvenir.
+          </p>
+        </div>
+      </div>
+      <div class="mt-7 flex items-center justify-between">
+        <div class="flex items-center gap-2 text-base text-rose-600/80 font-medium">
+          <i class="fa fa-arrow-trend-down animate-pulse"></i><span>Pression constante</span>
+        </div>
+        <div class="text-3xl leading-none drop-shadow-md">💸</div>
+      </div>
+      <div class="mt-6 h-3 w-full overflow-hidden rounded-full bg-gradient-to-r from-rose-100 to-pink-100 shadow-inner">
+        <div class="h-full w-2/3 rounded-full bg-gradient-to-r from-rose-500 via-pink-500 to-fuchsia-500 shadow-lg shadow-rose-400/40"></div>
+      </div>
+    </div>
+  </div>
 
-              <div class="pc-slide group absolute left-1/2 top-1/2 sm:top-[55%] w-[96%] sm:w-[92%] md:w-[85%] lg:w-[72%] -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out opacity-0 scale-90 blur-[1px] z-0" data-index="1">
-                <div class="relative overflow-hidden rounded-2xl border border-gray-100 bg-white/95 p-7 sm:p-9 md:p-10 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur">
-                  <div class="pointer-events-none absolute -left-10 -bottom-10 h-32 w-32 rounded-full bg-gradient-to-br from-amber-400/20 to-yellow-400/10 blur-2xl"></div>
-                  <div class="flex items-start gap-5">
-                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-yellow-500 text-white shadow-lg shadow-amber-500/20">
-                      <i class="fa fa-clock text-xl"></i>
-                    </div>
-                    <div class="min-w-0">
-                      <div class="flex flex-wrap items-center gap-2">
-                        <span class="inline-flex items-center rounded-full bg-amber-50 px-3 py-1 text-sm font-semibold text-amber-800 ring-1 ring-amber-200">Organisation</span>
-                        <span class="inline-flex items-center rounded-full bg-gray-50 px-3 py-1 text-sm font-semibold text-gray-700 ring-1 ring-gray-200">Charge mentale</span>
-                      </div>
-                      <h3 class="mt-4 text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Tu manques de temps</h3>
-                      <p class="mt-4 text-base md:text-lg text-gray-900 leading-relaxed">
-                        Entre le travail, la famille, les obligations… quand trouver le temps de construire un projet qui te tient à cœur et qui pourrait changer ta vie ?
-                      </p>
-                    </div>
-                  </div>
-                  <div class="mt-7 flex items-center justify-between">
-                    <div class="flex items-center gap-2 text-base text-gray-500">
-                      <i class="fa fa-list-check"></i><span>Journées trop pleines</span>
-                    </div>
-                    <div class="text-3xl leading-none">⏰</div>
-                  </div>
-                  <div class="mt-6 h-2 w-full overflow-hidden rounded-full bg-gray-200">
-                    <div class="h-full w-1/2 rounded-full bg-gradient-to-r from-amber-500 to-yellow-500"></div>
-                  </div>
-                </div>
-              </div>
+  <div class="pc-slide group absolute left-1/2 top-1/2 sm:top-[55%] w-[96%] sm:w-[92%] md:w-[85%] lg:w-[72%] -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out opacity-0 scale-90 blur-[1px] z-0" data-index="1">
+    <div class="relative overflow-hidden rounded-2xl border border-amber-200/60 bg-gradient-to-br from-white via-amber-50/50 to-orange-50/60 p-7 sm:p-9 md:p-10 shadow-[0_10px_40px_rgba(245,158,11,0.12)] backdrop-blur-sm">
+      <div class="pointer-events-none absolute -left-16 -bottom-16 h-40 w-40 rounded-full bg-gradient-to-br from-amber-400/20 via-yellow-300/15 to-orange-400/10 blur-3xl animate-pulse"></div>
+      <div class="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-gradient-to-bl from-rose-300/15 to-pink-300/10 blur-2xl"></div>
+      <div class="flex items-start gap-5">
+        <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 via-orange-500 to-yellow-500 text-white shadow-xl shadow-amber-500/30 ring-4 ring-amber-200/50">
+          <i class="fa fa-hourglass-half text-2xl drop-shadow-lg"></i>
+          <div class="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br from-rose-400 to-red-500 animate-ping shadow-lg"></div>
+        </div>
+        <div class="min-w-0">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="inline-flex items-center rounded-full bg-gradient-to-r from-amber-100 to-orange-100 px-3 py-1 text-sm font-semibold text-amber-800 ring-1 ring-amber-300/60 shadow-sm">📋 Organisation</span>
+            <span class="inline-flex items-center rounded-full bg-gradient-to-r from-slate-100 to-gray-100 px-3 py-1 text-sm font-semibold text-slate-700 ring-1 ring-slate-200 shadow-sm">🧠 Charge mentale</span>
+          </div>
+          <h3 class="mt-4 text-2xl md:text-3xl font-bold tracking-tight bg-gradient-to-r from-amber-700 via-orange-600 to-yellow-600 bg-clip-text text-transparent">Tu manques de temps</h3>
+          <p class="mt-4 text-base md:text-lg text-gray-700 leading-relaxed">
+            Entre le travail, la famille, les obligations… quand trouver le temps de construire un projet qui te tient à cœur et qui pourrait changer ta vie ?
+          </p>
+        </div>
+      </div>
+      <div class="mt-7 flex items-center justify-between">
+        <div class="flex items-center gap-2 text-base text-amber-600/80 font-medium">
+          <i class="fa fa-calendar-xmark animate-pulse"></i><span>Journées trop pleines</span>
+        </div>
+        <div class="text-3xl leading-none drop-shadow-md">⏳</div>
+      </div>
+      <div class="mt-6 h-3 w-full overflow-hidden rounded-full bg-gradient-to-r from-amber-100 to-orange-100 shadow-inner">
+        <div class="h-full w-1/2 rounded-full bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 shadow-lg shadow-amber-400/40"></div>
+      </div>
+    </div>
+  </div>
 
-              <div class="pc-slide group absolute left-1/2 top-1/2 sm:top-[55%] w-[96%] sm:w-[92%] md:w-[85%] lg:w-[72%] -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out opacity-0 scale-90 blur-[1px] z-0" data-index="2">
-                <div class="relative overflow-hidden rounded-2xl border border-gray-100 bg-white/95 p-7 sm:p-9 md:p-10 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur">
-                  <div class="pointer-events-none absolute -right-10 -bottom-10 h-32 w-32 rounded-full bg-gradient-to-br from-violet-400/20 to-sky-400/10 blur-2xl"></div>
-                  <div class="flex items-start gap-5">
-                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 text-white shadow-lg shadow-violet-600/20">
-                      <i class="fa fa-brain text-xl"></i>
-                    </div>
-                    <div class="min-w-0">
-                      <div class="flex flex-wrap items-center gap-2">
-                        <span class="inline-flex items-center rounded-full bg-violet-50 px-3 py-1 text-sm font-semibold text-violet-800 ring-1 ring-violet-200">Compétences</span>
-                        <span class="inline-flex items-center rounded-full bg-gray-50 px-3 py-1 text-sm font-semibold text-gray-700 ring-1 ring-gray-200">Blocage</span>
-                      </div>
-                      <h3 class="mt-4 text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Tu n'as pas les compétences</h3>
-                      <p class="mt-4 text-base md:text-lg text-gray-900 leading-relaxed">
-                        Créer un business en ligne te semble une montagne insurmontable. Technique, marketing, création… tu ne sais pas par où commencer.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="mt-7 flex items-center justify-between">
-                    <div class="flex items-center gap-2 text-base text-gray-500">
-                      <i class="fa fa-circle-question"></i><span>Trop de questions</span>
-                    </div>
-                    <div class="text-3xl leading-none">🧠</div>
-                  </div>
-                  <div class="mt-6 h-2 w-full overflow-hidden rounded-full bg-gray-200">
-                    <div class="h-full w-3/5 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600"></div>
-                  </div>
-                </div>
-              </div>
+  <div class="pc-slide group absolute left-1/2 top-1/2 sm:top-[55%] w-[96%] sm:w-[92%] md:w-[85%] lg:w-[72%] -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out opacity-0 scale-90 blur-[1px] z-0" data-index="2">
+    <div class="relative overflow-hidden rounded-2xl border border-violet-200/80 bg-gradient-to-br from-white via-violet-50/50 to-indigo-50/60 p-7 sm:p-9 md:p-10 shadow-[0_10px_40px_rgba(139,92,246,0.12)] backdrop-blur-sm">
+      <div class="pointer-events-none absolute -right-16 -bottom-16 h-40 w-40 rounded-full bg-gradient-to-br from-violet-400/20 via-purple-300/15 to-indigo-400/10 blur-3xl animate-pulse"></div>
+      <div class="pointer-events-none absolute -left-8 -top-8 h-24 w-24 rounded-full bg-gradient-to-br from-sky-300/15 to-cyan-300/10 blur-2xl"></div>
+      <div class="flex items-start gap-5">
+        <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-600 via-purple-600 to-indigo-600 text-white shadow-xl shadow-violet-600/30 ring-4 ring-violet-200/50">
+          <i class="fa fa-lightbulb text-2xl drop-shadow-lg"></i>
+          <div class="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br from-cyan-400 to-sky-500 animate-bounce shadow-lg"></div>
+        </div>
+        <div class="min-w-0">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="inline-flex items-center rounded-full bg-gradient-to-r from-violet-100 to-purple-100 px-3 py-1 text-sm font-semibold text-violet-800 ring-1 ring-violet-300/60 shadow-sm">🎯 Compétences</span>
+            <span class="inline-flex items-center rounded-full bg-gradient-to-r from-slate-100 to-gray-100 px-3 py-1 text-sm font-semibold text-slate-700 ring-1 ring-slate-200 shadow-sm">🚧 Blocage</span>
+          </div>
+          <h3 class="mt-4 text-2xl md:text-3xl font-bold tracking-tight bg-gradient-to-r from-violet-700 via-purple-600 to-indigo-700 bg-clip-text text-transparent">Tu n'as pas les compétences</h3>
+          <p class="mt-4 text-base md:text-lg text-gray-700 leading-relaxed">
+            Créer un business en ligne te semble une montagne insurmontable. Technique, marketing, création… tu ne sais pas par où commencer.
+          </p>
+        </div>
+      </div>
+      <div class="mt-7 flex items-center justify-between">
+        <div class="flex items-center gap-2 text-base text-violet-600/80 font-medium">
+          <i class="fa fa-circle-question animate-pulse"></i><span>Trop de questions</span>
+        </div>
+        <div class="text-3xl leading-none drop-shadow-md">💡</div>
+      </div>
+      <div class="mt-6 h-3 w-full overflow-hidden rounded-full bg-gradient-to-r from-violet-100 to-purple-100 shadow-inner">
+        <div class="h-full w-3/5 rounded-full bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 shadow-lg shadow-violet-400/40"></div>
+      </div>
+    </div>
+  </div>
 
-              <div class="pc-slide group absolute left-1/2 top-1/2 sm:top-[55%] w-[96%] sm:w-[92%] md:w-[85%] lg:w-[72%] -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out opacity-0 scale-90 blur-[1px] z-0" data-index="3">
-                <div class="relative overflow-hidden rounded-2xl border border-gray-100 bg-white/95 p-7 sm:p-9 md:p-10 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur">
-                  <div class="pointer-events-none absolute -left-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-sky-400/20 to-indigo-400/10 blur-2xl"></div>
-                  <div class="flex items-start gap-5">
-                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-600 text-white shadow-lg shadow-sky-500/20">
-                      <i class="fa fa-battery-quarter text-xl"></i>
-                    </div>
-                    <div class="min-w-0">
-                      <div class="flex flex-wrap items-center gap-2">
-                        <span class="inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-sm font-semibold text-sky-800 ring-1 ring-sky-200">Énergie</span>
-                        <span class="inline-flex items-center rounded-full bg-gray-50 px-3 py-1 text-sm font-semibold text-gray-700 ring-1 ring-gray-200">Motivation</span>
-                      </div>
-                      <h3 class="mt-4 text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Tu te sens épuisée et démotivée</h3>
-                      <p class="mt-4 text-base md:text-lg text-gray-900 leading-relaxed">
-                        Tu commences des choses puis tu lâches, parce que tu n'as pas de plan clair et personne pour te guider. Résultat : tu doutes de toi et tu n'avances pas.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="mt-7 flex items-center justify-between">
-                    <div class="flex items-center gap-2 text-base text-gray-500">
-                      <i class="fa fa-heart-crack"></i><span>Découragement</span>
-                    </div>
-                    <div class="text-3xl leading-none">😮‍💨</div>
-                  </div>
-                  <div class="mt-6 h-2 w-full overflow-hidden rounded-full bg-gray-200">
-                    <div class="h-full w-2/5 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500"></div>
-                  </div>
-                </div>
-              </div>
+  <div class="pc-slide group absolute left-1/2 top-1/2 sm:top-[55%] w-[96%] sm:w-[92%] md:w-[85%] lg:w-[72%] -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out opacity-0 scale-90 blur-[1px] z-0" data-index="3">
+    <div class="relative overflow-hidden rounded-2xl border border-sky-200/60 bg-gradient-to-br from-white via-sky-50/50 to-cyan-50/60 p-7 sm:p-9 md:p-10 shadow-[0_10px_40px_rgba(14,165,233,0.12)] backdrop-blur-sm">
+      <div class="pointer-events-none absolute -left-16 -top-16 h-40 w-40 rounded-full bg-gradient-to-br from-sky-400/20 via-cyan-300/15 to-blue-400/10 blur-3xl animate-pulse"></div>
+      <div class="pointer-events-none absolute -right-8 -bottom-8 h-24 w-24 rounded-full bg-gradient-to-tl from-indigo-300/15 to-violet-300/10 blur-2xl"></div>
+      <div class="flex items-start gap-5">
+        <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 via-cyan-500 to-blue-600 text-white shadow-xl shadow-sky-500/30 ring-4 ring-sky-200/50">
+          <i class="fa fa-bolt-lightning text-2xl drop-shadow-lg"></i>
+          <div class="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br from-amber-400 to-yellow-500 animate-ping shadow-lg"></div>
+        </div>
+        <div class="min-w-0">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="inline-flex items-center rounded-full bg-gradient-to-r from-sky-100 to-cyan-100 px-3 py-1 text-sm font-semibold text-sky-800 ring-1 ring-sky-300/60 shadow-sm">⚡ Énergie</span>
+            <span class="inline-flex items-center rounded-full bg-gradient-to-r from-slate-100 to-gray-100 px-3 py-1 text-sm font-semibold text-slate-700 ring-1 ring-slate-200 shadow-sm">🎯 Motivation</span>
+          </div>
+          <h3 class="mt-4 text-2xl md:text-3xl font-bold tracking-tight bg-gradient-to-r from-sky-700 via-cyan-600 to-blue-700 bg-clip-text text-transparent">Tu te sens épuisée et démotivée</h3>
+          <p class="mt-4 text-base md:text-lg text-gray-700 leading-relaxed">
+            Tu commences des choses puis tu lâches, parce que tu n'as pas de plan clair et personne pour te guider. Résultat : tu doutes de toi et tu n'avances pas.
+          </p>
+        </div>
+      </div>
+      <div class="mt-7 flex items-center justify-between">
+        <div class="flex items-center gap-2 text-base text-sky-600/80 font-medium">
+          <i class="fa fa-face-tired animate-pulse"></i><span>Découragement</span>
+        </div>
+        <div class="text-3xl leading-none drop-shadow-md">🔋</div>
+      </div>
+      <div class="mt-6 h-3 w-full overflow-hidden rounded-full bg-gradient-to-r from-sky-100 to-cyan-100 shadow-inner">
+        <div class="h-full w-2/5 rounded-full bg-gradient-to-r from-sky-500 via-cyan-500 to-blue-600 shadow-lg shadow-sky-400/40"></div>
+      </div>
+    </div>
+  </div>
 
-              <div class="pc-slide group absolute left-1/2 top-1/2 sm:top-[55%] w-[96%] sm:w-[92%] md:w-[85%] lg:w-[72%] -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out opacity-0 scale-90 blur-[1px] z-0" data-index="4">
-                <div class="relative overflow-hidden rounded-2xl border border-gray-100 bg-white/95 p-7 sm:p-9 md:p-10 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur">
-                  <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-fuchsia-400/20 to-amber-400/10 blur-2xl"></div>
-                  <div class="flex items-start gap-5">
-                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-fuchsia-600 to-pink-600 text-white shadow-lg shadow-fuchsia-600/20">
-                      <i class="fa fa-chart-line text-xl"></i>
-                    </div>
-                    <div class="min-w-0">
-                      <div class="flex flex-wrap items-center gap-2">
-                        <span class="inline-flex items-center rounded-full bg-fuchsia-50 px-3 py-1 text-sm font-semibold text-fuchsia-800 ring-1 ring-fuchsia-200">Visibilité</span>
-                        <span class="inline-flex items-center rounded-full bg-gray-50 px-3 py-1 text-sm font-semibold text-gray-700 ring-1 ring-gray-200">Croissance</span>
-                      </div>
-                      <h3 class="mt-4 text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Tu postes… mais rien ne décolle</h3>
-                      <p class="mt-4 text-base md:text-lg text-gray-900 leading-relaxed">
-                        Tu as l'impression de parler dans le vide. Peu de vues, peu de messages, aucune vente. Tu ne sais pas quoi améliorer.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="mt-7 flex items-center justify-between">
-                    <div class="flex items-center gap-2 text-base text-gray-500">
-                      <i class="fa fa-magnifying-glass"></i><span>Manque de traction</span>
-                    </div>
-                    <div class="text-3xl leading-none">📉</div>
-                  </div>
-                  <div class="mt-6 h-2 w-full overflow-hidden rounded-full bg-gray-200">
-                    <div class="h-full w-1/2 rounded-full bg-gradient-to-r from-fuchsia-600 to-pink-500"></div>
-                  </div>
-                </div>
-              </div>
+  <div class="pc-slide group absolute left-1/2 top-1/2 sm:top-[55%] w-[96%] sm:w-[92%] md:w-[85%] lg:w-[72%] -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out opacity-0 scale-90 blur-[1px] z-0" data-index="4">
+    <div class="relative overflow-hidden rounded-2xl border border-fuchsia-200/60 bg-gradient-to-br from-gray via-fuchsia-50/50 to-purple-50/60 p-7 sm:p-9 md:p-10 shadow-[0_10px_40px_rgba(217,70,239,0.12)] backdrop-blur-sm">
+      <div class="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-gradient-to-br from-fuchsia-400/20 via-pink-300/15 to-purple-400/10 blur-3xl animate-pulse"></div>
+      <div class="pointer-events-none absolute -left-8 -bottom-8 h-24 w-24 rounded-full bg-gradient-to-tr from-amber-300/15 to-rose-300/10 blur-2xl"></div>
+      <div class="flex items-start gap-5">
+        <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-fuchsia-600 via-pink-600 to-purple-600 text-white shadow-xl shadow-fuchsia-600/30 ring-4 ring-fuchsia-200/50">
+          <i class="fa fa-eye text-2xl drop-shadow-lg"></i>
+          <div class="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br from-emerald-400 to-green-500 animate-bounce shadow-lg"></div>
+        </div>
+        <div class="min-w-0">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="inline-flex items-center rounded-full bg-gradient-to-r from-fuchsia-100 to-pink-100 px-3 py-1 text-sm font-semibold text-fuchsia-800 ring-1 ring-fuchsia-300/60 shadow-sm">👀 Visibilité</span>
+            <span class="inline-flex items-center rounded-full bg-gradient-to-r from-slate-100 to-gray-100 px-3 py-1 text-sm font-semibold text-slate-700 ring-1 ring-slate-200 shadow-sm">📈 Croissance</span>
+          </div>
+          <h3 class="mt-4 text-2xl md:text-3xl font-bold tracking-tight bg-gradient-to-r from-fuchsia-700 via-pink-600 to-purple-700 bg-clip-text text-transparent">Tu postes… mais rien ne décolle</h3>
+          <p class="mt-4 text-base md:text-lg text-gray-700 leading-relaxed">
+            Tu as l'impression de parler dans le vide. Peu de vues, peu de messages, aucune vente. Tu ne sais pas quoi améliorer.
+          </p>
+        </div>
+      </div>
+      <div class="mt-7 flex items-center justify-between">
+        <div class="flex items-center gap-2 text-base text-fuchsia-600/80 font-medium">
+          <i class="fa fa-magnifying-glass-chart animate-pulse"></i><span>Manque de traction</span>
+        </div>
+        <div class="text-3xl leading-none drop-shadow-md">📊</div>
+      </div>
+      <div class="mt-6 h-3 w-full overflow-hidden rounded-full bg-gradient-to-r from-fuchsia-100 to-pink-100 shadow-inner">
+        <div class="h-full w-1/2 rounded-full bg-gradient-to-r from-fuchsia-600 via-pink-600 to-purple-600 shadow-lg shadow-fuchsia-400/40"></div>
+      </div>
+    </div>
+  </div>
 
-              <div class="pc-slide group absolute left-1/2 top-1/2 sm:top-[55%] w-[96%] sm:w-[92%] md:w-[85%] lg:w-[72%] -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out opacity-0 scale-90 blur-[1px] z-0" data-index="5">
-                <div class="relative overflow-hidden rounded-2xl border border-gray-100 bg-white/95 p-7 sm:p-9 md:p-10 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur">
-                  <div class="pointer-events-none absolute -left-10 -bottom-10 h-32 w-32 rounded-full bg-gradient-to-br from-emerald-400/20 to-teal-400/10 blur-2xl"></div>
-                  <div class="flex items-start gap-5">
-                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-lg shadow-emerald-500/20">
-                      <i class="fa fa-triangle-exclamation text-xl"></i>
-                    </div>
-                    <div class="min-w-0">
-                      <div class="flex flex-wrap items-center gap-2">
-                        <span class="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-sm font-semibold text-emerald-800 ring-1 ring-emerald-200">Confiance</span>
-                        <span class="inline-flex items-center rounded-full bg-gray-50 px-3 py-1 text-sm font-semibold text-gray-700 ring-1 ring-gray-200">Peur</span>
-                      </div>
-                      <h3 class="mt-4 text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Tu as peur de te tromper</h3>
-                      <p class="mt-4 text-base md:text-lg text-gray-900 leading-relaxed">
-                        Tu veux bien te lancer, mais tu as peur d'investir du temps/argent au mauvais endroit. Tu veux une méthode qui marche déja, simple et fiable.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="mt-7 flex items-center justify-between">
-                    <div class="flex items-center gap-2 text-base text-gray-500">
-                      <i class="fa fa-shield-halved"></i><span>Besoin de sécurité</span>
-                    </div>
-                    <div class="text-3xl leading-none">🛡️</div>
-                  </div>
-                  <div class="mt-6 h-2 w-full overflow-hidden rounded-full bg-gray-200">
-                    <div class="h-full w-3/5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500"></div>
-                  </div>
-                </div>
-              </div>
+  <div class="pc-slide group absolute left-1/2 top-1/2 sm:top-[55%] w-[96%] sm:w-[92%] md:w-[85%] lg:w-[72%] -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out opacity-0 scale-90 blur-[1px] z-0" data-index="5">
+    <div class="relative overflow-hidden rounded-2xl border border-emerald-200/60 bg-gradient-to-br from-white via-emerald-50/50 to-teal-50/60 p-7 sm:p-9 md:p-10 shadow-[0_10px_40px_rgba(16,185,129,0.12)] backdrop-blur-sm">
+      <div class="pointer-events-none absolute -left-16 -bottom-16 h-40 w-40 rounded-full bg-gradient-to-br from-emerald-400/20 via-teal-300/15 to-green-400/10 blur-3xl animate-pulse"></div>
+      <div class="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-gradient-to-bl from-sky-300/15 to-cyan-300/10 blur-2xl"></div>
+      <div class="flex items-start gap-5">
+        <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 via-teal-500 to-green-600 text-white shadow-xl shadow-emerald-500/30 ring-4 ring-emerald-200/50">
+          <i class="fa fa-shield-heart text-2xl drop-shadow-lg"></i>
+          <div class="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-gradient-to-br from-violet-400 to-purple-500 animate-ping shadow-lg"></div>
+        </div>
+        <div class="min-w-0">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="inline-flex items-center rounded-full bg-gradient-to-r from-emerald-100 to-teal-100 px-3 py-1 text-sm font-semibold text-emerald-800 ring-1 ring-emerald-300/60 shadow-sm">💪 Confiance</span>
+            <span class="inline-flex items-center rounded-full bg-gradient-to-r from-slate-100 to-gray-100 px-3 py-1 text-sm font-semibold text-slate-700 ring-1 ring-slate-200 shadow-sm">😨 Peur</span>
+          </div>
+          <h3 class="mt-4 text-2xl md:text-3xl font-bold tracking-tight bg-gradient-to-r from-emerald-700 via-teal-600 to-green-700 bg-clip-text text-transparent">Tu as peur de te tromper</h3>
+          <p class="mt-4 text-base md:text-lg text-gray-700 leading-relaxed">
+            Tu veux bien te lancer, mais tu as peur d'investir du temps/argent au mauvais endroit. Tu veux une méthode qui marche déja, simple et fiable.
+          </p>
+        </div>
+      </div>
+      <div class="mt-7 flex items-center justify-between">
+        <div class="flex items-center gap-2 text-base text-emerald-600/80 font-medium">
+          <i class="fa fa-lock animate-pulse"></i><span>Besoin de sécurité</span>
+        </div>
+        <div class="text-3xl leading-none drop-shadow-md">🛡️</div>
+      </div>
+      <div class="mt-6 h-3 w-full overflow-hidden rounded-full bg-gradient-to-r from-emerald-100 to-teal-100 shadow-inner">
+        <div class="h-full w-3/5 rounded-full bg-gradient-to-r from-emerald-500 via-teal-500 to-green-600 shadow-lg shadow-emerald-400/40"></div>
+      </div>
+    </div>
+  </div>
 
-            </div>
+</div>
 
           </div>
 
@@ -1175,7 +1287,7 @@
                 <div id="p47-2" class="p47-panel overflow-hidden rounded-2xl border-2 border-violet-200 bg-gradient-to-br from-white via-violet-50/30 to-white backdrop-blur px-4 sm:px-5" style="max-height: 0; opacity: 0;">
                   <div class="py-4 bg-white/60 backdrop-blur-sm rounded-xl p-4 my-2">
                     <p class="text-sm sm:text-base text-gray-800 font-semibold leading-relaxed mb-3">
-                      Droits MRR illimités - Revends à 497€ et garde 100% des profits.
+                      Droits MRR illimités - Revends à 497€ et garde 85% des profits.
                     </p>
                     <p class="text-sm sm:text-base text-gray-700 leading-relaxed">
                       Tu n'as pas besoin de créer un produit. Tu vends une formation déjà demandée et tu encaisses directement.
@@ -1304,10 +1416,10 @@
                       <span class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-600 to-yellow-500 text-white px-3 py-1 text-[11px] font-black shadow-sm ring-1 ring-white/30">
                         <i class="fa fa-wand-magic-sparkles"></i> Baguette Ultime
                       </span><div class="flex flex-wrap items-center gap-2">
-                        <p class="font-extrabold text-gray-900">L'accès à la Baguette Ultime</p><span class="inline-flex items-center gap-1 rounded-full bg-sky-100 text-sky-700 px-2 py-0.5 text-xs font-bold ring-1 ring-sky-200 line-through">999€</span>
+                        <p class="font-extrabold text-gray-900">L'accès au Programme Baguette Ultime</p><span class="inline-flex items-center gap-1 rounded-full bg-sky-100 text-sky-700 px-2 py-0.5 text-xs font-bold ring-1 ring-sky-200 line-through">999€</span>
 
                       </div>
-                      <p class="mt-1 text-sm text-gray-600">Tu proposes la boîte complète à tes clients.</p>
+                      <p class="mt-1 text-sm text-gray-600">Tu proposes la boîte complète à tes clients et tu empoches des revenus passifs.</p>
                     </div>
                   </div>
                   <div class="flex items-center gap-2 flex-shrink-0">
@@ -1402,7 +1514,7 @@
                         <p class="font-extrabold text-gray-900">1 An de Coaching Pro + accompagnement </p>
                         <span class="inline-flex items-center gap-1 rounded-full bg-sky-100 text-sky-700 px-2 py-0.5 text-xs font-bold ring-1 ring-sky-200 line-through">2 997€</span>
                       </div>
-                      <p class="mt-1 text-sm text-gray-600">Tu n'es pas seule : guidance + communauté + support.</p>
+                      <p class="mt-1 text-sm text-gray-600">Tu n'es pas seule : Lives,  coaching + communauté + support.</p>
                     </div>
                   </div>
                   <div class="flex items-center gap-2 flex-shrink-0">
@@ -1611,7 +1723,7 @@
                       </div>
                       <div class="min-w-0">
                         <p class="font-bold text-gray-900 text-sm">Templates &amp; Modèles Prêts + 10 Tunnels + 1000 Mockups</p>
-                        <span class="inline-flex items-center gap-1 rounded-full bg-sky-100 text-pink-600 px-2 py-0.5 text-xs font-bold ring-1 ring-sky-200 line-through">497€</span><p class="text-xs text-gray-600 mt-1">Pages, emails, posts à copier/coller pour lancer plus vite.</p>
+                        <span class="inline-flex items-center gap-1 rounded-full bg-sky-100 text-pink-600 px-2 py-0.5 text-xs font-bold ring-1 ring-sky-200 line-through">297€</span><p class="text-xs text-gray-600 mt-1">Pages, emails, posts à copier/coller pour lancer plus vite.</p>
                       </div>
                     </div>
 
@@ -1628,9 +1740,9 @@
                 </div><div class="rounded-3xl bg-gradient-to-br from-purple-700 via-pink-600 to-yellow-500 p-[2px] shadow-2xl m-4 sm:m-6">
 
                 </div><p class="text-sm font-semibold text-gray-600 mb-2">VALEUR TOTALE DE L'OFFRE COMPLÈTE</p>
-                <p class="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-pink-600 to-yellow-500 mb-2 font-black">+10 000€</p>
-                <p class="text-xl text-gray-700 font-semibold">Pour seulement <span class="text-green-700 font-black font-semibold">996€</span> prix PROMO !</p><a href="#cta" class="open-popup-trigger inline-flex items-center justify-center rounded-full bg-gradient-to-r from-pink-600 to-purple-700 text-white font-extrabold px-6 py-3 shadow-lg hover:shadow-2xl hover:-translate-y-0.5 transition-all text-center whitespace-nowrap">
-                Je veux tout ça ! <i class="fa fa-arrow-down ml-2"></i>
+                <p class="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-pink-600 to-yellow-500 mb-2 font-black">≃10 000€</p>
+                <p class="text-xl text-gray-700 font-semibold">Pour toi seulement <span class="text-green-700 font-black font-semibold">996€</span> prix PROMO !</p><a href="#cta" class="open-popup-trigger inline-flex items-center justify-center rounded-full bg-gradient-to-r from-pink-600 to-purple-700 text-white font-extrabold px-8 py-6 shadow-lg hover:shadow-2xl hover:-translate-y-0.5 transition-all text-center whitespace-nowrap mt-4 text-xl">🔥
+                Je veux tout ça ! 🔥<i class="fa fa-arrow-down ml-2"></i>
               </a>
               </div>
             </div><div class="rounded-3xl bg-gradient-to-br from-purple-700 via-pink-600 to-yellow-500 p-[2px] shadow-2xl m-4 sm:m-6">
@@ -2517,33 +2629,471 @@
     });
   </script>
 </div>
-</section><button type="button" id="toggle-espace-liabiz" class="w-full text-left bg-white/90 backdrop-blur rounded-3xl border-2 border-purple-200 p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group my-6">
-        <div class="flex items-center justify-between gap-4">
-          <div class="flex-1">
-            <div class="flex flex-wrap items-center gap-3 mb-3 items-center">
-              <span class="inline-flex items-center gap-2 rounded-full bg-purple-100 text-purple-700 px-4 py-1 text-sm font-semibold">
-                <i class="fas fa-bolt"></i>👇 Découvre Tout Ce Que Contient Ton accés au SaaS L'IABIZ 👇 — Ta tour de contrôle 🕹️
-              </span>
+</section><div>
+  <button type="button" id="toggle-espace-liabiz" class="w-full text-left bg-white/90 backdrop-blur rounded-3xl border-2 border-purple-200 p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group my-6">
+    <div class="flex items-center justify-between gap-4">
+      <div class="flex-1">
+        <div class="flex flex-wrap items-center gap-3 mb-3 items-center">
+          <span class="inline-flex items-center gap-2 rounded-full bg-purple-100 text-purple-700 px-4 py-1 text-sm font-semibold">
+            <i class="fas fa-bolt"></i>👇 Découvre Tout Ce Que Contient Ton accés au SaaS L'IABIZ 👇 — Ta tour de contrôle 🕹️
+          </span>
+        </div>
+        <h2 class="font-heading text-3xl md:text-3xl lg:text-5xl font-black text-gray-800 mb-2">
+          <span class="gradient-text">L'IABIZ : Tout ton business</span> au même endroit
+        </h2>
+        <p class="text-base md:text-lg text-gray-600 font-extrabold">⬇️🔻🔻 Clique pour découvrir tous les outils inclus dans ta tour de contrôle 🎯🔻🔻⬇️</p>
+      </div>
+      <div class="flex-shrink-0">
+        <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+          <i class="fas fa-chevron-down text-white text-xl md:text-2xl transition-transform duration-300" id="chevron-espace-liabiz"></i>
+        </div>
+      </div>
+    </div>
+  </button>
+
+  <div id="espace-liabiz-content" class="overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 0; opacity: 0;">
+    <div class="pt-8">
+              <div class="mx-auto max-w-3xl text-center mb-12">
+                <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                  Imagine un tableau de bord unique : tes <span class="font-semibold text-gray-900">tunnels</span>, tes <span class="font-semibold text-gray-900">leads</span>,
+                  tes <span class="font-semibold text-gray-900">messages</span>, tes <span class="font-semibold text-gray-900">emails</span>,
+                  ton <span class="font-semibold text-gray-900">calendrier</span>, tes <span class="font-semibold text-gray-900">réseaux</span>
+                  et même ton <span class="font-semibold text-gray-900">espace formation</span>… tout dedans.
+                </p>
+
+                <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+                  <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-sm text-gray-700 ring-1 ring-white/60">
+                    <i class="fas fa-check text-pink-600"></i> Centralisé
+                  </span>
+                  <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-sm text-gray-700 ring-1 ring-white/60">
+                    <i class="fas fa-check text-yellow-600"></i> Automatisé
+                  </span>
+                  <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-sm text-gray-700 ring-1 ring-white/60">
+                    <i class="fas fa-check text-violet-700"></i> Facile à piloter
+                  </span>
+                  <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-sm text-gray-700 ring-1 ring-white/60">
+                    <i class="fas fa-check text-green-700"></i> Économique
+                  </span>
+                </div>
+              </div>
+
+              <div class="mt-12 relative">
+  <div class="overflow-hidden">
+    <div id="liabiz-carousel" class="flex transition-transform duration-700 ease-out">
+      <div class="min-w-full px-2">
+        <div class="grid gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white/80 p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]">
+            <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-pink-400/20 to-violet-400/10 blur-2xl transition group-hover:from-pink-400/30"></div>
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white shadow-lg shadow-pink-500/20">
+                <i class="fas fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="min-w-0">
+                <h3 class="text-xl font-bold text-gray-900">Tunnels &amp; Pages de vente</h3>
+                <p class="mt-2 text-gray-600 leading-relaxed">Landing → capture → checkout → upsell : ton parcours est pensé pour convertir (même quand tu dors 😴).</p>
+              </div>
             </div>
-            <h2 class="font-heading text-3xl md:text-3xl lg:text-5xl font-black text-gray-800 mb-2">
-              <span class="gradient-text">L'IABIZ : Tout ton business</span> au même endroit
-            </h2>
-            <p class="text-base md:text-lg text-gray-600 font-extrabold">⬇️🔻🔻 Clique pour découvrir tous les outils inclus dans ta tour de contrôle 🎯🔻🔻⬇️</p>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+              <li class="flex gap-2"><i class="fas fa-check text-pink-600 mt-1"></i> Pages drag &amp; drop</li>
+              <li class="flex gap-2"><i class="fas fa-check text-pink-600 mt-1"></i> Formulaires + tags + automatisations</li>
+              <li class="flex gap-2"><i class="fas fa-check text-pink-600 mt-1"></i> Formulaires de paiements </li>
+              <li class="flex gap-2"><i class="fas fa-check text-pink-600 mt-1"></i> Assisté par IA </li>
+            </ul>
           </div>
-          <div class="flex-shrink-0">
-            <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-              <i class="fas fa-chevron-down text-white text-xl md:text-2xl transition-transform duration-300" id="chevron-espace-liabiz"></i>
+
+          <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white/80 p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]">
+            <div class="pointer-events-none absolute -right-10 -bottom-10 h-32 w-32 rounded-full bg-gradient-to-br from-pink-400/20 to-yellow-400/10 blur-2xl transition group-hover:from-pink-400/30"></div>
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500 to-yellow-500 text-white shadow-lg shadow-pink-500/20">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <div class="min-w-0">
+                <h3 class="text-xl font-bold text-gray-900">Planning réseaux &amp; calendrier contenu</h3>
+                <p class="mt-2 text-gray-600 leading-relaxed">Tu planifies, tu postes régulier, tu deviens un Pro du Social Média. Simple.</p>
+              </div>
             </div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+              <li class="flex gap-2"><i class="fas fa-check text-pink-600 mt-1"></i> Tes réseaux connectés + création de contenus </li>
+              <li class="flex gap-2"><i class="fas fa-check text-pink-600 mt-1"></i> Organisation par thèmes + Calendrier de publication</li>
+              <li class="flex gap-2"><i class="fas fa-check text-pink-600 mt-1"></i> Routine "sans charge mentale"</li>
+            </ul>
+          </div>
+
+          <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white/80 p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]">
+            <div class="pointer-events-none absolute -left-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-fuchsia-400/20 to-amber-400/10 blur-2xl transition group-hover:from-fuchsia-400/30"></div>
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-fuchsia-600 to-pink-600 text-white shadow-lg shadow-fuchsia-600/20">
+                <i class="fas fa-paper-plane"></i>
+              </div>
+              <div class="min-w-0">
+                <h3 class="text-xl font-bold text-gray-900">Emails &amp; automatisations</h3>
+                <p class="mt-2 text-gray-600 leading-relaxed">Le robot travaille : séquences, relances, nurturing… et toi tu postes 😏</p>
+              </div>
+            </div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+              <li class="flex gap-2"><i class="fas fa-check text-fuchsia-700 mt-1"></i> Séquences automatiques</li>
+              <li class="flex gap-2"><i class="fas fa-check text-fuchsia-700 mt-1"></i> Relances intelligentes</li>
+              <li class="flex gap-2"><i class="fas fa-check text-fuchsia-700 mt-1"></i> Segmentation des leads</li>
+            </ul>
           </div>
         </div>
-      </button>
+      </div>
+
+      <div class="min-w-full px-2">
+        <div class="grid gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white/80 p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]">
+            <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-sky-400/20 to-violet-400/10 blur-2xl transition group-hover:from-sky-400/30"></div>
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-600 text-white shadow-lg shadow-sky-500/20">
+                <i class="fas fa-comments"></i>
+              </div>
+              <div class="min-w-0">
+                <h3 class="text-xl font-bold text-gray-900">Chat &amp; messagerie </h3>
+                <p class="mt-2 text-gray-600 leading-relaxed">Tout centralisé : tu réponds plus vite → tu vends plus vite.</p>
+              </div>
+            </div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+              <li class="flex gap-2"><i class="fas fa-check text-sky-600 mt-1"></i> Conversations au même endroit (insta, tiktok, WhatsApp..)</li>
+              <li class="flex gap-2"><i class="fas fa-check text-sky-600 mt-1"></i> Historique centralisé par contact, Suivi + notes clients</li>
+              <li class="flex gap-2"><i class="fas fa-check text-sky-600 mt-1"></i> Réponses plus rapides + image Pro</li>
+            </ul>
+          </div>
+
+          <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white/80 p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]">
+            <div class="pointer-events-none absolute -left-10 -bottom-10 h-32 w-32 rounded-full bg-gradient-to-br from-violet-400/20 to-pink-400/10 blur-2xl transition group-hover:from-violet-400/30"></div>
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-600 to-pink-600 text-white shadow-lg shadow-violet-600/20">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="min-w-0">
+                <h3 class="text-xl font-bold text-gray-900">Espace formations / membres</h3>
+                <p class="mt-2 text-gray-600 leading-relaxed">Tu livres comme une pro : accès sécurisé, modules, ressources. Expérience premium ✨</p>
+              </div>
+            </div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+              <li class="flex gap-2"><i class="fas fa-check text-violet-700 mt-1"></i> Accès membres sécurisé</li>
+              <li class="flex gap-2"><i class="fas fa-check text-violet-700 mt-1"></i> Modules + contenus</li>
+              <li class="flex gap-2"><i class="fas fa-check text-violet-700 mt-1"></i> Gestion des accès clients</li>
+            </ul>
+          </div>
+
+          <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white/80 p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]">
+            <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-amber-400/20 to-fuchsia-400/10 blur-2xl transition group-hover:from-amber-400/30"></div>
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-fuchsia-600 text-white shadow-lg shadow-amber-500/20">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="min-w-0">
+                <h3 class="text-xl font-bold text-gray-900">Tableaux de bord &amp; suivi</h3>
+                <p class="mt-2 text-gray-600 leading-relaxed">Tu vois les leads, les conversions, les ventes. Zéro "je crois que ça marche"… tu sais.</p>
+              </div>
+            </div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+              <li class="flex gap-2"><i class="fas fa-check text-amber-700 mt-1"></i> Stats &amp; conversions</li>
+              <li class="flex gap-2"><i class="fas fa-check text-amber-700 mt-1"></i> Vision claire du business</li>
+              <li class="flex gap-2"><i class="fas fa-check text-amber-700 mt-1"></i> Optimisation rapide</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="min-w-full px-2">
+        <div class="grid gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white/80 p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]">
+            <div class="pointer-events-none absolute -right-10 -bottom-10 h-32 w-32 rounded-full bg-gradient-to-br from-amber-400/20 to-yellow-400/10 blur-2xl transition group-hover:from-amber-400/30"></div>
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-yellow-500 text-white shadow-lg shadow-amber-500/20">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <div class="min-w-0">
+                <h3 class="text-xl font-bold text-gray-900">Calendrier &amp; RDV</h3>
+                <p class="mt-2 text-gray-600 leading-relaxed">Les gens bookent tout seuls. Toi tu arrives juste au rendez-vous 😌.</p>
+              </div>
+            </div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+              <li class="flex gap-2"><i class="fas fa-check text-yellow-600 mt-1"></i> Prise de RDV automatique</li>
+              <li class="flex gap-2"><i class="fas fa-check text-yellow-600 mt-1"></i> Rappels &amp; confirmations</li>
+              <li class="flex gap-2"><i class="fas fa-check text-yellow-600 mt-1"></i> Organisation clean</li>
+            </ul>
+          </div>
+
+          <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white/80 p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]">
+            <div class="pointer-events-none absolute -left-10 -bottom-10 h-32 w-32 rounded-full bg-gradient-to-br from-violet-400/20 to-sky-400/10 blur-2xl transition group-hover:from-violet-400/30"></div>
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 text-white shadow-lg shadow-violet-600/20">
+                <i class="fas fa-address-book"></i>
+              </div>
+              <div class="min-w-0">
+                <h3 class="text-xl font-bold text-gray-900">CRM &amp; contacts</h3>
+                <p class="mt-2 text-gray-600 leading-relaxed">Tes leads et clients sont rangés, tagués et suivis. Fini le chaos.</p>
+              </div>
+            </div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+              <li class="flex gap-2"><i class="fas fa-check text-violet-700 mt-1"></i> Pipeline (Nouveau → Chaud → Client)</li>
+              <li class="flex gap-2"><i class="fas fa-check text-violet-700 mt-1"></i> Historique des interactions</li>
+              <li class="flex gap-2"><i class="fas fa-check text-violet-700 mt-1"></i> Suivi simple des relances</li>
+            </ul>
+          </div>
+
+          <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white/80 p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]">
+            <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-pink-400/20 to-violet-400/10 blur-2xl transition group-hover:from-pink-400/30"></div>
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white shadow-lg shadow-pink-500/20">
+                <i class="fas fa-sync-alt"></i>
+              </div>
+              <div class="min-w-0">
+                <h3 class="text-xl font-bold text-gray-900">Automatisations avancées</h3>
+                <p class="mt-2 text-gray-600 leading-relaxed">Workflows personnalisés qui tournent 24/7 pour maximiser tes conversions.</p>
+              </div>
+            </div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+              <li class="flex gap-2"><i class="fas fa-check text-pink-600 mt-1"></i> Scénarios intelligents</li>
+              <li class="flex gap-2"><i class="fas fa-check text-pink-600 mt-1"></i> Déclencheurs personnalisés</li>
+              <li class="flex gap-2"><i class="fas fa-check text-pink-600 mt-1"></i> Gain de temps maximum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" id="liabiz-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-purple-700 rounded-full p-3 shadow-lg backdrop-blur-sm transition-all z-10 ring-1 ring-white/60">
+    <i class="fa fa-chevron-left text-lg"></i>
+  </button>
+  <button type="button" id="liabiz-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-purple-700 rounded-full p-3 shadow-lg backdrop-blur-sm transition-all z-10 ring-1 ring-white/60">
+    <i class="fa fa-chevron-right text-lg"></i>
+  </button>
+
+  <div class="mt-8 flex items-center justify-center gap-2">
+    <div id="liabiz-indicators" class="flex items-center justify-center gap-2"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const carousel = document.getElementById('liabiz-carousel');
+  if (!carousel) return;
+
+  const prevBtn = document.getElementById('liabiz-prev');
+  const nextBtn = document.getElementById('liabiz-next');
+  const indicators = document.getElementById('liabiz-indicators');
+
+  const totalSlides = 3;
+  let currentIndex = 0;
+  let autoplayInterval;
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  function createIndicators() {
+    if (!indicators) return;
+    indicators.innerHTML = '';
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.setAttribute('aria-label', 'Aller à la page ' + (i + 1));
+      dot.className = 'h-2.5 w-2.5 rounded-full transition-all ring-1 ring-white/60 bg-purple-300 hover:bg-purple-400';
+      dot.addEventListener('click', () => goTo(i));
+      indicators.appendChild(dot);
+    }
+  }
+
+  function updateIndicators() {
+    if (!indicators) return;
+    const dots = Array.from(indicators.querySelectorAll('button'));
+    dots.forEach((d, i) => {
+      if (i === currentIndex) {
+        d.classList.remove('bg-purple-300');
+        d.classList.add('bg-purple-700');
+        d.style.transform = 'scale(1.15)';
+      } else {
+        d.classList.remove('bg-purple-700');
+        d.classList.add('bg-purple-300');
+        d.style.transform = 'scale(1)';
+      }
+    });
+  }
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    updateIndicators();
+  }
+
+  function goTo(index) {
+    currentIndex = index;
+    updateCarousel();
+    resetAutoplay();
+  }
+
+  function next() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateCarousel();
+  }
+
+  function prev() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+
+  function startAutoplay() {
+    autoplayInterval = setInterval(next, 5000);
+  }
+
+  function stopAutoplay() {
+    clearInterval(autoplayInterval);
+  }
+
+  function resetAutoplay() {
+    stopAutoplay();
+    startAutoplay();
+  }
+
+  if (prevBtn) prevBtn.addEventListener('click', () => { prev(); resetAutoplay(); });
+  if (nextBtn) nextBtn.addEventListener('click', () => { next(); resetAutoplay(); });
+
+  carousel.addEventListener('mouseenter', stopAutoplay);
+  carousel.addEventListener('mouseleave', startAutoplay);
+
+  carousel.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    stopAutoplay();
+  }, { passive: true });
+
+  carousel.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const swipeThreshold = 50;
+    if (touchEndX < touchStartX - swipeThreshold) next();
+    else if (touchEndX > touchStartX + swipeThreshold) prev();
+    startAutoplay();
+  }, { passive: true });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') prev();
+    if (e.key === 'ArrowRight') next();
+  });
+
+  createIndicators();
+  updateCarousel();
+  startAutoplay();
+})();
+</script>
+
+              <div class="mt-10">
+                <div class="relative overflow-hidden rounded-2xl border border-violet-100 bg-gradient-to-r from-violet-100 via-fuchsia-100 to-pink-100 p-5 sm:p-6 shadow-sm mx-8">
+                  <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.55),transparent_45%,rgba(255,255,255,0.35))]"></div>
+                  <div class="relative flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="max-w-2xl">
+                      <p class="text-xl font-bold text-purple-900 mb-2">
+            <i class="fas fa-crown text-yellow-500"></i> Tout ça inclus dans L'IABIZ
+          </p><h3 class="font-heading text-xl md:text-2xl font-black text-gray-900">
+                        En clair : tu remplaces plein d'outils par <span class="gradient-text">un seul</span> 😎
+                      </h3>
+                      <p class="mt-2 text-sm md:text-base text-gray-700 leading-relaxed">
+                        Au lieu de payer 1000 abonnements dispersés (tunnel + emails + planning + CRM + espace membre…),
+                        tu as un espace unique, stable, et prêt à scaler, que tu peux utiliser pour tous tes business. 🚀
+                      </p>
+                      <p class="mt-2 text-xs md:text-sm text-gray-600"><span class="font-semibold">Mymy tip :</span> quand tout est centralisé, tu vas plus vite et tu bloques moins.</p>
+                    </div>
+
+                    <a href="Paiment%20DSA.html" class="cta-button inline-block bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-bold py-3 px-6 rounded-full text-base shadow-lg transform transition duration-300 ease-in-out hover:scale-105 pulse-animation text-center whitespace-nowrap">
+                      Je veux l'accès 💫
+                      <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                  </div><p class="text-sm text-gray-600 mt-3">
+             — 1er mois offert avec la Baguette Ultime, puis payé par l'affiliation —
+          </p>
+                </div>
+              </div>
+
+              <div class="mt-10 max-w-3xl mx-auto">
+                <div class="space-y-3">
+                  <button class="accordion-button w-full text-left bg-white/80 backdrop-blur rounded-xl border border-gray-100 p-4 shadow-[0_10px_30px_rgba(0,0,0,0.06)] flex items-center justify-between hover:shadow-lg transition-all">
+                    <div class="pr-3">
+                      <p class="font-bold text-gray-900 text-sm md:text-base">Pourquoi il y a un abonnement dans l'offre Ultime ?</p>
+                      <p class="text-xs md:text-sm text-gray-600 mt-1">Parce que tu utilises un outil tout-en-1 (ta tour de contrôle).</p>
+                    </div>
+                    <i class="accordion-icon fas fa-chevron-down text-gray-500 flex-shrink-0"></i>
+                  </button>
+                  <div class="accordion-content bg-white/70 backdrop-blur rounded-xl border border-gray-100 px-4 pb-4 overflow-hidden transition-all duration-300" style="max-height: 0;">
+                    <p class="pt-4 text-gray-700 leading-relaxed text-sm md:text-base">
+                      L'abonnement, ce n'est pas "un coût caché". C'est l'accès à l'outil tout-en-1 (CRM, emails, planning, tunnel, chat, espace membre…).
+                      C'est la machine qui fait tourner ton système au quotidien.
+                    </p>
+                  </div>
+
+                  <button class="accordion-button w-full text-left bg-white/80 backdrop-blur rounded-xl border border-gray-100 p-4 shadow-[0_10px_30px_rgba(0,0,0,0.06)] flex items-center justify-between hover:shadow-lg transition-all">
+                    <div class="pr-3">
+                      <p class="font-bold text-gray-900 text-sm md:text-base">Est-ce que je peux arrêter quand je veux ?</p>
+                      <p class="text-xs md:text-sm text-gray-600 mt-1">Oui. Zéro engagement (tu gardes le contrôle).</p>
+                    </div>
+                    <i class="accordion-icon fas fa-chevron-down text-gray-500 flex-shrink-0"></i>
+                  </button>
+                  <div class="accordion-content bg-white/70 backdrop-blur rounded-xl border border-gray-100 px-4 pb-4 overflow-hidden transition-all duration-300" style="max-height: 0;">
+                    <p class="pt-4 text-gray-700 leading-relaxed text-sm md:text-base">
+                      Oui : tu peux arrêter quand tu veux. L'idée de l'Ultime, c'est que tu aies une solution simple, centralisée,
+                      et que tu puisses scaler sans te battre avec la technique.
+                    </p>
+                  </div>
+
+                  <button class="accordion-button w-full text-left bg-white/80 backdrop-blur rounded-xl border border-gray-100 p-4 shadow-[0_10px_30px_rgba(0,0,0,0.06)] flex items-center justify-between hover:shadow-lg transition-all">
+                    <div class="pr-3">
+                      <p class="font-bold text-gray-900 text-sm md:text-base">Et si je garde l'abonnement, ça me rapporte quoi ?</p>
+                      <p class="text-xs md:text-sm text-gray-600 mt-1">Du temps, de la régularité, et moins de bugs → plus de ventes.</p>
+                    </div>
+                    <i class="accordion-icon fas fa-chevron-down text-gray-500 flex-shrink-0"></i>
+                  </button>
+                  <div class="accordion-content bg-white/70 backdrop-blur rounded-xl border border-gray-100 px-4 pb-4 overflow-hidden transition-all duration-300" style="max-height: 0;">
+                    <p class="pt-4 text-gray-700 leading-relaxed text-sm md:text-base">
+                      Tu gagnes surtout : du temps + une structure stable + des automatisations.
+                      Tu passes plus d'énergie à publier et vendre, et moins à "configurer des trucs".
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mt-5 text-center text-xs md:text-sm text-gray-600">Tu veux le mode "simple &amp; rapide" ? La Bagette Ultime, c'est littéralement "je te setup + tu pilotes". 💜</p>
+              </div>
+            </div>
+  </div>
+
+  <script>
+    (function() {
+      const toggleButton = document.getElementById('toggle-espace-liabiz');
+      const content = document.getElementById('espace-liabiz-content');
+      const chevron = document.getElementById('chevron-espace-liabiz');
+      
+      if (!toggleButton || !content || !chevron) return;
+      
+      let isOpen = false;
+      
+      toggleButton.addEventListener('click', function() {
+        isOpen = !isOpen;
+        
+        if (isOpen) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          content.style.opacity = '1';
+          chevron.style.transform = 'rotate(180deg)';
+        } else {
+          content.style.maxHeight = '0';
+          content.style.opacity = '0';
+          chevron.style.transform = 'rotate(0deg)';
+        }
+      });
+      
+      window.addEventListener('resize', function() {
+        if (isOpen) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      });
+    })();
+  </script>
+</div>
+
 
   <section id="tarification" class="py-16 md:py-10 bg-gradient-to-b from-white via-purple-50 to-white">
     <div class="container mx-auto px-4">
       <div class="text-center max-w-3xl mx-auto">
-        <span class="gradient-text inline-block animate-gradient font-bold text-4xl py-3">Choisis Ta Boîte à Outils Magique Elle t'attend !</span>
+        <span class="gradient-text inline-block animate-gradient font-bold text-4xl py-3">Mais tu as le choix entre deux baguettes Magiques. Fais le bon choix  ! ✨</span>
         <p class="mt-4 text-base sm:text-lg md:text-xl leading-relaxed text-gray-600">
-          Deux baguettes, même destination. La différence ? La vitesse de démarrage … et le potentiel de revenus (affiliation + automatisation).
+          Deux chemins, même destination. La différence ? La vitesse de démarrage … et le potentiel de revenus (affiliation + automatisation).
         </p>
       </div>
 
@@ -3146,7 +3696,7 @@
       <div class="max-w-lg mx-auto bg-gradient-to-br from-purple-600 via-pink-600 to-red-500 p-8 md:p-10 rounded-2xl shadow-2xl text-white transform transition duration-500 hover:scale-105 mb-0">
         <h3 class="text-2xl font-semibold mb-4">Accède à Tout Ça Pour Un Prix de Dingue</h3>
         <div class="text-2xl font-bold font-heading text-white/50 line-through">2 499€</div><p class="text-5xl md:text-8xl font-extrabold mb-3"> 996€</p>
-        <p class="text-xl mb-6">(ou 497€ si tu veux juste la Baguette Topissime🪄! )</p>
+        <p class="text-lg mb-6">(ou 497€ si tu veux juste la Baguette Topissime🪄! )</p>
         <p class="text-2xl font-semibold text-yellow-300 mb-5">Le meilleur Investissement que tu puisses t'offrir  ! 🔥</p>
         <p class="mt-1 text-gray-200 text-xl font-extrabold">✨ C'est celui là 👇🏻✨</p>
       </div>
@@ -3214,7 +3764,7 @@
             <i class="fas fa-chevron-down accordion-icon text-sm"></i>
           </button>
           <div class="accordion-content px-4 pb-4 bg-white text-gray-700 text-sm md:text-base">
-            Non. L'accès à la formation DSA et à ses droits de revente, c'est un paiement unique de 497€ (ou en 2 ou 3 fois). Il n'y a pas d'abonnement mensuel pour la formation elle-même. Certains outils externes recommandés (comme l'autorépondeur ou Systeme.io) peuvent avoir des plans gratuits ou payants, mais la formation t'explique comment démarrer avec un minimum voire zéro frais supplémentaires. Avec La Baguette Ultime, tous les outils sont inclus dans l'abonnement mensuel (1er mois offert) et en plus Tout ton système est construit, tu n'a plus qu'a démarrer ton aventure !
+            Non. L'accès à la formation DSA et à ses droits de revente, c'est un paiement unique de 497€. Il n'y a pas d'abonnement mensuel pour la formation elle-même. Certains outils externes recommandés (comme l'autorépondeur ou Systeme.io) peuvent avoir des plans gratuits ou payants, mais la formation t'explique comment démarrer avec un minimum voire zéro frais supplémentaires. Avec La Baguette Ultime, tous les outils sont inclus dans l'abonnement mensuel (1er mois offert) et en plus Tout ton système est construit, tu n'a plus qu'a démarrer ton aventure !
           </div>
         </div>
       </div>
